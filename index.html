@@ -85,6 +85,23 @@
   .ingen{color:var(--paper-dim);font-size:13px;line-height:1.55;padding:16px 0}
   .meta{margin-top:24px;font-size:11px;color:#6f7780;line-height:1.6}
   .meta a{color:var(--signal-2)}
+
+  .admin-bar{padding:10px 22px;border-top:1px solid var(--signal-2);background:var(--panel-2);display:none}
+  body.admin .admin-bar{display:block}
+  .admin-btn{background:var(--signal-2);color:var(--ink);border:none;padding:7px 14px;border-radius:3px;
+    font:inherit;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.02em;width:100%}
+  .admin-btn:hover{filter:brightness(1.15)}
+  .admin-btn.secondary{background:transparent;border:1px solid var(--signal-2);color:var(--signal-2)}
+  .admin-edit{padding:14px 0}
+  .admin-edit label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;
+    color:var(--paper-dim);margin-bottom:4px;margin-top:10px}
+  .admin-edit label:first-child{margin-top:0}
+  .admin-edit input[type=text],.admin-edit textarea{width:100%;padding:7px 9px;border-radius:3px;
+    border:1px solid var(--line);background:var(--panel);color:var(--paper);font:inherit;font-size:13px}
+  .admin-edit textarea{min-height:60px;resize:vertical}
+  .admin-badge{display:inline-block;background:var(--signal-2);color:var(--ink);font-size:9px;
+    font-weight:600;padding:2px 6px;border-radius:2px;letter-spacing:.06em;margin-left:8px;vertical-align:middle}
+  .admin-changes{font-size:11px;color:var(--signal-2);margin-top:6px}
   .leaflet-container{font-family:inherit}
   .baselag,.histlag{transition:filter .25s}
   body.sok .baselag,body.sok .histlag{filter:saturate(.25) brightness(1.05)}
@@ -97,7 +114,7 @@
 
 <aside>
   <header>
-    <h1>Fredrikshald 1900</h1>
+    <h1>Fredrikshald 1900<span class="admin-badge" style="display:none" id="adminBadge">ADMIN</span></h1>
     <div class="sub">Folketellingen lagt over Krums bykart fra 1905</div>
   </header>
 
@@ -179,6 +196,7 @@ function husstandBlokk(h, i, antall){
 }
 
 function vis(p){
+  aktivParsell = p;
   const e = eiendommer[p.id] || {};   // eiendomsdata
   const d = beboere[p.id];            // folketellingsdata
   const hh = d ? d.husstander : [];
@@ -261,7 +279,8 @@ function vis(p){
       ${e.historie_kilde ? `Historikk: ${e.historie_kilde}<br>` : ''}
       Historisk kart 1905 ved O. Krum · ©Kartverket<br>
       <a href="mailto:${EPOST}?subject=${emne}">Meld feil på denne gården</a>
-    </div>`;
+    </div>
+    ${adminEditor(p)}`;
 }
 
 /* Kartet er allerede rødt og gult, så konturene bruker lyshet framfor kulør:
@@ -339,6 +358,98 @@ document.getElementById('sok').addEventListener('input', e => {
   });
 });
 
+/* ---- Admin-modus ---- */
+const ADMIN_PASS = 'fredrikshald1900';
+let adminMode = false;
+let adminEndringer = {};   // id -> { felt: nyVerdi, ... }
+let aktivParsell = null;   // properties fra sist klikket parsell
+
+function sjekkAdmin(){
+  if (new URLSearchParams(location.search).has('admin')){
+    const pw = prompt('Admin-passord:');
+    if (pw === ADMIN_PASS){
+      adminMode = true;
+      document.body.classList.add('admin');
+      document.getElementById('adminBadge').style.display = '';
+    }
+  }
+}
+
+function adminEditor(p){
+  if (!adminMode) return '';
+  const e = eiendommer[p.id] || {};
+  const mat = e.matrikkel_1901 || {};
+  const ft = e.folketelling_meta || {};
+  const endret = adminEndringer[p.id] || {};
+  const val = (felt, fallback) => endret[felt] !== undefined ? endret[felt] : (fallback || '');
+
+  return `
+    <div class="admin-edit" style="border-top:1px solid var(--signal-2);margin-top:18px;padding-top:14px">
+      <div style="font-size:11px;color:var(--signal-2);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px">Rediger</div>
+      <label>Navn (f.eks. Wielgården)</label>
+      <input type="text" data-felt="navn" value="${val('navn', e.navn || '')}">
+      <label>Adresse</label>
+      <input type="text" data-felt="adresse" value="${val('adresse', e.adresse || mat.gate || '')}">
+      <label>Gnr/bnr</label>
+      <input type="text" data-felt="gnr_bnr" value="${val('gnr_bnr', e.gnr_bnr || '')}">
+      <button class="admin-btn" style="margin-top:12px" onclick="lagreEndring('${p.id}')">Lagre</button>
+    </div>`;
+}
+
+function lagreEndring(id){
+  const inputs = panel.querySelectorAll('.admin-edit input[data-felt], .admin-edit textarea[data-felt]');
+  const endring = {};
+  inputs.forEach(inp => { if (inp.value.trim()) endring[inp.dataset.felt] = inp.value.trim(); });
+  if (Object.keys(endring).length === 0) return;
+
+  adminEndringer[id] = Object.assign(adminEndringer[id] || {}, endring);
+
+  // Oppdater eiendommer i minnet så visningen reflekterer endringen
+  if (!eiendommer[id]) eiendommer[id] = {};
+  Object.assign(eiendommer[id], endring);
+
+  // Oppdater tooltip
+  if (lag) lag.eachLayer(l => {
+    if (l.feature && l.feature.properties.id === id){
+      const e = eiendommer[id] || {};
+      const mat = e.matrikkel_1901 || {};
+      l.unbindTooltip();
+      l.bindTooltip(e.navn || mat.gate || e.adresse || ('Løpenummer ' + id), {direction:'top', opacity:.9});
+    }
+  });
+
+  // Vis oppdatert panel
+  if (aktivParsell && aktivParsell.id === id) vis(aktivParsell);
+  oppdaterEksportKnapp();
+}
+
+function oppdaterEksportKnapp(){
+  const n = Object.keys(adminEndringer).length;
+  let bar = document.getElementById('adminBar');
+  if (!bar){
+    bar = document.createElement('div');
+    bar.className = 'admin-bar';
+    bar.id = 'adminBar';
+    document.querySelector('aside').appendChild(bar);
+  }
+  bar.innerHTML = `
+    <div class="admin-changes">${n} ${n === 1 ? 'gård' : 'gårder'} endret</div>
+    <button class="admin-btn" style="margin-top:6px" onclick="eksporterEndringer()">Last ned eiendommer.json</button>`;
+  bar.style.display = n > 0 ? 'block' : 'none';
+}
+
+function eksporterEndringer(){
+  // Lag oppdatert eiendommer.json
+  const data = JSON.stringify(eiendommer, null, 2);
+  const blob = new Blob([data], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'eiendommer.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+sjekkAdmin();
 start();
 </script>
 </body>
