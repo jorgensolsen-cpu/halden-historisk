@@ -32,18 +32,35 @@
   input:focus-visible,a:focus-visible{outline:2px solid var(--signal-2);outline-offset:1px}
 
   .body{flex:1;overflow-y:auto;padding:22px}
+  #panelBody{flex:1;overflow-y:auto;display:flex;flex-direction:column;min-height:0}
   .empty{color:var(--paper-dim);font-size:14px;line-height:1.55}
 
-  .addr{font-family:Fraunces,serif;font-size:22px;line-height:1.15;margin:0 0 2px}
-  .navn{font-size:13px;color:var(--paper-dim);margin-bottom:10px}
-  .matr{font-size:12px;color:var(--signal-2);letter-spacing:.04em;margin-bottom:18px}
+  .top{padding:22px 22px 0;flex-shrink:0}
+  .addr{font-family:Fraunces,serif;font-weight:600;font-size:22px;line-height:1.15;margin:0 0 2px}
+  .undertittel{font-size:13px;color:var(--paper-dim);margin-bottom:4px}
+  .eier-linje{font-size:13px;color:var(--paper);margin-bottom:2px}
+  .eier-linje .etikett{color:var(--paper-dim)}
+  .matr{font-size:11.5px;color:var(--signal-2);letter-spacing:.03em;margin-bottom:0;line-height:1.5}
 
-  .hus{border-top:1px solid var(--line);padding-top:14px;margin-top:4px}
-  .hus-type{font-size:13.5px;color:var(--paper);line-height:1.45}
-  .count{font-size:11px;text-transform:uppercase;letter-spacing:.08em;
-         color:var(--paper-dim);padding:4px 0 0}
+  /* Faner */
+  .tabs{display:flex;gap:0;padding:0 22px;flex-shrink:0;border-bottom:1px solid var(--line);margin-top:16px}
+  .tab{padding:10px 0;margin-right:22px;font-size:12px;font-weight:500;letter-spacing:.04em;
+       text-transform:uppercase;color:var(--paper-dim);cursor:pointer;border-bottom:2px solid transparent;
+       transition:color .15s, border-color .15s;position:relative;top:1px}
+  .tab:hover{color:var(--paper)}
+  .tab.active{color:var(--signal-2);border-bottom-color:var(--signal-2)}
+  .tab .teller{font-size:10px;font-weight:400;opacity:.6;margin-left:4px}
 
-  .silh{display:flex;align-items:flex-end;gap:4px;flex-wrap:wrap;margin-bottom:10px}
+  /* Fane-innhold */
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+  .tab-inner{padding:18px 22px 22px}
+  #panelBody .tab-content.active{flex:1}
+
+  /* === BEBOERE-fane === */
+  .oppsummering{font-size:12px;color:var(--paper-dim);padding-bottom:14px;border-bottom:1px solid var(--line);
+                margin-bottom:2px;line-height:1.5}
+  .silh{display:flex;align-items:flex-end;gap:4px;flex-wrap:wrap;margin-bottom:8px}
   .silh svg{display:block;width:auto;color:var(--paper)}
   .silh svg.v{height:26px}
   .silh svg.bn{height:18px}
@@ -53,6 +70,7 @@
   .silh.tett svg.bn{height:12px}
 
   details.hh{border-bottom:1px solid var(--line);padding:14px 0}
+  details.hh:last-of-type{border-bottom:none}
   details.hh summary{cursor:pointer;list-style:none;position:relative;padding-right:20px}
   details.hh summary::-webkit-details-marker{display:none}
   details.hh summary::after{
@@ -73,18 +91,53 @@
   .p span{color:var(--paper-dim)}
   .yrke{color:var(--signal-2)}
 
-  figure{margin:0 0 18px}
-  figure img{width:100%;display:block;border-radius:2px}
+  .ingen-beboere{color:var(--paper-dim);font-size:13px;line-height:1.55;padding:16px 0}
+
+  /* === EIENDOM-fane === */
+  .felt-gruppe{margin-bottom:20px}
+  .felt-gruppe:last-child{margin-bottom:0}
+  .gruppe-tittel{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--paper-dim);
+                 margin-bottom:10px;font-weight:500}
+  .felt{display:flex;justify-content:space-between;align-items:baseline;
+        padding:6px 0;border-bottom:1px solid rgba(239,231,214,.06);font-size:13px;line-height:1.45}
+  .felt:last-child{border-bottom:none}
+  .felt-etikett{color:var(--paper-dim);flex-shrink:0;margin-right:12px}
+  .felt-verdi{text-align:right;color:var(--paper);font-variant-numeric:tabular-nums}
+  .felt-verdi.stor{font-family:Fraunces,serif;font-size:15px;color:var(--signal-2)}
+
+  .anmerkning{margin-top:16px;padding:12px 14px;background:rgba(239,231,214,.05);border-radius:4px;
+              font-size:12.5px;line-height:1.55;color:var(--paper-dim);font-style:italic}
+
+  /* === BYGNINGER-fane === */
+  .bygg-hero{display:flex;gap:16px;align-items:flex-start;margin-bottom:18px}
+  .bygg-ikon{width:48px;height:48px;border-radius:4px;background:var(--panel-2);
+             display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .bygg-ikon svg{width:28px;height:28px;color:var(--signal-2)}
+  .bygg-tekst{flex:1}
+  .bygg-type{font-family:Fraunces,serif;font-size:17px;line-height:1.2;margin-bottom:4px}
+  .bygg-detalj{font-size:12.5px;color:var(--paper-dim);line-height:1.5}
+
+  .bygg-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+  .bygg-kort{background:var(--panel-2);border-radius:4px;padding:12px 14px}
+  .bygg-kort-verdi{font-family:Fraunces,serif;font-size:20px;line-height:1;margin-bottom:4px;color:var(--paper)}
+  .bygg-kort-etikett{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--paper-dim)}
+
+  .bilde-placeholder{width:100%;aspect-ratio:16/10;border-radius:4px;background:var(--panel-2);
+                      display:flex;align-items:center;justify-content:center;margin-top:4px}
+  .bilde-placeholder span{font-size:12px;color:#6f7780}
+
+  figure{margin:0 0 14px}
+  figure img{width:100%;display:block;border-radius:4px}
   figcaption{font-size:11px;color:#6f7780;margin-top:6px;line-height:1.5}
 
-  .historie{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);
+  .historie{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
             font-size:13.5px;line-height:1.65;color:var(--paper)}
   .historie p{margin:0 0 .8em}
   .historie p:last-child{margin-bottom:0}
 
-  .ingen{color:var(--paper-dim);font-size:13px;line-height:1.55;padding:16px 0}
-  .meta{margin-top:24px;font-size:11px;color:#6f7780;line-height:1.6}
-  .meta a{color:var(--signal-2)}
+  /* Kilde-footer */
+  .kilde{padding:14px 22px;border-top:1px solid var(--line);font-size:10.5px;color:#6f7780;line-height:1.6;flex-shrink:0}
+  .kilde a{color:var(--signal-2)}
 
   .admin-bar{padding:10px 22px;border-top:1px solid var(--signal-2);background:var(--panel-2);display:none}
   body.admin .admin-bar{display:block}
@@ -124,9 +177,14 @@
     <input type="search" id="sok" placeholder="Søk navn eller yrke">
   </div>
 
-  <div class="body" id="panel">
-    <p class="empty">Klikk på en gård for å se hvem som bodde der.</p>
+  <div id="panelTop"></div>
+  <div id="panelTabs" style="display:none"></div>
+  <div id="panelBody">
+    <div class="body" id="panel">
+      <p class="empty">Klikk på en gård for å se hvem som bodde der.</p>
+    </div>
   </div>
+  <div id="panelKilde" class="kilde" style="display:none"></div>
 </aside>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -174,7 +232,7 @@ function husstandTittel(h){
   return (deler >= 2 && deler > b.length / 2) ? `Familien ${etter}` : hf.navn;
 }
 
-function husstandBlokk(h, i, antall){
+function husstandBlokk(h){
   const b = h.beboere;
   const hf = b.find(x => /^h[fm]/i.test(x.stilling || '')) || b[0];
   const barn = b.filter(x => alder(x.f) !== null && alder(x.f) < 15).length;
@@ -197,90 +255,184 @@ function husstandBlokk(h, i, antall){
 
 function vis(p){
   aktivParsell = p;
-  const e = eiendommer[p.id] || {};   // eiendomsdata
-  const d = beboere[p.id];            // folketellingsdata
+  const e = eiendommer[p.id] || {};
+  const d = beboere[p.id];
   const hh = d ? d.husstander : [];
   const alle = hh.flatMap(h => h.beboere);
   const barn = alle.filter(b => alder(b.f) !== null && alder(b.f) < 15).length;
-
-  const emne = encodeURIComponent('Rettelse: ' + p.id + (e.adresse ? ' (' + e.adresse + ')' : ''));
-
-  /* Bilder fra eiendommer.json (array) */
-  const bildeHtml = e.bilder && e.bilder.length ? e.bilder.map(b => `
-    <figure>
-      <img src="${b.fil}" alt="${e.navn || e.adresse || ''}" loading="lazy">
-      ${(b.kreditering || b.rettigheter) ? `<figcaption>${
-        [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
-      }${b.beskrivelse ? ' — ' + b.beskrivelse : ''}</figcaption>` : ''}
-    </figure>`).join('') : '';
-
-  const historie = e.historie ? `
-    <div class="historie">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>` : '';
-
-  /* Bygningsbeskrivelse fra eiendommer.json */
-  const byg = e.bygning || {};
-  const husbeskrivelse = [
-    byg.hustype,
-    byg.etasjer ? byg.etasjer + (String(byg.etasjer) === '1' ? ' etasje' : ' etasjer') : null,
-    byg.leiligheter ? byg.leiligheter + (String(byg.leiligheter) === '1' ? ' leilighet' : ' leiligheter') : null
-  ].filter(Boolean).join(' · ');
-
-  /* Nummerlinjen: henter fra eiendommer.matrikkel_1901 og parsell-properties */
   const mat = e.matrikkel_1901 || {};
-  const nummerlinje = [
-    p.id ? 'Løpenummer 1901: ' + p.id : null,
-    mat.lopenr_1878 || p.lopenr_1878 ? 'Løpenr. 1878: ' + (mat.lopenr_1878 || p.lopenr_1878) : null,
-    mat.matrikkelnr || p.matrikkel ? 'Matrikkel ' + (mat.matrikkelnr || p.matrikkel) : null,
-    e.gnr_bnr || p.gnr_bnr ? 'Gnr/bnr ' + (e.gnr_bnr || p.gnr_bnr) : null
-  ].filter(Boolean).join(' · ') || '—';
-
   const ft = e.folketelling_meta || {};
-  /* Tittel-hierarki: navn > gate fra matrikkel > adresse > folketelling-adresse > løpenr */
+  const byg = e.bygning || {};
+
+  /* Tittel-hierarki */
   const tittel = e.navn || mat.gate || e.adresse || ft.adresse_historisk || ('Løpenummer ' + p.id);
-  /* Undertittel: vis navnet hvis tittelen ble noe annet, eller gaten hvis tittelen ble navnet */
   const undertittel = (e.navn && mat.gate && e.navn !== mat.gate) ? mat.gate
                     : (!e.navn && e.adresse && e.adresse !== tittel) ? e.adresse : null;
 
-  panel.innerHTML = `
-    <h2 class="addr">${tittel}</h2>
-    ${undertittel ? `<div class="navn">${undertittel}</div>` : ''}
-    <div class="matr">${nummerlinje}</div>
+  /* Nummerlinje */
+  const nummerlinje = [
+    p.id ? 'Lnr ' + p.id : null,
+    mat.matrikkelnr || p.matrikkel ? 'Matrikkel ' + (mat.matrikkelnr || p.matrikkel) : null,
+    e.gnr_bnr || p.gnr_bnr ? 'Gnr/bnr ' + (e.gnr_bnr || p.gnr_bnr) : null
+  ].filter(Boolean).join(' · ') || '';
 
-    ${mat.eier || husbeskrivelse ? `
-      <div class="hus">
-        ${mat.eier ? `<div class="hus-type">Eier: ${mat.eier}</div>` : ''}
-        ${husbeskrivelse ? `<div class="hus-type">${husbeskrivelse}</div>` : ''}
-        ${mat.skattetakst ? `<div class="count">Skattetakst: ${mat.skattetakst.toLocaleString('nb')} kr${mat.brandtakst ? ' · Brandtakst: ' + mat.brandtakst.toLocaleString('nb') + ' kr' : ''}</div>` : ''}
-        ${mat.anmerkning ? `<div class="count">${mat.anmerkning}</div>` : ''}
-      </div>` : ''}
+  /* === TOP === */
+  const topEl = document.getElementById('panelTop');
+  topEl.innerHTML = `
+    <div class="top">
+      <h2 class="addr">${tittel}</h2>
+      ${undertittel ? `<div class="undertittel">${undertittel}</div>` : ''}
+      ${mat.eier ? `<div class="eier-linje"><span class="etikett">Eier:</span> ${mat.eier}</div>` : ''}
+      ${nummerlinje ? `<div class="matr">${nummerlinje}</div>` : ''}
+    </div>`;
 
-    ${bildeHtml}
+  /* === FANER === */
+  const harBeboere = alle.length > 0;
+  const startTab = harBeboere ? 'beboere' : 'eiendom';
+  const tabsEl = document.getElementById('panelTabs');
+  tabsEl.style.display = '';
+  tabsEl.innerHTML = `
+    <div class="tabs">
+      <div class="tab${startTab==='beboere'?' active':''}" data-tab="beboere">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</div>
+      <div class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom">Eiendom</div>
+      <div class="tab" data-tab="bygninger">Bygninger</div>
+    </div>`;
 
-    ${alle.length ? `
-      <div class="hus">
-        <div class="count">${alle.length} ${alle.length === 1 ? 'person' : 'personer'} i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn</div>
+  /* === BEBOERE === */
+  const beboereSilh = harBeboere ? `
+    <div class="oppsummering">
+      <div class="silh${alle.length > 30 ? ' tett' : ''}">${alle.map(silhuett).join('')}</div>
+      ${alle.length} personer i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn
+    </div>` : '';
+
+  const beboereInnhold = harBeboere
+    ? beboereSilh + hh.map(h => husstandBlokk(h)).join('')
+    : '<p class="ingen-beboere">Ingen beboere registrert i folketellingen 1900.</p>';
+
+  /* === EIENDOM === */
+  let eiendomFelter = '';
+
+  /* Matrikkelgruppe */
+  const matFelter = [
+    mat.eier ? ['Eier', mat.eier] : null,
+    mat.gate ? ['Gate', mat.gate] : null,
+    mat.matrikkelnr || p.matrikkel ? ['Matrikkelnr', mat.matrikkelnr || p.matrikkel] : null,
+    p.id ? ['Løpenr 1901', p.id] : null,
+    mat.lopenr_1878 || p.lopenr_1878 ? ['Løpenr 1878', mat.lopenr_1878 || p.lopenr_1878] : null,
+    e.gnr_bnr || p.gnr_bnr ? ['Gnr/bnr', e.gnr_bnr || p.gnr_bnr] : null
+  ].filter(Boolean);
+  if (matFelter.length) {
+    eiendomFelter += `<div class="felt-gruppe"><div class="gruppe-tittel">Matrikkel 1901</div>
+      ${matFelter.map(f => `<div class="felt"><span class="felt-etikett">${f[0]}</span><span class="felt-verdi">${f[1]}</span></div>`).join('')}
+    </div>`;
+  }
+
+  /* Takst */
+  if (mat.skattetakst || mat.brandtakst) {
+    eiendomFelter += `<div class="felt-gruppe"><div class="gruppe-tittel">Takst</div>
+      ${mat.skattetakst ? `<div class="felt"><span class="felt-etikett">Skattetakst</span><span class="felt-verdi stor">${mat.skattetakst.toLocaleString('nb')} kr</span></div>` : ''}
+      ${mat.brandtakst ? `<div class="felt"><span class="felt-etikett">Brandtakst</span><span class="felt-verdi stor">${mat.brandtakst.toLocaleString('nb')} kr</span></div>` : ''}
+    </div>`;
+  }
+
+  /* Anmerkning */
+  if (mat.anmerkning) {
+    eiendomFelter += `<div class="anmerkning">${mat.anmerkning}</div>`;
+  }
+
+  /* Folketellingsgruppe */
+  const ftFelter = [
+    ft.adresse_historisk ? ['Historisk adresse', ft.adresse_historisk] : null,
+    ft.krets ? ['Tellingskrets', ft.krets] : null,
+    byg.gardens_nummer_raa ? ['Gårdens nummer', byg.gardens_nummer_raa] : null
+  ].filter(Boolean);
+  if (ftFelter.length) {
+    eiendomFelter += `<div class="felt-gruppe" style="margin-top:20px"><div class="gruppe-tittel">Folketelling</div>
+      ${ftFelter.map(f => `<div class="felt"><span class="felt-etikett">${f[0]}</span><span class="felt-verdi">${f[1]}</span></div>`).join('')}
+    </div>`;
+  }
+
+  if (!eiendomFelter) eiendomFelter = '<p class="ingen-beboere">Ingen eiendomsdata registrert.</p>';
+
+  /* === BYGNINGER === */
+  const husIkon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>';
+  let bygningerInnhold = '';
+
+  if (byg.hustype || byg.etasjer || byg.leiligheter || byg.sidebygninger) {
+    bygningerInnhold += `<div class="bygg-hero">
+      <div class="bygg-ikon">${husIkon}</div>
+      <div class="bygg-tekst">
+        <div class="bygg-type">${byg.hustype || 'Bygning'}</div>
+        ${byg.sidebygninger ? `<div class="bygg-detalj">${byg.sidebygninger}</div>` : ''}
       </div>
-      ${hh.map((h,i) => husstandBlokk(h, i, hh.length)).join('')}
-    ` : `<p class="ingen">Ingen beboere registrert på denne gården ennå.</p>`}
+    </div>`;
 
-    ${historie}
+    const kort = [
+      byg.etasjer ? ['Etasjer', byg.etasjer] : null,
+      byg.leiligheter ? ['Leiligheter', byg.leiligheter] : null
+    ].filter(Boolean);
+    if (kort.length) {
+      bygningerInnhold += `<div class="bygg-grid">
+        ${kort.map(k => `<div class="bygg-kort"><div class="bygg-kort-verdi">${k[1]}</div><div class="bygg-kort-etikett">${k[0]}</div></div>`).join('')}
+      </div>`;
+    }
+  }
 
-    <div class="meta">
-      ${d && d.kilde_url
-        ? `Folketelling 1900 for 0101 Fredrikshald kjøpstad · <a href="${d.kilde_url}" target="_blank" rel="noopener">${d.kilde || 'Digitalarkivet'}</a>`
-        : `Folketelling 1900 for 0101 Fredrikshald kjøpstad${d && d.kilde ? ' · ' + d.kilde : ''}`}
-      · Arkivverket/Digitalarkivet<br>
-      ${d && d.hentet ? `Data hentet ${d.hentet}<br>` : ''}
-      ${[
-        byg.sidebygninger ? 'Sidebygninger: ' + byg.sidebygninger : null,
-        ft.krets ? 'Tellingskrets ' + ft.krets : null,
-        ft.adresse_historisk ? 'I folketellingen: «' + ft.adresse_historisk + '»' : null
-      ].filter(Boolean).join('<br>') + (byg.sidebygninger || ft.krets || ft.adresse_historisk ? '<br>' : '')}
-      ${e.historie_kilde ? `Historikk: ${e.historie_kilde}<br>` : ''}
-      Historisk kart 1905 ved O. Krum · ©Kartverket<br>
-      <a href="mailto:${EPOST}?subject=${emne}">Meld feil på denne gården</a>
+  /* Bilder */
+  if (e.bilder && e.bilder.length) {
+    bygningerInnhold += e.bilder.map(b => `
+      <figure>
+        <img src="${b.fil}" alt="${e.navn || e.adresse || ''}" loading="lazy">
+        ${(b.kreditering || b.rettigheter) ? `<figcaption>${
+          [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
+        }${b.beskrivelse ? ' — ' + b.beskrivelse : ''}</figcaption>` : ''}
+      </figure>`).join('');
+  } else {
+    bygningerInnhold += '<div class="bilde-placeholder"><span>Ingen bilder ennå</span></div>';
+  }
+
+  /* Historie */
+  if (e.historie) {
+    bygningerInnhold += `<div class="historie">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>`;
+  }
+
+  if (!bygningerInnhold) bygningerInnhold = '<p class="ingen-beboere">Ingen bygningsdata registrert.</p>';
+
+  /* === PANEL BODY (tab contents) === */
+  const bodyEl = document.getElementById('panelBody');
+  bodyEl.innerHTML = `
+    <div class="tab-content${startTab==='beboere'?' active':''}" data-content="beboere">
+      <div class="tab-inner">${beboereInnhold}</div>
+    </div>
+    <div class="tab-content${startTab==='eiendom'?' active':''}" data-content="eiendom">
+      <div class="tab-inner">${eiendomFelter}</div>
+    </div>
+    <div class="tab-content" data-content="bygninger">
+      <div class="tab-inner">${bygningerInnhold}</div>
     </div>
     ${adminEditor(p)}`;
+
+  /* === KILDE-FOOTER === */
+  const emne = encodeURIComponent('Rettelse: ' + p.id + (e.adresse ? ' (' + e.adresse + ')' : ''));
+  const kildeEl = document.getElementById('panelKilde');
+  kildeEl.style.display = '';
+  kildeEl.innerHTML = `
+    ${d && d.kilde_url
+      ? `Folketelling 1900 · <a href="${d.kilde_url}" target="_blank" rel="noopener">Digitalarkivet</a>`
+      : 'Folketelling 1900 · Digitalarkivet'} · Arkivverket<br>
+    Historisk kart 1905 ved O. Krum · ©Kartverket<br>
+    <a href="mailto:${EPOST}?subject=${emne}">Meld feil</a>`;
+
+  /* Tab-switching */
+  tabsEl.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const id = tab.dataset.tab;
+      tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      bodyEl.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      bodyEl.querySelector('[data-content="' + id + '"]').classList.add('active');
+    });
+  });
 }
 
 /* Kartet er allerede rødt og gult, så konturene bruker lyshet framfor kulør:
@@ -397,7 +549,7 @@ function adminEditor(p){
 }
 
 function lagreEndring(id){
-  const inputs = panel.querySelectorAll('.admin-edit input[data-felt], .admin-edit textarea[data-felt]');
+  const inputs = document.getElementById('panelBody').querySelectorAll('.admin-edit input[data-felt], .admin-edit textarea[data-felt]');
   const endring = {};
   inputs.forEach(inp => { if (inp.value.trim()) endring[inp.dataset.felt] = inp.value.trim(); });
   if (Object.keys(endring).length === 0) return;
