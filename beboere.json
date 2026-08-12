@@ -2,12 +2,6 @@
   "469": {
     "kilde": "gf01036993000529",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000529",
-    "adresse_historisk": "Storgaden, Østergaden",
-    "gardens_nummer_raa": "se merkn.",
-    "hustype": "Vaaningshus",
-    "sidebygninger": "Sidebygninger, Udhus, en kudskebolig",
-    "etasjer": "2",
-    "matrikkel": [],
     "husstander": [
       {
         "beboere": [
@@ -225,17 +219,6 @@
   "377": {
     "kilde": "gf01036993000392",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000392",
-    "adresse_historisk": "Strandgade",
-    "gardens_nummer_raa": "514, 515, 516, 321",
-    "hustype": "Forretningslokale x)",
-    "sidebygninger": "2 sidebygninger, hvoraf 1ste etg. andvendes til butikker",
-    "etasjer": "2",
-    "matrikkel": [
-      "514",
-      "515",
-      "516",
-      "321"
-    ],
     "husstander": [
       {
         "beboere": [
@@ -645,14 +628,6 @@
   "396": {
     "kilde": "gf01036993000408",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000408",
-    "adresse_historisk": "Vestergade",
-    "gardens_nummer_raa": "445",
-    "hustype": "almindeligt Vaaningshus",
-    "sidebygninger": "1 Sidebygning og 1 Udhusbygning",
-    "etasjer": "2 Etager",
-    "matrikkel": [
-      "445"
-    ],
     "husstander": [
       {
         "beboere": [
@@ -889,17 +864,6 @@
   "378": {
     "kilde": "gf01036993000406",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000406",
-    "adresse_historisk": "Strandgaden",
-    "gardens_nummer_raa": "443",
-    "eier": null,
-    "hustype": "Forretningslokale x)",
-    "sidebygninger": null,
-    "etasjer": "2",
-    "leiligheter": "3",
-    "krets": "010a",
-    "matrikkel": [
-      "443"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001208",
@@ -1000,17 +964,6 @@
   "389": {
     "kilde": "gf01036993000380",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000380",
-    "adresse_historisk": "Vestergade",
-    "gardens_nummer_raa": "456",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": null,
-    "etasjer": "2",
-    "leiligheter": "4",
-    "krets": "009b",
-    "matrikkel": [
-      "456"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001107",
@@ -1220,17 +1173,6 @@
   "397": {
     "kilde": "gf01036993000407",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000407",
-    "adresse_historisk": "Vestergade - Strandgaden",
-    "gardens_nummer_raa": "444",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": "1 sidebygning og 1 bagbygning med 3 butikker",
-    "etasjer": "1",
-    "leiligheter": "2",
-    "krets": "010a",
-    "matrikkel": [
-      "444"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001211",
@@ -1469,18 +1411,6 @@
   "474": {
     "kilde": "gf01036993000527",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000527",
-    "adresse_historisk": "Storgaden",
-    "gardens_nummer_raa": "328, 543",
-    "eier": null,
-    "hustype": "Vaaningshus Forretningslokale",
-    "sidebygninger": "Vedskurer og Stald",
-    "etasjer": "2 i bagbygn. 1 i forhuset",
-    "leiligheter": "udelukkende til Beboelse 6",
-    "krets": "014a",
-    "matrikkel": [
-      "328",
-      "543"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001660",
@@ -1622,17 +1552,6 @@
   "566": {
     "kilde": "gf01036993000533",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000533",
-    "adresse_historisk": "Østergade",
-    "gardens_nummer_raa": "547",
-    "eier": null,
-    "hustype": "almindeligt Vaaningshus og Contorlokaler",
-    "sidebygninger": "Portnerbolig, alm. Udhuse",
-    "etasjer": "1",
-    "leiligheter": "2",
-    "krets": "014a",
-    "matrikkel": [
-      "547"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001686",
@@ -1754,17 +1673,6 @@
   "567": {
     "kilde": "gf01036993000524",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000524",
-    "adresse_historisk": "Østergade",
-    "gardens_nummer_raa": "548",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": "Sidebygninger",
-    "etasjer": "1",
-    "leiligheter": "4",
-    "krets": "014a",
-    "matrikkel": [
-      "548"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001644",
@@ -1948,17 +1856,6 @@
   "339": {
     "kilde": "gf01036993000331",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000331",
-    "adresse_historisk": "Fisketorvet",
-    "gardens_nummer_raa": "535",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": "Udhus",
-    "etasjer": "delvis 1 og 2 etager",
-    "leiligheter": "2",
-    "krets": "009a",
-    "matrikkel": [
-      "535"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993000920",
@@ -2197,19 +2094,6 @@
   "470": {
     "kilde": "gf01036993000411",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000411",
-    "adresse_historisk": "Storgaden",
-    "gardens_nummer_raa": "323, 324, 445b %325%",
-    "eier": null,
-    "hustype": "Vaaningshus, og Apothek",
-    "sidebygninger": "I bagbygning, 2.die Etage beboet, 1ste Etage Bryggerhus, Laboratorie, Stødebod, Vognremisse",
-    "etasjer": "1 Etage",
-    "leiligheter": null,
-    "krets": "010a",
-    "matrikkel": [
-      "323",
-      "324",
-      "445b %325%"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001220",
@@ -2422,19 +2306,6 @@
   "472": {
     "kilde": "gf01036993000412",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000412",
-    "adresse_historisk": "Storgaden",
-    "gardens_nummer_raa": "326, 327, 329",
-    "eier": null,
-    "hustype": "almindeligt Vaaningshus",
-    "sidebygninger": "1 Sidebygning og 1 bagbygning",
-    "etasjer": "2",
-    "leiligheter": "5",
-    "krets": "010a",
-    "matrikkel": [
-      "326",
-      "327",
-      "329"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001222",
@@ -2704,17 +2575,6 @@
   "473": {
     "kilde": "gf01036993000404",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000404",
-    "adresse_historisk": "Vestergaden",
-    "gardens_nummer_raa": "449",
-    "eier": null,
-    "hustype": "almindeligt Vaaningshus",
-    "sidebygninger": null,
-    "etasjer": "1",
-    "leiligheter": "4",
-    "krets": "010a",
-    "matrikkel": [
-      "449"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001200",
@@ -2976,17 +2836,6 @@
   "565": {
     "kilde": "gf01036993000621",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000621",
-    "adresse_historisk": "Garvergaden",
-    "gardens_nummer_raa": "594",
-    "eier": null,
-    "hustype": "almindeligt Vaaningshus",
-    "sidebygninger": "1 Sidebygning, 1 Bagbygning og 1 Udhusbygning",
-    "etasjer": "1 Etage %2de Etager%",
-    "leiligheter": "5",
-    "krets": "015b",
-    "matrikkel": [
-      "594"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001959",
@@ -3357,17 +3206,6 @@
   "475": {
     "kilde": "gf01036993000423",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000423",
-    "adresse_historisk": "Theatergaden - %Storgd%",
-    "gardens_nummer_raa": "330",
-    "eier": null,
-    "hustype": "almindeligt Vaaningshus 2 Butiker og 2 Kontorværelser",
-    "sidebygninger": "1 Toetages Sidebygning og 1 Udhus",
-    "etasjer": "2",
-    "leiligheter": "se merkn.",
-    "krets": "010b",
-    "matrikkel": [
-      "330"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001256",
@@ -3725,19 +3563,6 @@
   "477": {
     "kilde": "gf01036993000526",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000526",
-    "adresse_historisk": "Storgaden Jens Blocksgade",
-    "gardens_nummer_raa": "331, 333, 335",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": "Sidebygninger, Særskilt vaaningshus til Jacob Blocksgade",
-    "etasjer": "til Storgd I Jac Blocksgd II",
-    "leiligheter": "10",
-    "krets": "014a",
-    "matrikkel": [
-      "331",
-      "333",
-      "335"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001651",
@@ -4232,17 +4057,6 @@
   "561": {
     "kilde": "gf01036993000534",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000534",
-    "adresse_historisk": "Østergade",
-    "gardens_nummer_raa": "550",
-    "eier": null,
-    "hustype": "Vaaningshus",
-    "sidebygninger": "1 Sidebygning",
-    "etasjer": "1",
-    "leiligheter": "1 %2%",
-    "krets": "014a",
-    "matrikkel": [
-      "550"
-    ],
     "husstander": [
       {
         "leilighet_id": "lf01036993001688",

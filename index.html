@@ -141,6 +141,7 @@ function silhuett(b){
 
 const panel = document.getElementById('panel');
 let beboere = {};        // id -> { husstander: [...] }
+let eiendommer = {};     // id -> { navn, adresse, bygning, matrikkel_1901, ... }
 
 /* Tittel på en husstand. Deler flertallet etternavn med den som fører
    husstanden, er det en familie. Ellers navngir vi bare husfar, siden
@@ -178,50 +179,51 @@ function husstandBlokk(h, i, antall){
 }
 
 function vis(p){
-  const d = beboere[p.id];
+  const e = eiendommer[p.id] || {};   // eiendomsdata
+  const d = beboere[p.id];            // folketellingsdata
   const hh = d ? d.husstander : [];
   const alle = hh.flatMap(h => h.beboere);
   const barn = alle.filter(b => alder(b.f) !== null && alder(b.f) < 15).length;
 
-  const emne = encodeURIComponent('Rettelse: ' + p.id + (p.adresse ? ' (' + p.adresse + ')' : ''));
+  const emne = encodeURIComponent('Rettelse: ' + p.id + (e.adresse ? ' (' + e.adresse + ')' : ''));
 
-  const bilde = d && d.bilde ? `
+  /* Bilder fra eiendommer.json (array) */
+  const bildeHtml = e.bilder && e.bilder.length ? e.bilder.map(b => `
     <figure>
-      <img src="${d.bilde}" alt="${p.navn || p.adresse || ''}" loading="lazy">
-      ${(d.bilde_kreditering || d.bilde_rettigheter) ? `<figcaption>${
-        [d.bilde_kreditering, d.bilde_rettigheter].filter(Boolean).join(' · ')
-      }</figcaption>` : ''}
-    </figure>` : '';
+      <img src="${b.fil}" alt="${e.navn || e.adresse || ''}" loading="lazy">
+      ${(b.kreditering || b.rettigheter) ? `<figcaption>${
+        [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
+      }${b.beskrivelse ? ' — ' + b.beskrivelse : ''}</figcaption>` : ''}
+    </figure>`).join('') : '';
 
-  const historie = d && d.historie ? `
-    <div class="historie">${d.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>` : '';
+  const historie = e.historie ? `
+    <div class="historie">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>` : '';
 
-  /* Kort beskrivelse av huset. Feltnavnene kan variere litt fra skraperen,
-     så vi aksepterer flere varianter og hopper over det som mangler. */
-  const g = (...n) => { for (const k of n) if (d && d[k] != null && d[k] !== '' && d[k] !== '-') return d[k]; };
-  const etasjer = g('etasjer','antall_etasjer');
-  const leil    = g('leiligheter','antall_leiligheter');
+  /* Bygningsbeskrivelse fra eiendommer.json */
+  const byg = e.bygning || {};
   const husbeskrivelse = [
-    g('hustype'),
-    etasjer ? etasjer + (String(etasjer) === '1' ? ' etasje' : ' etasjer') : null,
-    leil ? leil + (String(leil) === '1' ? ' leilighet' : ' leiligheter') : null
+    byg.hustype,
+    byg.etasjer ? byg.etasjer + (String(byg.etasjer) === '1' ? ' etasje' : ' etasjer') : null,
+    byg.leiligheter ? byg.leiligheter + (String(byg.leiligheter) === '1' ? ' leilighet' : ' leiligheter') : null
   ].filter(Boolean).join(' · ');
 
-  const matr = (d && d.matrikkel) || p.matrikkel;
-  const matrTekst = Array.isArray(matr) ? matr.join(', ') : matr;
-
+  /* Nummerlinjen: henter fra eiendommer.matrikkel_1901 og parsell-properties */
+  const mat = e.matrikkel_1901 || {};
   const nummerlinje = [
     p.id ? 'Løpenummer 1901: ' + p.id : null,
-    p.lopenr_1878 ? 'Løpenr. 1878: ' + p.lopenr_1878 : null,
-    matrTekst ? 'Matrikkel ' + matrTekst : null,
-    p.gnr_bnr ? 'Gnr/bnr ' + p.gnr_bnr : null
+    mat.lopenr_1878 || p.lopenr_1878 ? 'Løpenr. 1878: ' + (mat.lopenr_1878 || p.lopenr_1878) : null,
+    mat.matrikkelnr || p.matrikkel ? 'Matrikkel ' + (mat.matrikkelnr || p.matrikkel) : null,
+    e.gnr_bnr || p.gnr_bnr ? 'Gnr/bnr ' + (e.gnr_bnr || p.gnr_bnr) : null
   ].filter(Boolean).join(' · ') || '—';
 
+  const ft = e.folketelling_meta || {};
+  const tittel = e.adresse || e.navn || ft.adresse_historisk || ('Løpenummer ' + p.id);
+
   panel.innerHTML = `
-    <h2 class="addr">${p.adresse || p.navn || (beboere[p.id]||{}).adresse_historisk || ('Løpenummer ' + p.id)}</h2>
-    ${p.navn ? `<div class="navn">${p.navn}</div>` : ''}
+    <h2 class="addr">${tittel}</h2>
+    ${e.navn ? `<div class="navn">${e.navn}</div>` : ''}
     <div class="matr">${nummerlinje}</div>
-    ${bilde}
+    ${bildeHtml}
 
     ${alle.length || husbeskrivelse ? `
       <div class="hus">
@@ -241,12 +243,13 @@ function vis(p){
       · Arkivverket/Digitalarkivet<br>
       ${d && d.hentet ? `Data hentet ${d.hentet}<br>` : ''}
       ${[
-        g('sidebygninger') ? 'Sidebygninger: ' + g('sidebygninger') : null,
-        g('eier','gaardens_eier') ? 'Gårdens eier: ' + g('eier','gaardens_eier') : null,
-        g('krets','tellingskrets') ? 'Tellingskrets ' + g('krets','tellingskrets') : null,
-        g('adresse_historisk') ? 'Oppført som «' + g('adresse_historisk') + '»' : null
-      ].filter(Boolean).join('<br>') + (g('sidebygninger') || g('eier','gaardens_eier') || g('krets','tellingskrets') || g('adresse_historisk') ? '<br>' : '')}
-      ${d && d.historie_kilde ? `Historikk: ${d.historie_kilde}<br>` : ''}
+        byg.sidebygninger ? 'Sidebygninger: ' + byg.sidebygninger : null,
+        mat.eier ? 'Eier (1901): ' + mat.eier : null,
+        mat.skattetakst ? 'Skattetakst: ' + mat.skattetakst.toLocaleString('nb') + ' kr' : null,
+        ft.krets ? 'Tellingskrets ' + ft.krets : null,
+        ft.adresse_historisk ? 'Oppført som «' + ft.adresse_historisk + '»' : null
+      ].filter(Boolean).join('<br>') + (byg.sidebygninger || mat.eier || ft.krets || ft.adresse_historisk ? '<br>' : '')}
+      ${e.historie_kilde ? `Historikk: ${e.historie_kilde}<br>` : ''}
       Historisk kart 1905 ved O. Krum · ©Kartverket<br>
       <a href="mailto:${EPOST}?subject=${emne}">Meld feil på denne gården</a>
     </div>`;
@@ -273,9 +276,11 @@ function settCasing(l){
 
 function tekstFor(id){
   const d = beboere[id];
-  if (!d) return '';
-  return d.husstander.flatMap(h => h.beboere)
-    .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ').toLowerCase();
+  const e = eiendommer[id] || {};
+  const personTekst = d ? d.husstander.flatMap(h => h.beboere)
+    .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ') : '';
+  const eierTekst = e.matrikkel_1901 ? (e.matrikkel_1901.eier || '') : '';
+  return (personTekst + ' ' + eierTekst + ' ' + (e.navn || '')).toLowerCase();
 }
 
 async function start(){
@@ -288,6 +293,7 @@ async function start(){
   }
   try { folk = await (await fetch('beboere.json')).json(); } catch(e) { /* valgfri */ }
   beboere = folk;
+  try { eiendommer = await (await fetch('eiendommer.json')).json(); } catch(e) { /* valgfri */ }
 
   lag = L.geoJSON(geo,{
     style: stil,
@@ -299,7 +305,9 @@ async function start(){
       });
       l.on('mouseover', () => { if (l !== forrige) l.setStyle({fillOpacity:.32}); });
       l.on('mouseout',  () => { if (l !== forrige) l.setStyle(stil); });
-      l.bindTooltip(p.adresse || p.navn || (beboere[p.id]||{}).adresse_historisk || ('Løpenummer ' + p.id),
+      const e = eiendommer[p.id] || {};
+      const ft = e.folketelling_meta || {};
+      l.bindTooltip(e.adresse || e.navn || p.adresse || p.navn || ft.adresse_historisk || ('Løpenummer ' + p.id),
                     {direction:'top', opacity:.9});
     }
   }).addTo(map);
@@ -314,7 +322,8 @@ document.getElementById('sok').addEventListener('input', e => {
   lag.eachLayer(l => {
     if (!q) { l.setStyle(l === forrige ? valgt : stil); return; }
     const p = l.feature.properties;
-    const hay = tekstFor(p.id) + ' ' + (p.adresse||'') + ' ' + (p.navn||'');
+    const ei = eiendommer[p.id] || {};
+    const hay = tekstFor(p.id) + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'');
     l.setStyle(hay.toLowerCase().includes(q) ? treff : dimmet);
   });
 });
