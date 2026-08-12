@@ -217,21 +217,32 @@ function vis(p){
   ].filter(Boolean).join(' · ') || '—';
 
   const ft = e.folketelling_meta || {};
-  const tittel = e.adresse || e.navn || ft.adresse_historisk || ('Løpenummer ' + p.id);
+  /* Tittel-hierarki: navn > gate fra matrikkel > adresse > folketelling-adresse > løpenr */
+  const tittel = e.navn || mat.gate || e.adresse || ft.adresse_historisk || ('Løpenummer ' + p.id);
+  /* Undertittel: vis navnet hvis tittelen ble noe annet, eller gaten hvis tittelen ble navnet */
+  const undertittel = (e.navn && mat.gate && e.navn !== mat.gate) ? mat.gate
+                    : (!e.navn && e.adresse && e.adresse !== tittel) ? e.adresse : null;
 
   panel.innerHTML = `
     <h2 class="addr">${tittel}</h2>
-    ${e.navn ? `<div class="navn">${e.navn}</div>` : ''}
+    ${undertittel ? `<div class="navn">${undertittel}</div>` : ''}
     <div class="matr">${nummerlinje}</div>
+
+    ${mat.eier || husbeskrivelse ? `
+      <div class="hus">
+        ${mat.eier ? `<div class="hus-type">Eier: ${mat.eier}</div>` : ''}
+        ${husbeskrivelse ? `<div class="hus-type">${husbeskrivelse}</div>` : ''}
+        ${mat.skattetakst ? `<div class="count">Skattetakst: ${mat.skattetakst.toLocaleString('nb')} kr${mat.brandtakst ? ' · Brandtakst: ' + mat.brandtakst.toLocaleString('nb') + ' kr' : ''}</div>` : ''}
+        ${mat.anmerkning ? `<div class="count">${mat.anmerkning}</div>` : ''}
+      </div>` : ''}
+
     ${bildeHtml}
 
-    ${alle.length || husbeskrivelse ? `
+    ${alle.length ? `
       <div class="hus">
-        ${husbeskrivelse ? `<div class="hus-type">${husbeskrivelse}</div>` : ''}
-        ${alle.length ? `<div class="count">${alle.length} ${alle.length === 1 ? 'person' : 'personer'} i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn</div>` : ''}
+        <div class="count">${alle.length} ${alle.length === 1 ? 'person' : 'personer'} i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn</div>
       </div>
       ${hh.map((h,i) => husstandBlokk(h, i, hh.length)).join('')}
-      ${!alle.length ? `<p class="ingen">Ingen beboere registrert på denne gården ennå.</p>` : ''}
     ` : `<p class="ingen">Ingen beboere registrert på denne gården ennå.</p>`}
 
     ${historie}
@@ -244,11 +255,9 @@ function vis(p){
       ${d && d.hentet ? `Data hentet ${d.hentet}<br>` : ''}
       ${[
         byg.sidebygninger ? 'Sidebygninger: ' + byg.sidebygninger : null,
-        mat.eier ? 'Eier (1901): ' + mat.eier : null,
-        mat.skattetakst ? 'Skattetakst: ' + mat.skattetakst.toLocaleString('nb') + ' kr' : null,
         ft.krets ? 'Tellingskrets ' + ft.krets : null,
-        ft.adresse_historisk ? 'Oppført som «' + ft.adresse_historisk + '»' : null
-      ].filter(Boolean).join('<br>') + (byg.sidebygninger || mat.eier || ft.krets || ft.adresse_historisk ? '<br>' : '')}
+        ft.adresse_historisk ? 'I folketellingen: «' + ft.adresse_historisk + '»' : null
+      ].filter(Boolean).join('<br>') + (byg.sidebygninger || ft.krets || ft.adresse_historisk ? '<br>' : '')}
       ${e.historie_kilde ? `Historikk: ${e.historie_kilde}<br>` : ''}
       Historisk kart 1905 ved O. Krum · ©Kartverket<br>
       <a href="mailto:${EPOST}?subject=${emne}">Meld feil på denne gården</a>
@@ -307,7 +316,8 @@ async function start(){
       l.on('mouseout',  () => { if (l !== forrige) l.setStyle(stil); });
       const e = eiendommer[p.id] || {};
       const ft = e.folketelling_meta || {};
-      l.bindTooltip(e.adresse || e.navn || p.adresse || p.navn || ft.adresse_historisk || ('Løpenummer ' + p.id),
+      const mat = e.matrikkel_1901 || {};
+      l.bindTooltip(e.navn || mat.gate || e.adresse || p.adresse || p.navn || ft.adresse_historisk || ('Løpenummer ' + p.id),
                     {direction:'top', opacity:.9});
     }
   }).addTo(map);
@@ -323,7 +333,8 @@ document.getElementById('sok').addEventListener('input', e => {
     if (!q) { l.setStyle(l === forrige ? valgt : stil); return; }
     const p = l.feature.properties;
     const ei = eiendommer[p.id] || {};
-    const hay = tekstFor(p.id) + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'');
+    const eiMat = ei.matrikkel_1901 || {};
+    const hay = tekstFor(p.id) + ' ' + (eiMat.gate||'') + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'');
     l.setStyle(hay.toLowerCase().includes(q) ? treff : dimmet);
   });
 });
