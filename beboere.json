@@ -1,0 +1,4377 @@
+{
+  "469": {
+    "kilde": "gf01036993000529",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000529",
+    "adresse_historisk": "Storgaden, Østergaden",
+    "gardens_nummer_raa": "se merkn.",
+    "hustype": "Vaaningshus",
+    "sidebygninger": "Sidebygninger, Udhus, en kudskebolig",
+    "etasjer": "2",
+    "matrikkel": [],
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Albert  Stenmark",
+            "f": "1864",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Kontorbud ved Trælastforetning"
+          },
+          {
+            "navn": "Nathalie  Stenmark",
+            "f": "1860",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Huslig gjerning"
+          },
+          {
+            "navn": "Bernhart  Stenmark",
+            "f": "1886",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Barberlærling"
+          },
+          {
+            "navn": "Anna  Stenmark",
+            "f": "1888",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev"
+          },
+          {
+            "navn": "Einar  Stenmark",
+            "f": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev"
+          },
+          {
+            "navn": "August  Stenmark",
+            "f": "1892",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev"
+          },
+          {
+            "navn": "Alf  Stenmark",
+            "f": "1894",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev"
+          },
+          {
+            "navn": "Nils  Stenmark",
+            "f": "1896",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet"
+          },
+          {
+            "navn": "Otto  Stenmark",
+            "f": "1898",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Mads  Wiel",
+            "f": "1861",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Disponent for dampskibsrederi"
+          },
+          {
+            "navn": "Laura Halvorsen",
+            "f": "1836",
+            "kj": "k",
+            "kj_kilde": "navn",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husholderske"
+          },
+          {
+            "navn": "Constanse Laura Knudsen",
+            "f": "1879",
+            "kj": "k",
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Huslig gjerning"
+          },
+          {
+            "navn": "Hanna Caroline Pettersen",
+            "f": "1880",
+            "kj": "k",
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Huslig gjerning"
+          },
+          {
+            "navn": "Anne Marlene Anderssen",
+            "f": "1864",
+            "kj": "k",
+            "kj_kilde": "ukjent",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Huslig gjerning"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Karl Oskar Axelsson",
+            "f": "1866",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Kusk for privat Person"
+          },
+          {
+            "navn": "Sofie Karoline Axelsson",
+            "f": "1871",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Huslig gjerning"
+          },
+          {
+            "navn": "Laura Chatharina Axelsson",
+            "f": "1898",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet"
+          },
+          {
+            "navn": "Astrid Margaretha Axelsson",
+            "f": "1900-03-20",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-10"
+  },
+  "377": {
+    "kilde": "gf01036993000392",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000392",
+    "adresse_historisk": "Strandgade",
+    "gardens_nummer_raa": "514, 515, 516, 321",
+    "hustype": "Forretningslokale x)",
+    "sidebygninger": "2 sidebygninger, hvoraf 1ste etg. andvendes til butikker",
+    "etasjer": "2",
+    "matrikkel": [
+      "514",
+      "515",
+      "516",
+      "321"
+    ],
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Carl Johan Andersen",
+            "f": "1864",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skomagermester"
+          },
+          {
+            "navn": "Carlotte Andersen",
+            "f": "1855",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Carlotte Eugenie Andersen",
+            "f": "1885",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Omar Andersen",
+            "f": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn"
+          },
+          {
+            "navn": "Mathilde Andersen",
+            "f": "1897",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Maurits  Kjellin",
+            "f": "1878",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Skomagersvend"
+          },
+          {
+            "navn": "Karl Marinius Johansen",
+            "f": "1885",
+            "kj": "m",
+            "kj_kilde": "navn",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Snedkerlærling"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Elika Hansen",
+            "f": "1854",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Pensionat privathotel"
+          },
+          {
+            "navn": "Anny Hansen",
+            "f": "1884",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Sigrid Hansen",
+            "f": "1886",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Johannes  Klein@Klem",
+            "f": "1870",
+            "kj": "m",
+            "kj_kilde": "navn",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Læge. Privat praktiserende"
+          },
+          {
+            "navn": "Karl  Monkerud",
+            "f": "1873",
+            "kj": "m",
+            "kj_kilde": "navn",
+            "fodested": "Fredriksstad Sm",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Lærer ved folkeskole"
+          },
+          {
+            "navn": "Petra  Lorange",
+            "f": "1843",
+            "kj": "k",
+            "kj_kilde": "navn",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "f",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Næring af formue"
+          },
+          {
+            "navn": "Anette Johansen",
+            "f": "1873",
+            "kj": "k",
+            "kj_kilde": "navn",
+            "fodested": "Degernes Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige, kokke"
+          },
+          {
+            "navn": "Marie  Berg",
+            "f": "1873",
+            "kj": "k",
+            "kj_kilde": "navn",
+            "fodested": "Ejdsberg Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige stuepige"
+          },
+          {
+            "navn": "Klara Larsen",
+            "f": "1881",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Tønsberg JL",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Opvartningspige"
+          },
+          {
+            "navn": "Martin  Rød",
+            "f": "1829",
+            "kj": "m",
+            "kj_kilde": "navn",
+            "fodested": "Berg Smålenene",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Gaardgut"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Ola  Sveen",
+            "f": "1871",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Ringsaker Hed",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Overretssagfører"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Jens  Wilse",
+            "f": "1827",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Hurum Bu",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Fhv. skibsfører"
+          },
+          {
+            "navn": "Dikka  Wilse",
+            "f": "1834",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredriksværn JL",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Karoline Ragnhild  Bigum",
+            "f": "1870",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kjøbenhavn",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Jordmoder for Bergs herred"
+          },
+          {
+            "navn": "Einar Tambarskjelver  Bigum",
+            "f": "1868",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "f",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Malersvend"
+          },
+          {
+            "navn": "Kaya Elnor  Mørk",
+            "f": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husbestyrerinde"
+          },
+          {
+            "navn": "Leif  Bigum",
+            "f": "1897",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn"
+          },
+          {
+            "navn": "Randi Erna  Bigum",
+            "f": "1898",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Otto Brynildsen",
+            "f": "1845",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Kornsjø Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Fragtemand"
+          },
+          {
+            "navn": "Andriette Brynildsen",
+            "f": "1848",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Bohuslen",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Kristian Brynildsen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Maskinist ved dampskib"
+          },
+          {
+            "navn": "Richard Brynildsen",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Sømand"
+          },
+          {
+            "navn": "Arnt Brynildsen",
+            "f": "1885",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Sømand"
+          },
+          {
+            "navn": "Ruth Brynildsen",
+            "f": "1889",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Andreas Andersen Eker",
+            "f": "1861",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Berg Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skovdriftsformand"
+          },
+          {
+            "navn": "Marie Georgine  Eker",
+            "f": "1861",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Anna Georgine  Eker",
+            "f": "1888",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-10"
+  },
+  "396": {
+    "kilde": "gf01036993000408",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000408",
+    "adresse_historisk": "Vestergade",
+    "gardens_nummer_raa": "445",
+    "hustype": "almindeligt Vaaningshus",
+    "sidebygninger": "1 Sidebygning og 1 Udhusbygning",
+    "etasjer": "2 Etager",
+    "matrikkel": [
+      "445"
+    ],
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Anders Larsen",
+            "f": "1831",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Brødkjører"
+          },
+          {
+            "navn": "Elise Larsen",
+            "f": "1834",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Frugtsælgerske"
+          },
+          {
+            "navn": "Maren Kristensen",
+            "f": "1864",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Rakkestad Sm",
+            "bostatus": "mt",
+            "stilling": "b",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige, husgjerning"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Wilhelm  Suhrke",
+            "f": "1863",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Arkitekt, Skibsreder"
+          },
+          {
+            "navn": "Ursula  Suhrke",
+            "f": "1867",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Ragna  Suhrke",
+            "f": "1895",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Inger  Suhrke",
+            "f": "1898",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Kirstine Hansen Eng",
+            "f": "1874",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Eng, Rakkestad Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Kokkepige"
+          },
+          {
+            "navn": "Margrete Hansen",
+            "f": "1884",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Barnepige"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Knut Olaus  Malm",
+            "f": "1852",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "f",
+            "yrke": "Adjunkt Lærer"
+          },
+          {
+            "navn": "Aage  Malm",
+            "f": "1886",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Borgerskoleelev"
+          },
+          {
+            "navn": "Knut  Malm",
+            "f": "1888",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Borgerskoleelev"
+          },
+          {
+            "navn": "Finn  Malm",
+            "f": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Borgerskoleelev"
+          },
+          {
+            "navn": "Ingeborg  Næss",
+            "f": "1874",
+            "kj": "k",
+            "kj_kilde": "navn",
+            "fodested": "Kopervik Sta",
+            "bostatus": "b",
+            "stilling": "Husholderske",
+            "sivilstand": "ug",
+            "yrke": "Husholderske"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Gabrielle  Faye",
+            "f": "1850",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "ug",
+            "yrke": "Rentenist"
+          },
+          {
+            "navn": "Otilie  Bjørnstad",
+            "f": "1877",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Id sogn Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjerning"
+          }
+        ]
+      },
+      {
+        "beboere": [
+          {
+            "navn": "Hans  Winther Bagger",
+            "f": "1840",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Gjerpen Brb",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Toldcontrollør"
+          },
+          {
+            "navn": "Marthe Emilie  Bagger",
+            "f": "1837",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Danmark",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Kaspara Sigvarda Ingeborg  Belle",
+            "f": "1878",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige, husgjerning"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-10"
+  },
+  "378": {
+    "kilde": "gf01036993000406",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000406",
+    "adresse_historisk": "Strandgaden",
+    "gardens_nummer_raa": "443",
+    "eier": null,
+    "hustype": "Forretningslokale x)",
+    "sidebygninger": null,
+    "etasjer": "2",
+    "leiligheter": "3",
+    "krets": "010a",
+    "matrikkel": [
+      "443"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001208",
+        "beboere": [
+          {
+            "navn": "Kristian Hfd. Johannesen",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Arbeider ved Skipsværft Styrmand",
+            "person_id": "pf01036993005515"
+          },
+          {
+            "navn": "Otilde Johannesen",
+            "f": 1837,
+            "f_raa": "1837",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Drammen Bu",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005516"
+          },
+          {
+            "navn": "Johan Edv. Johannesen",
+            "f": 1876,
+            "f_raa": "1876",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sogn Sm",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Maskinist 'F.hald No 1'",
+            "person_id": "pf01036993005517"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001209",
+        "beboere": [
+          {
+            "navn": "Karina Halvorsen",
+            "f": 1838,
+            "f_raa": "1838",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Horten JL",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "ug",
+            "yrke": "Har livrente",
+            "person_id": "pf01036993005518"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001210",
+        "beboere": [
+          {
+            "navn": "Lauritz Elias  Bømholdt",
+            "f": 1827,
+            "f_raa": "1827",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Skien Brb",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Postmester",
+            "person_id": "pf01036993005519"
+          },
+          {
+            "navn": "Selma Karoline  Bjørnstad",
+            "f": 1867,
+            "f_raa": "1867",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Husholderske",
+            "person_id": "pf01036993005520"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "389": {
+    "kilde": "gf01036993000380",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000380",
+    "adresse_historisk": "Vestergade",
+    "gardens_nummer_raa": "456",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": null,
+    "etasjer": "2",
+    "leiligheter": "4",
+    "krets": "009b",
+    "matrikkel": [
+      "456"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001107",
+        "beboere": [
+          {
+            "navn": "Josefine  Norgaard",
+            "f": 1864,
+            "f_raa": "1864",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "ug",
+            "yrke": "Handlende og gaardeier",
+            "person_id": "pf01036993005096"
+          },
+          {
+            "navn": "Svend  Norgaard",
+            "f": 1825,
+            "f_raa": "1825",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "Fader",
+            "sivilstand": "e",
+            "yrke": "fhv Gaardbruger",
+            "person_id": "pf01036993005097"
+          },
+          {
+            "navn": "Alfred  Bjerge",
+            "f": 1881,
+            "f_raa": "1881",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Handelsbetjent",
+            "person_id": "pf01036993005098"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001108",
+        "beboere": [
+          {
+            "navn": "Karl Ludvig Johansen",
+            "f": 1864,
+            "f_raa": "1864-12-17",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Slagterforretning",
+            "person_id": "pf01036993005099"
+          },
+          {
+            "navn": "Johanne Johansen",
+            "f": 1854,
+            "f_raa": "1854-10-17",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sarpsborg Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005100"
+          },
+          {
+            "navn": "Karl August Johansen",
+            "f": 1889,
+            "f_raa": "1889-05-06",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "søn",
+            "person_id": "pf01036993005101"
+          },
+          {
+            "navn": "Dorra Krestine Johansen",
+            "f": 1893,
+            "f_raa": "1893-01-03",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "datter",
+            "person_id": "pf01036993005102"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001109",
+        "beboere": [
+          {
+            "navn": "Oline Marie Andersen",
+            "f": 1881,
+            "f_raa": "1881",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "t %Sverige%",
+            "bostatus": "b",
+            "stilling": "Sypikke",
+            "sivilstand": "ug",
+            "yrke": "Sypige",
+            "person_id": "pf01036993005103"
+          },
+          {
+            "navn": "Anna Laura Jonassen",
+            "f": 1863,
+            "f_raa": "1863",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverrige",
+            "bostatus": "b",
+            "stilling": "Sypikke",
+            "sivilstand": "ug",
+            "yrke": "Sypige",
+            "person_id": "pf01036993005104"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001110",
+        "beboere": [
+          {
+            "navn": "Alma Andersen",
+            "f": 1853,
+            "f_raa": "1853",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Jerbo Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Forsørges af børnene",
+            "person_id": "pf01036993005105"
+          },
+          {
+            "navn": "Amanda Andersen",
+            "f": 1874,
+            "f_raa": "1874",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Høgsäter Sverige",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Syerske, Kaabefabrik",
+            "person_id": "pf01036993005106"
+          },
+          {
+            "navn": "Johanne Andersen",
+            "f": 1876,
+            "f_raa": "1876",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Høgsäter Sverige",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet erhverv",
+            "person_id": "pf01036993005107"
+          },
+          {
+            "navn": "Viktor Andersen",
+            "f": 1892,
+            "f_raa": "1892",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "søn",
+            "person_id": "pf01036993005108"
+          },
+          {
+            "navn": "Synnøve  Berg",
+            "f": 1898,
+            "f_raa": "1898",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "D.D.",
+            "sivilstand": "ug",
+            "yrke": "datterdatter",
+            "person_id": "pf01036993005109"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "397": {
+    "kilde": "gf01036993000407",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000407",
+    "adresse_historisk": "Vestergade - Strandgaden",
+    "gardens_nummer_raa": "444",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "1 sidebygning og 1 bagbygning med 3 butikker",
+    "etasjer": "1",
+    "leiligheter": "2",
+    "krets": "010a",
+    "matrikkel": [
+      "444"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001211",
+        "beboere": [
+          {
+            "navn": "Anders Kristian Andersen Paulsbo",
+            "f": 1867,
+            "f_raa": "1867",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Sporskifter ved Stadsbanerne",
+            "person_id": "pf01036993005521"
+          },
+          {
+            "navn": "Hanna Thorine Martinsen Paulsbo",
+            "f": 1872,
+            "f_raa": "1872",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Askim Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husstel",
+            "person_id": "pf01036993005522"
+          },
+          {
+            "navn": "Martha Helene  Paulsbo",
+            "f": 1897,
+            "f_raa": "1897",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005523"
+          },
+          {
+            "navn": "Astrid Marie  Paulsbo",
+            "f": 1899,
+            "f_raa": "1899-08-23",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005524"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001212",
+        "beboere": [
+          {
+            "navn": "H. N. Nilssen",
+            "f": 1849,
+            "f_raa": "1849",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stiklestad NT",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Sogneprest",
+            "person_id": "pf01036993005525"
+          },
+          {
+            "navn": "Dorothea Charlotte  Nilssen f Anker",
+            "f": 1849,
+            "f_raa": "1849",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Horrig, Guldalen",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Sogneprests Hustru",
+            "person_id": "pf01036993005526"
+          },
+          {
+            "navn": "Dorothea Ulrikke Nilssen",
+            "f": 1877,
+            "f_raa": "1877",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Nore Prestegaard Bu",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "TilHjælp i Hjemmet",
+            "person_id": "pf01036993005527"
+          },
+          {
+            "navn": "Beata Nilssen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Nore Prestegaard Bu",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "TilHjælp i Hjemmet",
+            "person_id": "pf01036993005528"
+          },
+          {
+            "navn": "Egil Nilssen",
+            "f": 1881,
+            "f_raa": "1881",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Nore Prestegaard Bu",
+            "bostatus": "f",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Volontør paa Arkitektkontor",
+            "person_id": "pf01036993005529"
+          },
+          {
+            "navn": "Bernt Anker Nilssen",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Nore Prestegaard Bu",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Montør ved elektr. Lys anlæg",
+            "person_id": "pf01036993005530"
+          },
+          {
+            "navn": "Carl Immanuel Nilssen",
+            "f": 1885,
+            "f_raa": "1885",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Nore Prestegaard Bu",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Middelskoleelev",
+            "person_id": "pf01036993005531"
+          },
+          {
+            "navn": "Louise Marie Nilssen",
+            "f": 1886,
+            "f_raa": "1886",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kongsberg Bu",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Middelskoleelev",
+            "person_id": "pf01036993005532"
+          },
+          {
+            "navn": "Adelhejd Nilssen",
+            "f": 1888,
+            "f_raa": "1888",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kongsberg Bu",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Forskoleelev",
+            "person_id": "pf01036993005533"
+          },
+          {
+            "navn": "Haakon Nilssen",
+            "f": 1890,
+            "f_raa": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Balsø Prestgaard Rom",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Forskoleelev",
+            "person_id": "pf01036993005534"
+          },
+          {
+            "navn": "Arvid Nilssen",
+            "f": 1892,
+            "f_raa": "1892",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Balsø Prestgaard Rom",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Forskoleelev",
+            "person_id": "pf01036993005535"
+          },
+          {
+            "navn": "Alma Carlssen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Kokkepige",
+            "person_id": "pf01036993005536"
+          },
+          {
+            "navn": "Oline Hansen",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Stuepige",
+            "person_id": "pf01036993005537"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "474": {
+    "kilde": "gf01036993000527",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000527",
+    "adresse_historisk": "Storgaden",
+    "gardens_nummer_raa": "328, 543",
+    "eier": null,
+    "hustype": "Vaaningshus Forretningslokale",
+    "sidebygninger": "Vedskurer og Stald",
+    "etasjer": "2 i bagbygn. 1 i forhuset",
+    "leiligheter": "udelukkende til Beboelse 6",
+    "krets": "014a",
+    "matrikkel": [
+      "328",
+      "543"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001660",
+        "beboere": [
+          {
+            "navn": "Thorvald Elias  Heltberg",
+            "f": 1841,
+            "f_raa": "1841",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Stange Hedemarken",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Boghandler",
+            "person_id": "pf01036993007387"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001661",
+        "beboere": [
+          {
+            "navn": "Otto Olsen",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skomager",
+            "person_id": "pf01036993007388"
+          },
+          {
+            "navn": "Mathilde Olsen",
+            "f": 1852,
+            "f_raa": "1852",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993007389"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001662",
+        "beboere": [
+          {
+            "navn": "Edvard Olsen",
+            "f": 1865,
+            "f_raa": "1865",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Vedkjører",
+            "person_id": "pf01036993007390"
+          },
+          {
+            "navn": "Karoline Olsen",
+            "f": 1851,
+            "f_raa": "1851",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993007391"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001663",
+        "beboere": [
+          {
+            "navn": "Helene Olsen",
+            "f": 1833,
+            "f_raa": "1833",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Eningdalen Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Vaskekone",
+            "person_id": "pf01036993007392"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001664",
+        "beboere": [
+          {
+            "navn": "Emilie Dorthea Anonsen",
+            "f": 1838,
+            "f_raa": "1838",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "intet Forsørges af børnene",
+            "person_id": "pf01036993007393"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001665",
+        "beboere": [
+          {
+            "navn": "Aksel  Halle",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Skaatø pr Kragerø Brb",
+            "bostatus": "b",
+            "stilling": "el %tj%",
+            "sivilstand": "ug",
+            "yrke": "Handelsbetjent i colonial",
+            "person_id": "pf01036993007394"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "566": {
+    "kilde": "gf01036993000533",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000533",
+    "adresse_historisk": "Østergade",
+    "gardens_nummer_raa": "547",
+    "eier": null,
+    "hustype": "almindeligt Vaaningshus og Contorlokaler",
+    "sidebygninger": "Portnerbolig, alm. Udhuse",
+    "etasjer": "1",
+    "leiligheter": "2",
+    "krets": "014a",
+    "matrikkel": [
+      "547"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001686",
+        "beboere": [
+          {
+            "navn": "Erik Eriksen",
+            "f": 1855,
+            "f_raa": "1855",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Fuldmægtig ved Contor og Skovdrift",
+            "person_id": "pf01036993007497"
+          },
+          {
+            "navn": "Hanna Eugenie Eriksen",
+            "f": 1858,
+            "f_raa": "1858",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007498"
+          },
+          {
+            "navn": "Halvard P. Damm Eriksen",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Volongtør paa Agenturkontor",
+            "person_id": "pf01036993007499"
+          },
+          {
+            "navn": "Astrid Emilie Eriksen",
+            "f": 1887,
+            "f_raa": "1887",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993007500"
+          },
+          {
+            "navn": "Marie Elfride Eriksen",
+            "f": 1891,
+            "f_raa": "1891",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993007501"
+          },
+          {
+            "navn": "Clara Johansson",
+            "f": 1883,
+            "f_raa": "1883",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Torp Socken",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige",
+            "person_id": "pf01036993007502"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001687",
+        "beboere": [
+          {
+            "navn": "Anne Johannesen",
+            "f": 1835,
+            "f_raa": "1835",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Portnerske, Contorrenhold",
+            "person_id": "pf01036993007503"
+          },
+          {
+            "navn": "Josephine Johannesen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Contorrenhold",
+            "person_id": "pf01036993007504"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "567": {
+    "kilde": "gf01036993000524",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000524",
+    "adresse_historisk": "Østergade",
+    "gardens_nummer_raa": "548",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "Sidebygninger",
+    "etasjer": "1",
+    "leiligheter": "4",
+    "krets": "014a",
+    "matrikkel": [
+      "548"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001644",
+        "beboere": [
+          {
+            "navn": "Jonas Andersen",
+            "f": 1834,
+            "f_raa": "1834",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Tøftedal sogn",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skræddermester",
+            "person_id": "pf01036993007328"
+          },
+          {
+            "navn": "Karoline Andersen",
+            "f": 1843,
+            "f_raa": "1843",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Eningdal Id Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007329"
+          },
+          {
+            "navn": "Ingrid Andersen",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skolebarn",
+            "person_id": "pf01036993007330"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001645",
+        "beboere": [
+          {
+            "navn": "Robert  Edgren",
+            "f": 1837,
+            "f_raa": "1837",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Brugsforvalter ved jernværk",
+            "person_id": "pf01036993007331"
+          },
+          {
+            "navn": "Emilie  Edgren",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007332"
+          },
+          {
+            "navn": "Anna Eliasen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007333"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001646",
+        "beboere": [
+          {
+            "navn": "Gustav Adolf  Hultberg",
+            "f": 1877,
+            "f_raa": "1877",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "3 kl. Maskjinist pr. Dampskib",
+            "person_id": "pf01036993007334"
+          },
+          {
+            "navn": "Lydia Pauline  Hultberg",
+            "f": 1878,
+            "f_raa": "1878",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993007335"
+          },
+          {
+            "navn": "Margit Josefa  Hultberg",
+            "f": 1900,
+            "f_raa": "1900-08-16",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": null,
+            "yrke": null,
+            "person_id": "pf01036993007336"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001647",
+        "beboere": [
+          {
+            "navn": "Kristoffer  Grønvold",
+            "f": 1824,
+            "f_raa": "1824",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Eidsvold Ak",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "fv. Skomagermester Huseier. Formue",
+            "person_id": "pf01036993007337"
+          },
+          {
+            "navn": "Marie  Grønvold",
+            "f": 1838,
+            "f_raa": "1838",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Værmeland",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007338"
+          },
+          {
+            "navn": "Oskar Marinius  Grønvold",
+            "f": 1864,
+            "f_raa": "1864",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "Pleiesøn",
+            "sivilstand": "ug",
+            "yrke": "Intet Sygelig. Har været Kontorist",
+            "person_id": "pf01036993007339"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "339": {
+    "kilde": "gf01036993000331",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000331",
+    "adresse_historisk": "Fisketorvet",
+    "gardens_nummer_raa": "535",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "Udhus",
+    "etasjer": "delvis 1 og 2 etager",
+    "leiligheter": "2",
+    "krets": "009a",
+    "matrikkel": [
+      "535"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993000920",
+        "beboere": [
+          {
+            "navn": "Martin Hansen",
+            "f": 1844,
+            "f_raa": "1844",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Spise og logis forretning",
+            "person_id": "pf01036993004343"
+          },
+          {
+            "navn": "Marie Hansen",
+            "f": 1860,
+            "f_raa": "1860",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993004344"
+          },
+          {
+            "navn": "Albine Hansen",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993004345"
+          },
+          {
+            "navn": "Oline Olsen",
+            "f": 1847,
+            "f_raa": "1847",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hvaløerne Sml",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993004346"
+          },
+          {
+            "navn": "Inga Toresen",
+            "f": 1883,
+            "f_raa": "1883",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredriksstad Sml",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993004347"
+          },
+          {
+            "navn": "Johan Nilsen Myhre",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Lillestrømmen Ak",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Fyrbøder paa jernbanen",
+            "person_id": "pf01036993004348"
+          },
+          {
+            "navn": "Ludvig  Moe",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Berg Sml",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Fyrbøder paa jernbanen",
+            "person_id": "pf01036993004349"
+          },
+          {
+            "navn": "Anna  Grasholt",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Aremark Sml",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Strygepige",
+            "person_id": "pf01036993004350"
+          },
+          {
+            "navn": "Johan Johannesen",
+            "f": 1870,
+            "f_raa": "1870",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Danmark",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Uldvarehandler",
+            "person_id": "pf01036993004351"
+          },
+          {
+            "navn": "Johan  Buurgaard",
+            "f": 1874,
+            "f_raa": "1874",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Danmark",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Uldvarehandler",
+            "person_id": "pf01036993004352"
+          },
+          {
+            "navn": "Johan  Widnæs",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Lisleby Sml",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Reiser med en fonograf",
+            "person_id": "pf01036993004353"
+          },
+          {
+            "navn": "Julius Pedersen",
+            "f": 1855,
+            "f_raa": "1855",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fr.stad Sml",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Kreaturhandler",
+            "person_id": "pf01036993004354"
+          },
+          {
+            "navn": "Amund Larsen",
+            "f": 1860,
+            "f_raa": "1860",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hvaløerne Sml",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Stenhuggerformand",
+            "person_id": "pf01036993004355"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993000921",
+        "beboere": [
+          {
+            "navn": "Hans Johan Johnsen",
+            "f": 1867,
+            "f_raa": "1867",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Arbeidsvognmand",
+            "person_id": "pf01036993004356"
+          },
+          {
+            "navn": "Olga Sofie Johnsen",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husmoder",
+            "person_id": "pf01036993004357"
+          },
+          {
+            "navn": "Ellen Helene Johnsen",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993004358"
+          },
+          {
+            "navn": "Holger H??erslev  Sinding",
+            "f": 1848,
+            "f_raa": "1848@1878",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Skien Brb",
+            "bostatus": "mt",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Elektrotekniker",
+            "person_id": "pf01036993004359"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "470": {
+    "kilde": "gf01036993000411",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000411",
+    "adresse_historisk": "Storgaden",
+    "gardens_nummer_raa": "323, 324, 445b %325%",
+    "eier": null,
+    "hustype": "Vaaningshus, og Apothek",
+    "sidebygninger": "I bagbygning, 2.die Etage beboet, 1ste Etage Bryggerhus, Laboratorie, Stødebod, Vognremisse",
+    "etasjer": "1 Etage",
+    "leiligheter": null,
+    "krets": "010a",
+    "matrikkel": [
+      "323",
+      "324",
+      "445b %325%"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001220",
+        "beboere": [
+          {
+            "navn": "Peder  Hals",
+            "f": 1841,
+            "f_raa": "1841",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Ringerike Bu",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Apotheker",
+            "person_id": "pf01036993005570"
+          },
+          {
+            "navn": "Caroline  Hals",
+            "f": 1868,
+            "f_raa": "1868",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Apothekerens Hustru",
+            "person_id": "pf01036993005571"
+          },
+          {
+            "navn": "Maren Caroline  Hals",
+            "f": 1893,
+            "f_raa": "1893",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Stavanger",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Apothekerens Datter",
+            "person_id": "pf01036993005572"
+          },
+          {
+            "navn": "Thor  Hals",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Apothekerens Søn",
+            "person_id": "pf01036993005573"
+          },
+          {
+            "navn": "Finn  Hals",
+            "f": 1895,
+            "f_raa": "1895",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Apothekerens Søn",
+            "person_id": "pf01036993005574"
+          },
+          {
+            "navn": "Petra Caroline  Hals",
+            "f": 1899,
+            "f_raa": "1899-01-19",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Apothekerens Datter",
+            "person_id": "pf01036993005575"
+          },
+          {
+            "navn": "Valborg Larsen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Barnepige",
+            "person_id": "pf01036993005576"
+          },
+          {
+            "navn": "Anna Johannesen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Stuepige",
+            "person_id": "pf01036993005577"
+          },
+          {
+            "navn": "Amanda Andersen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Kokkepige",
+            "person_id": "pf01036993005578"
+          },
+          {
+            "navn": "Svend Caspersen",
+            "f": 1872,
+            "f_raa": "1872",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Laborantkarl",
+            "person_id": "pf01036993005579"
+          },
+          {
+            "navn": "Jørgen Christensen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Kongsvinger Hed",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Farmaceut",
+            "person_id": "pf01036993005580"
+          },
+          {
+            "navn": "Odin Christiansen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Trondhjem ST",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Discippel ved apothek",
+            "person_id": "pf01036993005581"
+          },
+          {
+            "navn": "Erik  Thorsrud",
+            "f": 1885,
+            "f_raa": "1885",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Valders Krs",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Discippel ved apothek",
+            "person_id": "pf01036993005582"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001221",
+        "beboere": [
+          {
+            "navn": "Johannes Pedersen",
+            "f": 1834,
+            "f_raa": "1834",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Gaardsarbejder",
+            "person_id": "pf01036993005583"
+          },
+          {
+            "navn": "Malena Pedersen",
+            "f": 1833,
+            "f_raa": "1833",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Rokke Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Vaskekone",
+            "person_id": "pf01036993005584"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "472": {
+    "kilde": "gf01036993000412",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000412",
+    "adresse_historisk": "Storgaden",
+    "gardens_nummer_raa": "326, 327, 329",
+    "eier": null,
+    "hustype": "almindeligt Vaaningshus",
+    "sidebygninger": "1 Sidebygning og 1 bagbygning",
+    "etasjer": "2",
+    "leiligheter": "5",
+    "krets": "010a",
+    "matrikkel": [
+      "326",
+      "327",
+      "329"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001222",
+        "beboere": [
+          {
+            "navn": "Kristian  Bærum",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Xania %Bærum%",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Kjøbmand",
+            "person_id": "pf01036993005585"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001223",
+        "beboere": [
+          {
+            "navn": "Karl Johannes Jahnsen",
+            "f": 1841,
+            "f_raa": "1841",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Bergen",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Conditor",
+            "person_id": "pf01036993005586"
+          },
+          {
+            "navn": "Lovise Jahnsen",
+            "f": 1868,
+            "f_raa": "1868",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Drammen Bu",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005587"
+          },
+          {
+            "navn": "Frits  Stengel",
+            "f": 1874,
+            "f_raa": "1874",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Bayern",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Conditorsvend",
+            "person_id": "pf01036993005588"
+          },
+          {
+            "navn": "Nils Torstein  Lezow",
+            "f": 1881,
+            "f_raa": "1881",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Bagerlærling",
+            "person_id": "pf01036993005589"
+          },
+          {
+            "navn": "Halfdan  Baastad",
+            "f": 1883,
+            "f_raa": "1883",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sandefjord JL",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Conditorlærling",
+            "person_id": "pf01036993005590"
+          },
+          {
+            "navn": "Alfred Johansen",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Gaardsdreng",
+            "person_id": "pf01036993005591"
+          },
+          {
+            "navn": "Selma Kirsten  Svane",
+            "f": 1878,
+            "f_raa": "1878",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Kokke",
+            "person_id": "pf01036993005592"
+          },
+          {
+            "navn": "Vilhelmine  Berg",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Stuepige",
+            "person_id": "pf01036993005593"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001224",
+        "beboere": [
+          {
+            "navn": "Hans Chr.  Døderlein",
+            "f": 1857,
+            "f_raa": "1857",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Asker Ak",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Bankchef",
+            "person_id": "pf01036993005594"
+          },
+          {
+            "navn": "Kitty  Døderlein",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Arendal Ned",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005595"
+          },
+          {
+            "navn": "Katharina  Døderlein",
+            "f": 1892,
+            "f_raa": "1892",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005596"
+          },
+          {
+            "navn": "Eva Malvina  Døderlein",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005597"
+          },
+          {
+            "navn": "Ruth  Døderlein",
+            "f": 1895,
+            "f_raa": "1895",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005598"
+          },
+          {
+            "navn": "Georg Michal  Døderlein",
+            "f": 1897,
+            "f_raa": "1897",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005599"
+          },
+          {
+            "navn": "Hans  Døderlein",
+            "f": 1900,
+            "f_raa": "1900-08-03",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005600"
+          },
+          {
+            "navn": "Anna Olavesen",
+            "f": 1885,
+            "f_raa": "1885",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Berg Smålenene Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Barnepige",
+            "person_id": "pf01036993005601"
+          },
+          {
+            "navn": "Birgitte Bergersen",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Stuepige",
+            "person_id": "pf01036993005602"
+          },
+          {
+            "navn": "Inger Eriksen",
+            "f": 1865,
+            "f_raa": "1865",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Strømstad",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige Kokke",
+            "person_id": "pf01036993005603"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "473": {
+    "kilde": "gf01036993000404",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000404",
+    "adresse_historisk": "Vestergaden",
+    "gardens_nummer_raa": "449",
+    "eier": null,
+    "hustype": "almindeligt Vaaningshus",
+    "sidebygninger": null,
+    "etasjer": "1",
+    "leiligheter": "4",
+    "krets": "010a",
+    "matrikkel": [
+      "449"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001200",
+        "beboere": [
+          {
+            "navn": "Anna Halvorsen",
+            "f": 1831,
+            "f_raa": "1831",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Naverstad Sogn, Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Lever af Gaarden og beskjæftiger sig tildels med Vask",
+            "person_id": "pf01036993005476"
+          },
+          {
+            "navn": "Karl Olav Halvorsen",
+            "f": 1877,
+            "f_raa": "1877",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Høvleriarbeider",
+            "person_id": "pf01036993005477"
+          },
+          {
+            "navn": "Augusta Olsen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Ske, Sverige",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Sypige",
+            "person_id": "pf01036993005478"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001201",
+        "beboere": [
+          {
+            "navn": "Johan  Wiig",
+            "f": 1854,
+            "f_raa": "1854",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Snedker",
+            "person_id": "pf01036993005479"
+          },
+          {
+            "navn": "Josefine  Wiig",
+            "f": 1856,
+            "f_raa": "1856",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005480"
+          },
+          {
+            "navn": "Johan Omar  Wiig",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Conditorlerling",
+            "person_id": "pf01036993005481"
+          },
+          {
+            "navn": "Julie  Wiig",
+            "f": 1888,
+            "f_raa": "1888",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "datter",
+            "person_id": "pf01036993005482"
+          },
+          {
+            "navn": "Walborg  Wiig",
+            "f": 1890,
+            "f_raa": "1890",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005483"
+          },
+          {
+            "navn": "Petter  Wiig",
+            "f": 1892,
+            "f_raa": "1892",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005484"
+          },
+          {
+            "navn": "Synthi  Wiig",
+            "f": 1895,
+            "f_raa": "1895",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005485"
+          },
+          {
+            "navn": "Lilli  Wiig",
+            "f": 1897,
+            "f_raa": "1897",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005486"
+          },
+          {
+            "navn": "!!  Wiig*",
+            "f": 1900,
+            "f_raa": "1900-06-19",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005487"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001202",
+        "beboere": [
+          {
+            "navn": "Klara Elisabet Matzen",
+            "f": 1870,
+            "f_raa": "1870",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Gøteborg Sverige",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Bogbinderske",
+            "person_id": "pf01036993005488"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001203",
+        "beboere": [
+          {
+            "navn": "Sigurd Østensen Sandberg",
+            "f": 1863,
+            "f_raa": "1863",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Vaage Krs",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Redaktør",
+            "person_id": "pf01036993005489"
+          },
+          {
+            "navn": "Andrine Elisabet  Sandberg",
+            "f": 1856,
+            "f_raa": "1856",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husmoder",
+            "person_id": "pf01036993005490"
+          },
+          {
+            "navn": "Rudolf Georg  Sandberg",
+            "f": 1886,
+            "f_raa": "1886",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005491"
+          },
+          {
+            "navn": "Iver Jakobsen Lillesæter",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Vaage Krs",
+            "bostatus": "mt",
+            "stilling": "b",
+            "sivilstand": "e",
+            "yrke": "Gaardbruger og Tømmermand",
+            "person_id": "pf01036993005492"
+          },
+          {
+            "navn": "Amund Jakobsen Holen",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Vaage Krs",
+            "bostatus": "mt",
+            "stilling": "b",
+            "sivilstand": "g",
+            "yrke": "Handelsfuldmægtig",
+            "person_id": "pf01036993005493"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "565": {
+    "kilde": "gf01036993000621",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000621",
+    "adresse_historisk": "Garvergaden",
+    "gardens_nummer_raa": "594",
+    "eier": null,
+    "hustype": "almindeligt Vaaningshus",
+    "sidebygninger": "1 Sidebygning, 1 Bagbygning og 1 Udhusbygning",
+    "etasjer": "1 Etage %2de Etager%",
+    "leiligheter": "5",
+    "krets": "015b",
+    "matrikkel": [
+      "594"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001959",
+        "beboere": [
+          {
+            "navn": "Johan  Kaatorp",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Eidsberg Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Snedkermester",
+            "person_id": "pf01036993008576"
+          },
+          {
+            "navn": "Juliane  Kaatorp",
+            "f": 1845,
+            "f_raa": "1845",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993008577"
+          },
+          {
+            "navn": "Johannes  Kaatorp",
+            "f": 1885,
+            "f_raa": "1885",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Legtøiarbeider",
+            "person_id": "pf01036993008578"
+          },
+          {
+            "navn": "Andrea  Kaatorp",
+            "f": 1886,
+            "f_raa": "1886",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008579"
+          },
+          {
+            "navn": "Anna Kristine  Kaatorp",
+            "f": 1889,
+            "f_raa": "1889",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008580"
+          },
+          {
+            "navn": "Selma Karoline Jansen@Jonsen",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Aremark Sm",
+            "bostatus": "mt",
+            "stilling": "Syerske",
+            "sivilstand": "ug",
+            "yrke": "Sypige",
+            "person_id": "pf01036993008581"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001960",
+        "beboere": [
+          {
+            "navn": "Johan Thorkildsen",
+            "f": 1853,
+            "f_raa": "1853",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Hobøl Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Pastor i Methodistkirken",
+            "person_id": "pf01036993008582"
+          },
+          {
+            "navn": "Anne Helene Thorkildsen",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Glemminge Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Huslig Syssel",
+            "person_id": "pf01036993008583"
+          },
+          {
+            "navn": "Theodor Thorkildsen",
+            "f": 1878,
+            "f_raa": "1878",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Arendal Ned",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Gaardskarl",
+            "person_id": "pf01036993008584"
+          },
+          {
+            "navn": "John Thorkildsen",
+            "f": 1883,
+            "f_raa": "1883",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Tønsberg JL",
+            "bostatus": "f",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Sjømand",
+            "person_id": "pf01036993008585"
+          },
+          {
+            "navn": "Einar Thorkildsen",
+            "f": 1887,
+            "f_raa": "1887",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Porsgrund Brb",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993008586"
+          },
+          {
+            "navn": "Peter Thorkildsen",
+            "f": 1890,
+            "f_raa": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Skien Brb",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993008587"
+          },
+          {
+            "navn": "Karen Thorkildsen",
+            "f": 1855,
+            "f_raa": "1855",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hobøl Sm",
+            "bostatus": "b",
+            "stilling": "hf's Søster",
+            "sivilstand": "ug",
+            "yrke": "Huslig Syssel",
+            "person_id": "pf01036993008588"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001961",
+        "beboere": [
+          {
+            "navn": "Johan Peter Mathisen",
+            "f": 1831,
+            "f_raa": "1831",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "e",
+            "yrke": "Fhv. Sømand. Lidt Dagarbejde og forøvrigt Fattigunderstøttelse",
+            "person_id": "pf01036993008589"
+          },
+          {
+            "navn": "Amanda Mathisen",
+            "f": 1860,
+            "f_raa": "1860",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Syg. Nyder Fattigunderstøttelse fra Kristiania Kommune",
+            "person_id": "pf01036993008590"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001962",
+        "beboere": [
+          {
+            "navn": "Kristian Olsen",
+            "f": 1853,
+            "f_raa": "1853",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Skjeberg Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Kjører",
+            "person_id": "pf01036993008591"
+          },
+          {
+            "navn": "Allette Olsen",
+            "f": 1860,
+            "f_raa": "1860",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Berg Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993008592"
+          },
+          {
+            "navn": "Klara Olsen",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008593"
+          },
+          {
+            "navn": "Otilie Olsen",
+            "f": 1886,
+            "f_raa": "1886",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008594"
+          },
+          {
+            "navn": "Helene Olsen",
+            "f": 1889,
+            "f_raa": "1889",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008595"
+          },
+          {
+            "navn": "Kristian Olsen",
+            "f": 1897,
+            "f_raa": "1897",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008596"
+          },
+          {
+            "navn": "Julius Hansen",
+            "f": 1876,
+            "f_raa": "1876",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Berg Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Kjøregut",
+            "person_id": "pf01036993008597"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001963",
+        "beboere": [
+          {
+            "navn": "Anton Nilsen",
+            "f": 1861,
+            "f_raa": "1861",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Østre Toten Krs",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Sadelmager hos Vognfabrikant Andersen hersteds",
+            "person_id": "pf01036993008598"
+          },
+          {
+            "navn": "Amanda Nilsen",
+            "f": 1868,
+            "f_raa": "1868",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Wene Ryr Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993008599"
+          },
+          {
+            "navn": "Arvid Nilsen",
+            "f": 1897,
+            "f_raa": "1897",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008600"
+          },
+          {
+            "navn": "Egil Nilsen",
+            "f": 1900,
+            "f_raa": "1900-07-08",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993008601"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "475": {
+    "kilde": "gf01036993000423",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000423",
+    "adresse_historisk": "Theatergaden - %Storgd%",
+    "gardens_nummer_raa": "330",
+    "eier": null,
+    "hustype": "almindeligt Vaaningshus 2 Butiker og 2 Kontorværelser",
+    "sidebygninger": "1 Toetages Sidebygning og 1 Udhus",
+    "etasjer": "2",
+    "leiligheter": "se merkn.",
+    "krets": "010b",
+    "matrikkel": [
+      "330"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001256",
+        "beboere": [
+          {
+            "navn": "Oskar  Borg",
+            "f": 1851,
+            "f_raa": "1851",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Musiker ): Organist og Dir. for Militærmusikken samt Sanglærer",
+            "person_id": "pf01036993005765"
+          },
+          {
+            "navn": "Emilie Jytilda  Borg",
+            "f": 1853,
+            "f_raa": "1853",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverrige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005766"
+          },
+          {
+            "navn": "Eugen  Borg",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "f",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005767"
+          },
+          {
+            "navn": "Gustav  Borg",
+            "f": 1886,
+            "f_raa": "1886",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005768"
+          },
+          {
+            "navn": "Harald  Borg",
+            "f": 1888,
+            "f_raa": "1888",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005769"
+          },
+          {
+            "navn": "Ellen  Borg",
+            "f": 1890,
+            "f_raa": "1890",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005770"
+          },
+          {
+            "navn": "Dag  Borg",
+            "f": 1893,
+            "f_raa": "1893",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005771"
+          },
+          {
+            "navn": "Helge  Borg",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005772"
+          },
+          {
+            "navn": "Gunda  Bjørkmand",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hvaler Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige",
+            "person_id": "pf01036993005773"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001257",
+        "beboere": [
+          {
+            "navn": "Christen Dahl Gløersen",
+            "f": 1846,
+            "f_raa": "1846",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Værø, Lofoten Nor",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Prokurist, Kasserer, Bogholder, Gaardeier",
+            "person_id": "pf01036993005774"
+          },
+          {
+            "navn": "Michaline Louise Gløersen",
+            "f": 1849,
+            "f_raa": "1849",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Drammen Bu",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005775"
+          },
+          {
+            "navn": "Signy Gløersen",
+            "f": 1881,
+            "f_raa": "1881",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005776"
+          },
+          {
+            "navn": "Toralf Gløersen",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "person_id": "pf01036993005777"
+          },
+          {
+            "navn": "Trine Louise Charlotte Gløersen",
+            "f": 1889,
+            "f_raa": "1889",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005778"
+          },
+          {
+            "navn": "Marie Nilsen",
+            "f": 1872,
+            "f_raa": "1872",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Ertemark Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husgjærning",
+            "person_id": "pf01036993005779"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001258",
+        "beboere": [
+          {
+            "navn": "Norman  Halle",
+            "f": 1865,
+            "f_raa": "1865",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Manufacturkjøbmand",
+            "person_id": "pf01036993005780"
+          },
+          {
+            "navn": "Ivarda  Halle",
+            "f": 1874,
+            "f_raa": "1874",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru",
+            "person_id": "pf01036993005781"
+          },
+          {
+            "navn": "Astri Charlotte  Halle",
+            "f": 1900,
+            "f_raa": "1900-09-13",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005782"
+          },
+          {
+            "navn": "Anna  Berg",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Tjenestepige",
+            "person_id": "pf01036993005783"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001259",
+        "beboere": [
+          {
+            "navn": "Paul  Baastad",
+            "f": 1848,
+            "f_raa": "1848",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "ug",
+            "yrke": "Kaptein, Skolechef",
+            "person_id": "pf01036993005784"
+          },
+          {
+            "navn": "Julie Jacobsen",
+            "f": 1880,
+            "f_raa": "1880",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hvalørerne Sm",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": "Husholderske",
+            "person_id": "pf01036993005785"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001260",
+        "beboere": [
+          {
+            "navn": "Johan Peter  Korpås",
+            "f": 1863,
+            "f_raa": "1863",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Bergs Herred Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Handelsagent",
+            "person_id": "pf01036993005786"
+          },
+          {
+            "navn": "Lovise Amalie  Korpås",
+            "f": 1854,
+            "f_raa": "1854",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Bergs Herred Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Kjole Søm",
+            "person_id": "pf01036993005787"
+          },
+          {
+            "navn": "Astrid Johanne  Korpås",
+            "f": 1893,
+            "f_raa": "1893",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005788"
+          },
+          {
+            "navn": "Signe Marie  Korpås*",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter",
+            "person_id": "pf01036993005789"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "477": {
+    "kilde": "gf01036993000526",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000526",
+    "adresse_historisk": "Storgaden Jens Blocksgade",
+    "gardens_nummer_raa": "331, 333, 335",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "Sidebygninger, Særskilt vaaningshus til Jacob Blocksgade",
+    "etasjer": "til Storgd I Jac Blocksgd II",
+    "leiligheter": "10",
+    "krets": "014a",
+    "matrikkel": [
+      "331",
+      "333",
+      "335"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001651",
+        "beboere": [
+          {
+            "navn": "Mathilde Hansen",
+            "f": 1853,
+            "f_raa": "1853-10-11",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": null,
+            "yrke": "Modehandlerinde",
+            "person_id": "pf01036993007353"
+          },
+          {
+            "navn": "Fredrik Hansen Juul",
+            "f": 1877,
+            "f_raa": "1877-08-28",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Guldsmedsvend",
+            "person_id": "pf01036993007354"
+          },
+          {
+            "navn": "Alette J. Hansen",
+            "f": 1880,
+            "f_raa": "1880-01-11",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Modehandlerinde",
+            "person_id": "pf01036993007355"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001652",
+        "beboere": [
+          {
+            "navn": "Franz  Hinkel",
+            "f": 1870,
+            "f_raa": "1870-12-10",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Mainz Tyskl.",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skomager f. eg. regn.",
+            "person_id": "pf01036993007356"
+          },
+          {
+            "navn": "Olga  Hinkel",
+            "f": 1878,
+            "f_raa": "1878-04-18",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007357"
+          },
+          {
+            "navn": "Franziska Babette  Hinkel",
+            "f": 1900,
+            "f_raa": "1900-06-28",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007358"
+          },
+          {
+            "navn": "Axel Laurits Hansen",
+            "f": 1883,
+            "f_raa": "1883-03-26",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Aremark Sm",
+            "bostatus": "mt",
+            "stilling": "b",
+            "sivilstand": "ug",
+            "yrke": "Malersvend Leilændings søn",
+            "person_id": "pf01036993007359"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001653",
+        "beboere": [
+          {
+            "navn": "Johan  Lycke",
+            "f": 1862,
+            "f_raa": "1862",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "el",
+            "sivilstand": "ug",
+            "yrke": "Kontorist ved Bomuldspinderikontor",
+            "person_id": "pf01036993007360"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001654",
+        "beboere": [
+          {
+            "navn": "Martin Andersen",
+            "f": 1852,
+            "f_raa": "1852",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Aremark Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Tegelværksarbeider",
+            "person_id": "pf01036993007361"
+          },
+          {
+            "navn": "Anna Andersen",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007362"
+          },
+          {
+            "navn": "Karl Andersen",
+            "f": 1888,
+            "f_raa": "1888",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skolelev",
+            "person_id": "pf01036993007363"
+          },
+          {
+            "navn": "Karoline Andersen",
+            "f": 1893,
+            "f_raa": "1893",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skolelev",
+            "person_id": "pf01036993007364"
+          },
+          {
+            "navn": "Sigrid Andersen",
+            "f": 1895,
+            "f_raa": "1895",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "f",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007365"
+          },
+          {
+            "navn": "Fritjof Andersen",
+            "f": 1900,
+            "f_raa": "1900-05-01",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Kristiania",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007366"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001655",
+        "beboere": [
+          {
+            "navn": "Andreas Andersen",
+            "f": 1826,
+            "f_raa": "1826",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Skjeberg Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "e",
+            "yrke": "Malermester f. eg. regn.",
+            "person_id": "pf01036993007367"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001656",
+        "beboere": [
+          {
+            "navn": "Edvard Severin Syvertsen",
+            "f": 1867,
+            "f_raa": "1867-01-05",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Regningsbud Handlende med speile og billeder",
+            "person_id": "pf01036993007368"
+          },
+          {
+            "navn": "Inger Marie Syvertsen",
+            "f": 1869,
+            "f_raa": "1869-08-29",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Enebak Ak",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007369"
+          },
+          {
+            "navn": "Marta Marie Syvertsen",
+            "f": 1889,
+            "f_raa": "1889-02-22",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skolelev",
+            "person_id": "pf01036993007370"
+          },
+          {
+            "navn": "Sigvard Marenius Joseph Syvertsen",
+            "f": 1892,
+            "f_raa": "1892-05-30",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skolelev",
+            "person_id": "pf01036993007371"
+          },
+          {
+            "navn": "Emma Syvertsen",
+            "f": 1897,
+            "f_raa": "1897-05-31",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007372"
+          },
+          {
+            "navn": "Johannes Syvertsen",
+            "f": 1899,
+            "f_raa": "1899-12-29",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007373"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001657",
+        "beboere": [
+          {
+            "navn": "Thomas Larsen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": null,
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Høvler v/ høvleri",
+            "person_id": "pf01036993007374"
+          },
+          {
+            "navn": "Nilsine Amine Larsen",
+            "f": 1872,
+            "f_raa": "1872",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Hvaløerne Sm",
+            "bostatus": null,
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007375"
+          },
+          {
+            "navn": "Thorleif Emanuel Larsen",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": null,
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007376"
+          },
+          {
+            "navn": "Alf Nandrup Larsen",
+            "f": 1896,
+            "f_raa": "1896",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": null,
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007377"
+          },
+          {
+            "navn": "Bjarne Henry Larsen",
+            "f": 1898,
+            "f_raa": "1898",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Id Sm",
+            "bostatus": null,
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Intet",
+            "person_id": "pf01036993007378"
+          },
+          {
+            "navn": "Agnes Elise Johansen",
+            "f": 1884,
+            "f_raa": "1884",
+            "kj": null,
+            "kj_kilde": "ukjent",
+            "fodested": "Hvaløerne Sm",
+            "bostatus": "mt",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Fiskers datter. Husgjern.",
+            "person_id": "pf01036993007379"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001658",
+        "beboere": [
+          {
+            "navn": "Anders Knudsen",
+            "f": 1852,
+            "f_raa": "1852",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Egersund Sta",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Dreier f eg. regn.",
+            "person_id": "pf01036993007380"
+          },
+          {
+            "navn": "Anette Knudsen",
+            "f": 1854,
+            "f_raa": "1854",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Berg Smaal.",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007381"
+          },
+          {
+            "navn": "Magnus Knudsen",
+            "f": 1879,
+            "f_raa": "1879",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Laurvig JL",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Forsørges af forældrene",
+            "person_id": "pf01036993007382"
+          },
+          {
+            "navn": "Hjalmar Knudsen",
+            "f": 1882,
+            "f_raa": "1882",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Laurvig JL %t%",
+            "bostatus": "f",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Sømand. Jungmand",
+            "person_id": "pf01036993007383"
+          },
+          {
+            "navn": "Knud Knudsen",
+            "f": 1888,
+            "f_raa": "1888",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "t %Laurvig%",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993007384"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001659",
+        "beboere": [
+          {
+            "navn": "Louise  Gihlberg",
+            "f": 1857,
+            "f_raa": "1857",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "f",
+            "yrke": "fhv. handlende i colonialv Bestyrer af en Bagers udsalg",
+            "person_id": "pf01036993007385"
+          },
+          {
+            "navn": "Alvilde  Gihlberg",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Skoleelev",
+            "person_id": "pf01036993007386"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  },
+  "561": {
+    "kilde": "gf01036993000534",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000534",
+    "adresse_historisk": "Østergade",
+    "gardens_nummer_raa": "550",
+    "eier": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "1 Sidebygning",
+    "etasjer": "1",
+    "leiligheter": "1 %2%",
+    "krets": "014a",
+    "matrikkel": [
+      "550"
+    ],
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993001688",
+        "beboere": [
+          {
+            "navn": "Lars  Grenager",
+            "f": 1827,
+            "f_raa": "1827",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "e",
+            "yrke": "Malermester",
+            "person_id": "pf01036993007505"
+          },
+          {
+            "navn": "Mathilde Sofie  Grenager",
+            "f": 1859,
+            "f_raa": "1859",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Husbestyrerinde",
+            "person_id": "pf01036993007506"
+          },
+          {
+            "navn": "Adolf Marinius  Grenager",
+            "f": 1864,
+            "f_raa": "1864",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Kjøbmand Glasmagasin",
+            "person_id": "pf01036993007507"
+          },
+          {
+            "navn": "Anna Henrikke  Grenager",
+            "f": 1866,
+            "f_raa": "1866",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Expeditrice Kaabeforretning",
+            "person_id": "pf01036993007508"
+          },
+          {
+            "navn": "Oscar Wilhelm  Grenager",
+            "f": 1868,
+            "f_raa": "1868",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Malersvend",
+            "person_id": "pf01036993007509"
+          },
+          {
+            "navn": "Olga Kristiana  Grenager",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Expeditrice Glasmagasin",
+            "person_id": "pf01036993007510"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993001689",
+        "beboere": [
+          {
+            "navn": "Anders Gustav Johansen",
+            "f": 1872,
+            "f_raa": "1872",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skomagersvend",
+            "person_id": "pf01036993007511"
+          },
+          {
+            "navn": "Hansine Johansen",
+            "f": 1871,
+            "f_raa": "1871",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Husgjerning",
+            "person_id": "pf01036993007512"
+          },
+          {
+            "navn": "!! Johansen*",
+            "f": 1900,
+            "f_raa": "1900-10-31",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fr.hald",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": null,
+            "yrke": null,
+            "person_id": "pf01036993007513"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-11"
+  }
+}
