@@ -21,7 +21,7 @@
     "lenker": []
   },
   "298": {
-    "navn": null,
+    "navn": "Høvleriet",
     "adresse": "Peder Ankers Gade",
     "gnr_bnr": null,
     "matrikkel_1901": {
@@ -2150,8 +2150,18 @@
       "gate": "Vestergade",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Vestergaden",
+      "gardens_nummer_raa": "449",
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -2930,7 +2940,7 @@
     "lenker": []
   },
   "455": {
-    "navn": null,
+    "navn": "Fr.halds Arbeidersamfund",
     "adresse": "Violgaden",
     "gnr_bnr": null,
     "matrikkel_1901": {
@@ -3113,7 +3123,7 @@
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden",
-      "gardens_nummer_raa": "323, 324, 445b %325%",
+      "gardens_nummer_raa": "323, 324, 445b",
       "krets": "010a"
     },
     "bilder": [],
@@ -3252,7 +3262,7 @@
       "leiligheter": "se merkn."
     },
     "folketelling_meta": {
-      "adresse_historisk": "Theatergaden - %Storgd%",
+      "adresse_historisk": "Theatergaden - Storgaden",
       "gardens_nummer_raa": "330",
       "krets": "010b"
     },
@@ -4532,8 +4542,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Waaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Sidebygning og %Fabrik%. Skofabrik",
+      "leiligheter": "2"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Sølvgaden",
+      "gardens_nummer_raa": "261, 262",
+      "krets": "001a",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4553,8 +4573,18 @@
       "gate": "Pistolstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "almindelig Udhus",
+      "leiligheter": "2"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Pistolstrædet",
+      "gardens_nummer_raa": "281",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4574,8 +4604,18 @@
       "gate": "Pistolstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Pistolstrædet",
+      "gardens_nummer_raa": "282",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4595,8 +4635,18 @@
       "gate": "Pistolstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "almindelig Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Pistolstrædet",
+      "gardens_nummer_raa": "280b",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4616,8 +4666,18 @@
       "gate": "Pistolstrædet",
       "anmerkning": "Hus og Have."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "3"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Pistolstrædet",
+      "gardens_nummer_raa": "283a, 284, 286a",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4637,8 +4697,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": "2",
+      "sidebygninger": null,
+      "leiligheter": "4"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Sølvgaden",
+      "gardens_nummer_raa": "276b",
+      "krets": "001a",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4658,8 +4728,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Bagbygning, almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "10"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendel & Pistolstrædet",
+      "gardens_nummer_raa": "283b, 286b",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4679,8 +4759,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "287a, b2",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4700,8 +4790,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "287b1",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4721,8 +4821,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "ja 1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "289",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4742,8 +4852,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "ja 1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "288b",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4763,8 +4883,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "288a",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4784,8 +4914,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "291",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4805,8 +4945,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "292",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4826,8 +4976,18 @@
       "gate": "Lavendelstrædet",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Lavendelstrædet",
+      "gardens_nummer_raa": "295b",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -12281,8 +12441,18 @@
       "gate": "Østergade",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "1 Sidebygning",
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Østergade",
+      "gardens_nummer_raa": "550",
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -12512,8 +12682,18 @@
       "gate": "Garvergaden",
       "anmerkning": "Gaard paa Østsiden og en liden Have paa Vests. af Gaden."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "almindeligt Vaaningshus",
+      "etasjer": "1 Etage",
+      "sidebygninger": "1 Sidebygning, 1 Bagbygning og 1 Udhusbygning",
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Garvergaden",
+      "gardens_nummer_raa": "594",
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
