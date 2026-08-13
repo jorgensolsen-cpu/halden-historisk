@@ -806,7 +806,7 @@
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Walkers Gade",
-      "anmerkning": "Do. do."
+      "anmerkning": "Halvp. af en Søbod."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -1194,7 +1194,7 @@
       "skattetakst": 11000,
       "brandtakst": 15720,
       "gate": "Strandgaden",
-      "anmerkning": "Do. cfr L.-No. 334."
+      "anmerkning": "Gaard. cfr L.-No. 334."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -3662,7 +3662,7 @@
       "skattetakst": 8000,
       "brandtakst": 10750,
       "gate": "Gamle Sørhaugen",
-      "anmerkning": "Do. og do."
+      "anmerkning": "Hus og Brygge."
     },
     "bygning": {
       "hustype": null,
@@ -4187,7 +4187,7 @@
       "lopenr": "21",
       "lopenr_1878": "149",
       "matrikkelnr": "300",
-      "eier": "Do. Do.",
+      "eier": "Disponent Ole Dahl og Gross. Jens Olsen",
       "skattetakst": null,
       "brandtakst": 300,
       "gate": "Gamle Sørhaugen",
@@ -4839,7 +4839,7 @@
       "lopenr": "43",
       "lopenr_1878": "132",
       "matrikkelnr": "299a & b",
-      "eier": "Do. do.",
+      "eier": "Jens Olsen og Ole Dahl",
       "skattetakst": 22000,
       "brandtakst": 27240,
       "gate": "Gamle Sørhaugen",
@@ -4870,7 +4870,7 @@
       "lopenr": "44",
       "lopenr_1878": "129",
       "matrikkelnr": "262c",
-      "eier": "Do do.",
+      "eier": "Jens Olsen og Ole Dahl",
       "skattetakst": 40000,
       "brandtakst": null,
       "gate": "Gamle Sørhaugen",
@@ -4891,7 +4891,7 @@
       "lopenr": "45",
       "lopenr_1878": "128",
       "matrikkelnr": "262a, 263 & 264",
-      "eier": "Do. do.",
+      "eier": "Jens Olsen og Ole Dahl",
       "skattetakst": null,
       "brandtakst": 39310,
       "gate": "Gamle Sørhaugen",
@@ -6032,7 +6032,7 @@
       "skattetakst": 10000,
       "brandtakst": 14920,
       "gate": "Strandstrædet",
-      "anmerkning": "Do."
+      "anmerkning": "Søbod."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -6133,7 +6133,7 @@
       "lopenr": "97",
       "lopenr_1878": "99",
       "matrikkelnr": "223a",
-      "eier": "Do. Carl Dahl",
+      "eier": "Kjøbmand Carl Dahl",
       "skattetakst": 24000,
       "brandtakst": 25200,
       "gate": "Fæstningsgaden",
@@ -7792,7 +7792,7 @@
       "lopenr": "176",
       "lopenr_1878": "266",
       "matrikkelnr": "93",
-      "eier": "Do. do.",
+      "eier": "Handelsmand Adolf Syversen",
       "skattetakst": 6000,
       "brandtakst": 7180,
       "gate": "Elvegaden",
@@ -8447,7 +8447,7 @@
       "skattetakst": 12000,
       "brandtakst": 17400,
       "gate": "Sygehusgaden",
-      "anmerkning": "Do » s. »"
+      "anmerkning": "Arbeiderb. på s. Side"
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -10064,7 +10064,7 @@
       "skattetakst": 8000,
       "brandtakst": 8500,
       "gate": "Langbryggen",
-      "anmerkning": "Do."
+      "anmerkning": "Søbod."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -10085,7 +10085,7 @@
       "skattetakst": 8000,
       "brandtakst": 9950,
       "gate": "Langbryggen",
-      "anmerkning": "Do."
+      "anmerkning": "Søbod."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -10274,7 +10274,7 @@
       "skattetakst": 3500,
       "brandtakst": null,
       "gate": "Store Torvgade",
-      "anmerkning": "Do."
+      "anmerkning": "Kultomt"
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -13124,7 +13124,7 @@
     "matrikkel_1901": {
       "lopenr": "583",
       "lopenr_1878": "918a",
-      "matrikkelnr": "Do. b",
+      "matrikkelnr": "592 b",
       "eier": "Olga Jensen",
       "skattetakst": 8500,
       "brandtakst": 12230,
@@ -13145,7 +13145,7 @@
     "matrikkel_1901": {
       "lopenr": "584",
       "lopenr_1878": "918b",
-      "matrikkelnr": "Do. c",
+      "matrikkelnr": "592 c",
       "eier": "Olga Jensen",
       "skattetakst": 800,
       "brandtakst": null,
@@ -13439,7 +13439,7 @@
     "matrikkel_1901": {
       "lopenr": "598",
       "lopenr_1878": "900b",
-      "matrikkelnr": "Do. a²",
+      "matrikkelnr": "592 a²",
       "eier": "Smed Alfred Johannesen",
       "skattetakst": 7000,
       "brandtakst": 7010,
@@ -16023,7 +16023,7 @@
       "lopenr": "722",
       "lopenr_1878": "995",
       "matrikkelnr": "799 n2",
-      "eier": "Do. Josef Johnsen",
+      "eier": "Tømmermand Josef Johnsen",
       "skattetakst": 1500,
       "brandtakst": null,
       "gate": "Nygade fra Damstrædet til Tistedalsgaden",
@@ -16111,7 +16111,7 @@
       "skattetakst": 9800,
       "brandtakst": 11420,
       "gate": "Damhauggaden",
-      "anmerkning": "Do."
+      "anmerkning": "Gaard og Løkke."
     },
     "bygning": null,
     "folketelling_meta": null,
@@ -16443,7 +16443,7 @@
       "lopenr": "742",
       "lopenr_1878": "959",
       "matrikkelnr": "799 a6",
-      "eier": "Do. Do.",
+      "eier": "Hjulmager Alfred Andersen",
       "skattetakst": 1800,
       "brandtakst": 2200,
       "gate": "Damhauggaden",
@@ -18694,7 +18694,7 @@
       "skattetakst": 1000,
       "brandtakst": 1240,
       "gate": "Nordre Tistedalen",
-      "anmerkning": "Do. (Et lidet Hus paa Fjeldet.)"
+      "anmerkning": "Arbeiderbolig. (Et lidet Hus paa Fjeldet.)"
     },
     "bygning": null,
     "folketelling_meta": null,
