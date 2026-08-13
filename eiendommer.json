@@ -35,15 +35,16 @@
       "anmerkning": "Høvleriet med Bestyrerbolig."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1 %3%",
-      "sidebygninger": "Udhus Høvleri og Kontor bygning",
-      "leiligheter": "1"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "889",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -65,15 +66,16 @@
       "anmerkning": "Arbeiderb. af Træ."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1 %3%",
-      "sidebygninger": "Udhus Høvleri og Kontor bygning",
-      "leiligheter": "1"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "889",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -95,15 +97,16 @@
       "anmerkning": "Arbeiderb af Sten."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "2",
-      "sidebygninger": "Udhus",
-      "leiligheter": "12"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "894",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -125,14 +128,16 @@
       "anmerkning": "Enetages Arbeiderb. af Træ."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "leiligheter": "5"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "890",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -154,15 +159,16 @@
       "anmerkning": "Leverandørbolig."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "sidebygninger": "Udhus",
-      "leiligheter": "2"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "891",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -184,15 +190,16 @@
       "anmerkning": "Smedie og Bolig."
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "sidebygninger": "Udhus Smidje",
-      "leiligheter": "1"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "892",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -235,15 +242,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "sidebygninger": "1 Udhus",
-      "leiligheter": "1"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "475",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -265,15 +273,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "sidebygninger": "Udhus Kjælder Vedskjul",
-      "leiligheter": "2"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Peder Ankers Gade",
-      "gardens_nummer_raa": "474",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -496,15 +505,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "2",
-      "sidebygninger": "Udhus",
-      "leiligheter": "6"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Rødsbjergs Plads",
-      "gardens_nummer_raa": "471",
-      "krets": "008a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -949,12 +959,13 @@
       "hustype": "Vaaningshus",
       "etasjer": "delvis 1 og 2 etager",
       "sidebygninger": "Udhus",
-      "leiligheter": "2"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Fisketorvet",
       "gardens_nummer_raa": "535",
-      "krets": "009a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -1606,15 +1617,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "2",
-      "sidebygninger": "1 sidebygning, hvori pølsemageri",
-      "leiligheter": "2"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Strandgaden",
-      "gardens_nummer_raa": "507",
-      "krets": "010a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -1636,15 +1648,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1 %2%",
-      "sidebygninger": "1 sidebygning og 1 bagbygning",
-      "leiligheter": "5"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Strandgaden",
-      "gardens_nummer_raa": "509",
-      "krets": "010a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -1773,11 +1786,14 @@
     "bygning": {
       "hustype": "Forretningslokale x)",
       "etasjer": "2",
-      "sidebygninger": "2 sidebygninger, hvoraf 1ste etg. andvendes til butikker"
+      "sidebygninger": "2 sidebygninger, hvoraf 1ste etg. andvendes til butikker",
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Strandgade",
-      "gardens_nummer_raa": "514, 515, 516, 321"
+      "gardens_nummer_raa": "514, 515, 516, 321",
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -1801,12 +1817,14 @@
     "bygning": {
       "hustype": "Forretningslokale x)",
       "etasjer": "2",
-      "leiligheter": "3"
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Strandgaden",
       "gardens_nummer_raa": "443",
-      "krets": "010a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -2040,12 +2058,14 @@
     "bygning": {
       "hustype": "Vaaningshus",
       "etasjer": "2",
-      "leiligheter": "4"
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Vestergade",
       "gardens_nummer_raa": "456",
-      "krets": "009b"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -2205,11 +2225,14 @@
     "bygning": {
       "hustype": "almindeligt Vaaningshus",
       "etasjer": "2 Etager",
-      "sidebygninger": "1 Sidebygning og 1 Udhusbygning"
+      "sidebygninger": "1 Sidebygning og 1 Udhusbygning",
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Vestergade",
-      "gardens_nummer_raa": "445"
+      "gardens_nummer_raa": "445",
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -2234,12 +2257,13 @@
       "hustype": "Vaaningshus",
       "etasjer": "1",
       "sidebygninger": "1 sidebygning og 1 bagbygning med 3 butikker",
-      "leiligheter": "2"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Vestergade - Strandgaden",
       "gardens_nummer_raa": "444",
-      "krets": "010a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3059,15 +3083,16 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": "almindeligt Vaaningshus",
-      "etasjer": "2",
-      "sidebygninger": "En sidebygning kontorer",
-      "leiligheter": "ja 1"
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
     },
     "folketelling_meta": {
-      "adresse_historisk": "Storgaden",
-      "gardens_nummer_raa": "322",
-      "krets": "010a"
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3091,11 +3116,14 @@
     "bygning": {
       "hustype": "Vaaningshus",
       "etasjer": "2",
-      "sidebygninger": "Sidebygninger, Udhus, en kudskebolig"
+      "sidebygninger": "Sidebygninger, Udhus, en kudskebolig",
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden, Østergaden",
-      "gardens_nummer_raa": "se merkn."
+      "gardens_nummer_raa": "se merkn.",
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3119,12 +3147,14 @@
     "bygning": {
       "hustype": "Vaaningshus, og Apothek",
       "etasjer": "1 Etage",
-      "sidebygninger": "I bagbygning, 2.die Etage beboet, 1ste Etage Bryggerhus, Laboratorie, Stødebod, Vognremisse"
+      "sidebygninger": "I bagbygning, 2.die Etage beboet, 1ste Etage Bryggerhus, Laboratorie, Stødebod, Vognremisse",
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden",
       "gardens_nummer_raa": "323, 324, 445b",
-      "krets": "010a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3170,12 +3200,13 @@
       "hustype": "almindeligt Vaaningshus",
       "etasjer": "2",
       "sidebygninger": "1 Sidebygning og 1 bagbygning",
-      "leiligheter": "5"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden",
       "gardens_nummer_raa": "326, 327, 329",
-      "krets": "010a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3229,12 +3260,13 @@
       "hustype": "Vaaningshus Forretningslokale",
       "etasjer": "2 i bagbygn. 1 i forhuset",
       "sidebygninger": "Vedskurer og Stald",
-      "leiligheter": "udelukkende til Beboelse 6"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden",
       "gardens_nummer_raa": "328, 543",
-      "krets": "014a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3259,12 +3291,13 @@
       "hustype": "almindeligt Vaaningshus 2 Butiker og 2 Kontorværelser",
       "etasjer": "2",
       "sidebygninger": "1 Toetages Sidebygning og 1 Udhus",
-      "leiligheter": "se merkn."
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Theatergaden - Storgaden",
       "gardens_nummer_raa": "330",
-      "krets": "010b"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3310,12 +3343,13 @@
       "hustype": "Vaaningshus",
       "etasjer": "til Storgd I Jac Blocksgd II",
       "sidebygninger": "Sidebygninger, Særskilt vaaningshus til Jacob Blocksgade",
-      "leiligheter": "10"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Storgaden Jens Blocksgade",
       "gardens_nummer_raa": "331, 333, 335",
-      "krets": "014a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3484,12 +3518,13 @@
       "hustype": "almindeligt Vaaningshus og Contorlokaler",
       "etasjer": "1",
       "sidebygninger": "Portnerbolig, alm. Udhuse",
-      "leiligheter": "2"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Østergade",
       "gardens_nummer_raa": "547",
-      "krets": "014a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3514,12 +3549,13 @@
       "hustype": "Vaaningshus",
       "etasjer": "1",
       "sidebygninger": "Sidebygninger",
-      "leiligheter": "4"
+      "leiligheter": null
     },
     "folketelling_meta": {
       "adresse_historisk": "Østergade",
       "gardens_nummer_raa": "548",
-      "krets": "014a"
+      "krets": null,
+      "eier_folketelling": null
     },
     "bilder": [],
     "historie": null,
@@ -3597,8 +3633,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus og Brygge."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3618,8 +3664,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Do. og do."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3681,8 +3737,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus og Have."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3702,8 +3768,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus. Prang til Vandet."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3723,8 +3799,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3744,8 +3830,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3765,8 +3861,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": null,
+      "sidebygninger": "almindelig Udhus",
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Gamle Sørhaugen",
+      "gardens_nummer_raa": "303a1",
+      "krets": "001b",
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3807,8 +3913,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus og Skibsværft."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3849,8 +3965,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3870,8 +3996,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Hus."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3891,8 +4027,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3912,8 +4058,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3933,8 +4089,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -3954,8 +4120,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Arbeiderbolig."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4038,8 +4214,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4080,8 +4266,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4101,8 +4297,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Arbeiderbolig."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4122,8 +4328,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4143,8 +4359,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4164,8 +4390,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4185,8 +4421,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4206,8 +4452,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4227,8 +4483,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4248,8 +4514,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4269,8 +4545,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4290,8 +4576,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4311,8 +4607,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4332,8 +4638,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4353,8 +4669,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4374,8 +4700,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4395,8 +4731,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4416,8 +4762,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4437,8 +4793,18 @@
       "gate": "Sølvgaden",
       "anmerkning": null
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -4479,8 +4845,18 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Skattetaxeret sammenmed L.-No. 44."
     },
-    "bygning": null,
-    "folketelling_meta": null,
+    "bygning": {
+      "hustype": null,
+      "etasjer": null,
+      "sidebygninger": null,
+      "leiligheter": null
+    },
+    "folketelling_meta": {
+      "adresse_historisk": null,
+      "gardens_nummer_raa": null,
+      "krets": null,
+      "eier_folketelling": null
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,
@@ -19267,6 +19643,206 @@
     },
     "bygning": null,
     "folketelling_meta": null,
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest37": {
+    "navn": "Intendantboligen m/bryggerhus",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Bryggerhus, Strygeværelse, Fjøs, Stald, Vedboder",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": "Prins Georgs bastion",
+      "kart_1885": "G (Kapteinvaktmesterbolig)",
+      "konfidens": "høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest38": {
+    "navn": "Opsynsmannsboligen",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": "Ved bryggerhuset, Prins Georgs bastion",
+      "kart_1885": null,
+      "konfidens": "middels-høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest39": {
+    "navn": "Korporalboligen",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": null,
+      "kart_1885": null,
+      "konfidens": "lav",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest40": {
+    "navn": "Vaskekonens bolig",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": null,
+      "kart_1885": null,
+      "konfidens": "lav",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest41": {
+    "navn": "Ekserserhuset (el. magasin)",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus 1ste Etg til Opbevaringsrum",
+      "etasjer": "2",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": null,
+      "kart_1885": "L (Ekserserhus) el. magasin",
+      "konfidens": "middels-lav",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest42": {
+    "navn": "Kaserne I (underoff.skole)",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Kaserne",
+      "etasjer": "2",
+      "sidebygninger": "1 kul & vedbod og 1 privet",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": null,
+      "kart_1885": "K el. H",
+      "konfidens": "middels",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest43": {
+    "navn": "Kaserne II (hornblåserkorps)",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Kaserne",
+      "etasjer": null,
+      "sidebygninger": "1 kul & vedbod",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": null,
+      "kart_1885": "H el. K",
+      "konfidens": "middels",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest44": {
+    "navn": "Hovedvakten",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vagtbygning",
+      "etasjer": "2",
+      "sidebygninger": "n",
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": "Ved hovedporten",
+      "kart_1885": "Hovedvakten",
+      "konfidens": "høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+    },
     "bilder": [],
     "historie": null,
     "historie_kilde": null,

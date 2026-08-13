@@ -10454,332 +10454,6 @@
       }
     ]
   },
-  "23": {
-    "kilde": "gf01036993000041",
-    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000041",
-    "hentet": "2026-08-13",
-    "husstander": [
-      {
-        "leilighet_id": "lf01036993000120",
-        "beboere": [
-          {
-            "navn": "Andreas Ahlsen",
-            "f": 1868,
-            "f_raa": "1868-02-06",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Berg Sogn Smaalenene",
-            "bostatus": "b",
-            "stilling": "hf",
-            "sivilstand": "g",
-            "yrke": "Skibstømmermand",
-            "person_id": "pf01036993000502"
-          },
-          {
-            "navn": "Hanna Ahlsen",
-            "f": 1869,
-            "f_raa": "1869-08-08",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "hm",
-            "sivilstand": "g",
-            "yrke": null,
-            "person_id": "pf01036993000503"
-          },
-          {
-            "navn": "Astri Gunvor Ahlsen",
-            "f": 1897,
-            "f_raa": "1897-12-15",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "d",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000504"
-          },
-          {
-            "navn": "Borghild Ahlsen",
-            "f": 1900,
-            "f_raa": "1900-01-01",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "d",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000505"
-          },
-          {
-            "navn": "Gusta Christoffersen",
-            "f": 1878,
-            "f_raa": "1878-12-01",
-            "kj": "k",
-            "kj_kilde": "fornavn",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "Tjenestepige",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000506"
-          }
-        ]
-      },
-      {
-        "leilighet_id": "lf01036993000121",
-        "beboere": [
-          {
-            "navn": "Karl Andreassen",
-            "f": 1865,
-            "f_raa": "1865-01-31",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikstad",
-            "bostatus": "b",
-            "stilling": "hf",
-            "sivilstand": "g",
-            "yrke": "Høvlmester",
-            "person_id": "pf01036993000507"
-          },
-          {
-            "navn": "Hilda Andreassen",
-            "f": 1868,
-            "f_raa": "1868-03-06",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "hm",
-            "sivilstand": "g",
-            "yrke": null,
-            "person_id": "pf01036993000508"
-          },
-          {
-            "navn": "Karl Ragnval Andreassen",
-            "f": 1891,
-            "f_raa": "1891-03-13",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000509"
-          },
-          {
-            "navn": "Runge Andreassen",
-            "f": 1893,
-            "f_raa": "1893-06-07",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000510"
-          },
-          {
-            "navn": "Harald Andreassen",
-            "f": 1894,
-            "f_raa": "1894-12-22",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000511"
-          },
-          {
-            "navn": "Hilding Andreassen",
-            "f": 1896,
-            "f_raa": "1896-06-15",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000512"
-          },
-          {
-            "navn": "Karen Andreassen",
-            "f": 1898,
-            "f_raa": "1898-06-12",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "d",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000513"
-          },
-          {
-            "navn": "Karsten Andreassen",
-            "f": 1900,
-            "f_raa": "1900-04-06",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000514"
-          },
-          {
-            "navn": "Hans Mortensen",
-            "f": 1823,
-            "f_raa": "1823-10-28",
-            "kj": "m",
-            "kj_kilde": "fornavn",
-            "fodested": "Trøgstad Sm",
-            "bostatus": "b",
-            "stilling": "fl",
-            "sivilstand": "e",
-            "yrke": "er hos Svigersønnen",
-            "person_id": "pf01036993000515"
-          },
-          {
-            "navn": "Karen Mortensen",
-            "f": 1860,
-            "f_raa": "1860-01-26",
-            "kj": "k",
-            "kj_kilde": "fornavn",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "fl",
-            "sivilstand": "ug",
-            "yrke": "er til hjelp i huset",
-            "person_id": "pf01036993000516"
-          }
-        ]
-      },
-      {
-        "leilighet_id": "lf01036993000122",
-        "beboere": [
-          {
-            "navn": "Vilhelm Gundersen",
-            "f": 1868,
-            "f_raa": "1868-08-15",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "hf",
-            "sivilstand": "g",
-            "yrke": "Arbeidsman",
-            "person_id": "pf01036993000517"
-          },
-          {
-            "navn": "Marie Gundersen",
-            "f": 1869,
-            "f_raa": "1869-04-03",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "hm",
-            "sivilstand": "g",
-            "yrke": null,
-            "person_id": "pf01036993000518"
-          },
-          {
-            "navn": "Rolf Villy Gundersen",
-            "f": 1900,
-            "f_raa": "1900-01-20",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000519"
-          }
-        ]
-      },
-      {
-        "leilighet_id": "lf01036993000123",
-        "beboere": [
-          {
-            "navn": "Wictor  Tidholm",
-            "f": 1874,
-            "f_raa": "1874",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Uddevalla, Sverige",
-            "bostatus": "b",
-            "stilling": "hf",
-            "sivilstand": "g",
-            "yrke": "Skreddersvend",
-            "person_id": "pf01036993000520"
-          },
-          {
-            "navn": "Elvira  Tidholm",
-            "f": 1856,
-            "f_raa": "1856",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Dalsland, Sverige",
-            "bostatus": "b",
-            "stilling": "hm",
-            "sivilstand": "g",
-            "yrke": null,
-            "person_id": "pf01036993000521"
-          },
-          {
-            "navn": "Edith Elvira Wictoria  Tidholm*",
-            "f": 1894,
-            "f_raa": "1894",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "d",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000522"
-          },
-          {
-            "navn": "Mary Alida Eleonora  Tidholm*",
-            "f": 1896,
-            "f_raa": "1896",
-            "kj": "k",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "d",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000523"
-          },
-          {
-            "navn": "John Ivan Alexander  Tidholm*",
-            "f": 1898,
-            "f_raa": "1898",
-            "kj": "m",
-            "kj_kilde": "stilling",
-            "fodested": "Fredrikshald kjøpstad*",
-            "bostatus": "b",
-            "stilling": "s",
-            "sivilstand": "ug",
-            "yrke": null,
-            "person_id": "pf01036993000524"
-          }
-        ]
-      }
-    ]
-  },
   "24": {
     "kilde": "gf01036993000023",
     "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000023",
@@ -16290,5 +15964,1989 @@
       }
     ],
     "hentet": "2026-08-13"
+  },
+  "fest37": {
+    "kilde": "gf01036993000146",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000146",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Herman  Anker",
+            "f": "1840",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Major i Intendanturkorpset"
+          },
+          {
+            "navn": "Alice  Anker",
+            "f": "1852",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Gøteborg",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null
+          },
+          {
+            "navn": "Beate  Anker",
+            "f": "1878",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Lærerinde ved Pigeskole"
+          },
+          {
+            "navn": "Ellen  Anker",
+            "f": "1880",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Amy  Anker",
+            "f": "1882",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Alice  Anker",
+            "f": "1885",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Harriet  Anker",
+            "f": "1887",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Christiania",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Herman  Anker",
+            "f": "1890",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Brynjolf  Wesenberg",
+            "f": "1875",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Bergen",
+            "bostatus": "f",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "Premierløjtnant i Intendanturkorpset"
+          },
+          {
+            "navn": "Emma  Rapp",
+            "f": "1874",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Ed socken Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": null
+          },
+          {
+            "navn": "Christine Pettersen",
+            "f": "1879",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Ed socken Sverige",
+            "bostatus": "b",
+            "stilling": "tj",
+            "sivilstand": "ug",
+            "yrke": null
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": "Bryggerhus, Strygeværelse, Fjøs, Stald, Vedboder",
+    "etasjer": "2",
+    "matrikkel": null
+  },
+  "fest38": {
+    "kilde": "gf01036993000147",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000147",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Anders Hansen",
+            "f": "1820",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Id Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "e",
+            "yrke": "Opsynsmand i Fr.stens Fæstning"
+          },
+          {
+            "navn": "Sofie Hansen",
+            "f": "1850",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": null,
+    "etasjer": "1",
+    "matrikkel": null
+  },
+  "fest39": {
+    "kilde": "gf01036993000148",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000148",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Ole Hansen",
+            "f": "1856",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Eidsberg Sm",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Korporal og Skomager"
+          },
+          {
+            "navn": "Bolette Hansen",
+            "f": "1859",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Rygge Sm",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": "Hustru"
+          },
+          {
+            "navn": "Aagot Tony Hansen",
+            "f": "1886",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Heny Hansen",
+            "f": "1888",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": "Datter"
+          },
+          {
+            "navn": "Helge Hansen",
+            "f": "1892",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn"
+          },
+          {
+            "navn": "Bjarne Hansen",
+            "f": "1897",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn"
+          },
+          {
+            "navn": "Thorleif Hansen",
+            "f": "1900-10-27",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Søn",
+            "f_raa": "1900-10-27"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": null,
+    "etasjer": "1",
+    "matrikkel": null
+  },
+  "fest40": {
+    "kilde": "gf01036993000149",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000149",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Elise Johannesen",
+            "f": "1837",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "e",
+            "yrke": "Vaskekone mv"
+          },
+          {
+            "navn": "Johan Oskar Johannesen",
+            "f": "1874",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "t Fr.hald",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": "Postfuldmægtig"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vaaningshus",
+    "sidebygninger": null,
+    "etasjer": "2",
+    "matrikkel": null
+  },
+  "fest41": {
+    "kilde": "gf01036993000150",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000150",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Ole  Vold",
+            "f": "1876",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Raade Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Otto  Mørk",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Haabøl Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Olaf  Karlstad",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Haabøl Sml",
+            "bostatus": "f",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Ole  Grydeland",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Haabøl Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Lorentcs Pettersen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Sarpsborg Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Olof  Kålstad",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Krogstad Ak",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Johannes  Buer",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rakkestad Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          },
+          {
+            "navn": "Andreas  Alsrød",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Berg Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Artillerist"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vaaningshus 1ste Etg til Opbevaringsrum",
+    "sidebygninger": null,
+    "etasjer": "2",
+    "matrikkel": null
+  },
+  "fest42": {
+    "kilde": "gf01036993000151",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000151",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Ludvig  Gerner",
+            "f": "1872",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Moss Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Premierløitnant"
+          },
+          {
+            "navn": "Arne  Grøntvedt",
+            "f": "1873",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Kristiansand S Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Premierløitnant"
+          },
+          {
+            "navn": "Erik  Rustad",
+            "f": "1855",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aamot Hed",
+            "bostatus": "mt",
+            "stilling": "Ugehavende underofficer hf",
+            "sivilstand": "g",
+            "yrke": "Sergent"
+          },
+          {
+            "navn": "Hans  Ødegaard",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lom Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Even  Hammer",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Hans  Haugen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "N. Fron Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Arnt  Vaaler",
+            "f": "1875",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Eidsskog Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Johannes  Trandem",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Trøgstad Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Jacob  Rognhaug",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Ole  Bøe",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lom Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Kristian  Rud",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rakkestad Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Peder  Skotte",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lesje Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Martin  Traaseth",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Gustav  Lien",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Fron Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Peder  Mork",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Nes på Romerike Ak",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Peder  Lekvold",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vestby Ak",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olav Nilsen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aamot Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Nils  Nyhus",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lom Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Oluf  Steinum",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Sigurd  Sæther",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Marius  Moseng",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tolgen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ingulf  Os",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tolgen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Karl  Moe",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Trysil Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Karl  Torp",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vinger Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Karl  Viken",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Myhre",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Anders  Holth",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aremark Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Hagen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Ringsaker Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Peder  Eggen",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lilleelvedalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Nils  Melleby",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rakkestad Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Johannes  Bye",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rakkestad Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole Aasen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Jerpsjø i Gefleborgs län, Sverige",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Erik  Grue",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tolgen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Johan  Vestbye",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Glemminge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Vister",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Glemminge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Bolstad",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lyster NB",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Fredrik  Havig",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Ringsaker Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Just  Glemminge",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Glemminge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Braathen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Skjeberg Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Otto  Østhaug",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aasnæs Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Albert  Bæk",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaaler i Solør Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Karl  Øby",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Borge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Karl  Botne",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Hvaløerne Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Aksel  Hauge",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Thune Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Nicolai  Viken",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aamot Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Heie",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Borge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ingebret  Husum",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Porsgrund Brb",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Hartvig Haagensen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Skjeberg Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Haakon  Stenseng",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Ringsaker Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Petter  Billet",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Glemminge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Kaserne",
+    "sidebygninger": "1 kul & vedbod og 1 privet",
+    "etasjer": "2",
+    "matrikkel": null
+  },
+  "fest43": {
+    "kilde": "gf01036993000152",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000152",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Alfred  Zimmer",
+            "f": "1873",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "f",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Premierløitnant (stadig tjenestgjørende)"
+          },
+          {
+            "navn": "Syver  Ultvedt",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Eidsberg Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Sigurd  Ringen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Kristian  Alm",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Stange Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Ariel  Rud",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Korporal"
+          },
+          {
+            "navn": "Aksel  Opstad",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tune Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Martin  Løken",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Øier Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Kristian  Oustad",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Anton  Lien",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Ø. Gausdal Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Andreas  Roland",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Adolf  Skarderud",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaaler, Solør Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Hans  Lysfjord",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Bindalen Nor",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Næss",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Brandvold Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Magnus  Hoel",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaaler, Solør Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ivar  Sveen",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaage Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Johannes  Kraabøl",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Øier Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Kristian  Haug",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Bendik  Bøe",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Førde NB",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Fredrik  Kløvstad",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Birid Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Børli",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Kvikne Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Gunder  Høiby",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Elverum Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Hagen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Elverum Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Skjenna",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaage Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Botolf  Smørbøl",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aasnæs Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Andreas  Moen",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lillehammer Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Talberg",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Borge Sml",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Bernt  Svartnæs",
+            "f": "1882",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Stange Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Ole  Ransted",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Ringbu Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Martin  Sørsaas",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Aasnæs Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Mentz  Rustad",
+            "f": "1878",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vinger Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Amund  Brun",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "V. Gausdal Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Østby",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Trysil Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Peter  Lønrusten",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rendalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Knud  Røe",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tolgen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Josef  Fjeld",
+            "f": "1876",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Grue Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olav  Lintorp",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Grue Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Martin  Kvernstuen",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rendalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Peder  Husum",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lille-Elvedalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Nyberg",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Øier Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Erik  Bjørklund",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Nils Antonsen",
+            "f": "1876",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Borge Sml",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          },
+          {
+            "navn": "Peter  Grav",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Rødnæs Sml",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          },
+          {
+            "navn": "Alf  Søvig",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          },
+          {
+            "navn": "Helmer  Venstad",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Elverum Hed",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          },
+          {
+            "navn": "Magnus  Mostu",
+            "f": "1883",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Elverum Hed",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          },
+          {
+            "navn": "Gudbrand  Opjordsmoen",
+            "f": "1865",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Faaberg Krs",
+            "bostatus": "mt",
+            "stilling": "fl hf",
+            "sivilstand": "g",
+            "yrke": "Fastlønnet hornblæserkorporal, Jordbruger"
+          },
+          {
+            "navn": "Emil  Linde",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "N. Fron Krs",
+            "bostatus": "mt",
+            "stilling": "fl s",
+            "sivilstand": "ug",
+            "yrke": "Fastlønnet hornblæser, Gaardsarbeider hos Faderen"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Kaserne",
+    "sidebygninger": "1 kul & vedbod",
+    "etasjer": null,
+    "matrikkel": null
+  },
+  "fest44": {
+    "kilde": "gf01036993000153",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000153",
+    "husstander": [
+      {
+        "beboere": [
+          {
+            "navn": "Kasper  Billerud",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Eidskogen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "John  Bakhaug",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Tønset Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Evald Jensen",
+            "f": "1876",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lillehammer Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Holter",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "S. Odalen Hed",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Even  Stormorken",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "N. Fron Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Olaf  Volden",
+            "f": "1881",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "N. Fron Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Kristoffer  Krokrud",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lesje Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Syver  Enebo",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Lesje Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Oluf  Næperud",
+            "f": "1877",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Birid Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Hans  Amundstad",
+            "f": "1879",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Vaage Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          },
+          {
+            "navn": "Arne  Næverdal",
+            "f": "1880",
+            "kj": "m",
+            "kj_kilde": "yrke",
+            "fodested": "Kvikne Krs",
+            "bostatus": "b",
+            "stilling": null,
+            "sivilstand": "ug",
+            "yrke": "Underofficerselev"
+          }
+        ]
+      }
+    ],
+    "hentet": "2026-08-13",
+    "adresse_historisk": "Fæstningen",
+    "gardens_nummer_raa": null,
+    "hustype": "Vagtbygning",
+    "sidebygninger": "n",
+    "etasjer": "2",
+    "matrikkel": null
+  },
+  "9": {
+    "kilde": "gf01036993000041",
+    "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000041",
+    "hentet": "2026-08-13",
+    "husstander": [
+      {
+        "leilighet_id": "lf01036993000120",
+        "beboere": [
+          {
+            "navn": "Andreas Ahlsen",
+            "f": 1868,
+            "f_raa": "1868-02-06",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Berg Sogn Smaalenene",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skibstømmermand",
+            "person_id": "pf01036993000502"
+          },
+          {
+            "navn": "Hanna Ahlsen",
+            "f": 1869,
+            "f_raa": "1869-08-08",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993000503"
+          },
+          {
+            "navn": "Astri Gunvor Ahlsen",
+            "f": 1897,
+            "f_raa": "1897-12-15",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000504"
+          },
+          {
+            "navn": "Borghild Ahlsen",
+            "f": 1900,
+            "f_raa": "1900-01-01",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000505"
+          },
+          {
+            "navn": "Gusta Christoffersen",
+            "f": 1878,
+            "f_raa": "1878-12-01",
+            "kj": "k",
+            "kj_kilde": "fornavn",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "Tjenestepige",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000506"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993000121",
+        "beboere": [
+          {
+            "navn": "Karl Andreassen",
+            "f": 1865,
+            "f_raa": "1865-01-31",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikstad",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Høvlmester",
+            "person_id": "pf01036993000507"
+          },
+          {
+            "navn": "Hilda Andreassen",
+            "f": 1868,
+            "f_raa": "1868-03-06",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993000508"
+          },
+          {
+            "navn": "Karl Ragnval Andreassen",
+            "f": 1891,
+            "f_raa": "1891-03-13",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000509"
+          },
+          {
+            "navn": "Runge Andreassen",
+            "f": 1893,
+            "f_raa": "1893-06-07",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000510"
+          },
+          {
+            "navn": "Harald Andreassen",
+            "f": 1894,
+            "f_raa": "1894-12-22",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000511"
+          },
+          {
+            "navn": "Hilding Andreassen",
+            "f": 1896,
+            "f_raa": "1896-06-15",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000512"
+          },
+          {
+            "navn": "Karen Andreassen",
+            "f": 1898,
+            "f_raa": "1898-06-12",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000513"
+          },
+          {
+            "navn": "Karsten Andreassen",
+            "f": 1900,
+            "f_raa": "1900-04-06",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000514"
+          },
+          {
+            "navn": "Hans Mortensen",
+            "f": 1823,
+            "f_raa": "1823-10-28",
+            "kj": "m",
+            "kj_kilde": "fornavn",
+            "fodested": "Trøgstad Sm",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "e",
+            "yrke": "er hos Svigersønnen",
+            "person_id": "pf01036993000515"
+          },
+          {
+            "navn": "Karen Mortensen",
+            "f": 1860,
+            "f_raa": "1860-01-26",
+            "kj": "k",
+            "kj_kilde": "fornavn",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "fl",
+            "sivilstand": "ug",
+            "yrke": "er til hjelp i huset",
+            "person_id": "pf01036993000516"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993000122",
+        "beboere": [
+          {
+            "navn": "Vilhelm Gundersen",
+            "f": 1868,
+            "f_raa": "1868-08-15",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Arbeidsman",
+            "person_id": "pf01036993000517"
+          },
+          {
+            "navn": "Marie Gundersen",
+            "f": 1869,
+            "f_raa": "1869-04-03",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993000518"
+          },
+          {
+            "navn": "Rolf Villy Gundersen",
+            "f": 1900,
+            "f_raa": "1900-01-20",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000519"
+          }
+        ]
+      },
+      {
+        "leilighet_id": "lf01036993000123",
+        "beboere": [
+          {
+            "navn": "Wictor  Tidholm",
+            "f": 1874,
+            "f_raa": "1874",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Uddevalla, Sverige",
+            "bostatus": "b",
+            "stilling": "hf",
+            "sivilstand": "g",
+            "yrke": "Skreddersvend",
+            "person_id": "pf01036993000520"
+          },
+          {
+            "navn": "Elvira  Tidholm",
+            "f": 1856,
+            "f_raa": "1856",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Dalsland, Sverige",
+            "bostatus": "b",
+            "stilling": "hm",
+            "sivilstand": "g",
+            "yrke": null,
+            "person_id": "pf01036993000521"
+          },
+          {
+            "navn": "Edith Elvira Wictoria  Tidholm*",
+            "f": 1894,
+            "f_raa": "1894",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000522"
+          },
+          {
+            "navn": "Mary Alida Eleonora  Tidholm*",
+            "f": 1896,
+            "f_raa": "1896",
+            "kj": "k",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "d",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000523"
+          },
+          {
+            "navn": "John Ivan Alexander  Tidholm*",
+            "f": 1898,
+            "f_raa": "1898",
+            "kj": "m",
+            "kj_kilde": "stilling",
+            "fodested": "Fredrikshald kjøpstad*",
+            "bostatus": "b",
+            "stilling": "s",
+            "sivilstand": "ug",
+            "yrke": null,
+            "person_id": "pf01036993000524"
+          }
+        ]
+      }
+    ],
+    "advarsler": [
+      "Sensustaker noterte 303a1, men bygningen står på 303a3 (parsell 9). Korrigert manuelt."
+    ]
   }
 }
