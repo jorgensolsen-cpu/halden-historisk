@@ -702,12 +702,11 @@ function vis(p){
       <div class="tab-inner">${beboereInnhold}</div>
     </div>
     <div class="tab-content${startTab==='eiendom'?' active':''}" data-content="eiendom">
-      <div class="tab-inner">${eiendomFelter}</div>
+      <div class="tab-inner">${eiendomFelter}${adminEditor(p)}</div>
     </div>
     <div class="tab-content" data-content="bygninger">
       <div class="tab-inner">${bygningerInnhold}</div>
-    </div>
-    ${adminEditor(p)}`;
+    </div>`;
 
   /* === KILDE-FOOTER === */
   const emne = encodeURIComponent('Rettelse: ' + p.id + (e.adresse ? ' (' + e.adresse + ')' : ''));
