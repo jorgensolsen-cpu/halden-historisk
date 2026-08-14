@@ -893,8 +893,8 @@ async function start(){
         l.setStyle(valgt); settCasing(l); forrige = l; vis(p);
         history.replaceState(null, '', '#lnr=' + p.id);
       });
-      l.on('mouseover', () => { if (l !== forrige) l.setStyle({fillOpacity:.32}); });
-      l.on('mouseout',  () => { if (l !== forrige) l.setStyle(stil); });
+      l.on('mouseover', () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')) l.setStyle({fillOpacity:.32}); });
+      l.on('mouseout',  () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')) l.setStyle(stil); });
       const e = eiendommer[p.id] || {};
       const ft = e.folketelling_meta || {};
       const mat = e.matrikkel_1901 || {};
