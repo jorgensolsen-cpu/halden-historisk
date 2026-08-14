@@ -214,24 +214,7 @@
   .anmerkning{margin-top:16px;padding:12px 14px;background:rgba(239,231,214,.05);border-radius:4px;
               font-size:12.5px;line-height:1.55;color:var(--paper-dim);font-style:italic}
 
-  /* === BYGNINGER-fane === */
-  .bygg-hero{display:flex;gap:16px;align-items:flex-start;margin-bottom:18px}
-  .bygg-ikon{width:48px;height:48px;border-radius:4px;background:var(--panel-2);
-             display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .bygg-ikon svg{width:28px;height:28px;color:var(--signal-2)}
-  .bygg-tekst{flex:1}
-  .bygg-type{font-family:Fraunces,serif;font-size:17px;line-height:1.2;margin-bottom:4px}
-  .bygg-detalj{font-size:12.5px;color:var(--paper-dim);line-height:1.5}
-
-  .bygg-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
-  .bygg-kort{background:var(--panel-2);border-radius:4px;padding:12px 14px}
-  .bygg-kort-verdi{font-family:Fraunces,serif;font-size:20px;line-height:1;margin-bottom:4px;color:var(--paper)}
-  .bygg-kort-etikett{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--paper-dim)}
-
-  .bilde-placeholder{width:100%;aspect-ratio:16/10;border-radius:4px;background:var(--panel-2);
-                      display:flex;align-items:center;justify-content:center;margin-top:4px}
-  .bilde-placeholder span{font-size:12px;color:#6f7780}
-
+  /* === HISTORIE-fane === */
   figure{margin:0 0 14px}
   figure img{width:100%;display:block;border-radius:4px}
   figcaption{font-size:11px;color:#6f7780;margin-top:6px;line-height:1.5}
@@ -649,34 +632,26 @@ function byggEiendomFane(e, p, mat, ft, byg){
     </div>`;
   }
 
+  /* Bygningsinfo */
+  const bygFelter = [
+    byg.hustype ? ['Type', byg.hustype] : null,
+    byg.etasjer ? ['Etasjer', byg.etasjer] : null,
+    byg.leiligheter ? ['Leiligheter', byg.leiligheter] : null,
+    byg.sidebygninger ? ['Sidebygninger', byg.sidebygninger] : null
+  ].filter(Boolean);
+  if (bygFelter.length) {
+    html += `<div class="felt-gruppe" style="margin-top:20px"><div class="gruppe-tittel">Bygning <span style="text-transform:none;letter-spacing:0;font-weight:400;opacity:.7">(folketelling 1900)</span></div>
+      ${bygFelter.map(f => `<div class="felt"><span class="felt-etikett">${f[0]}</span><span class="felt-verdi">${f[1]}</span></div>`).join('')}
+    </div>`;
+  }
+
   return html || '<p class="ingen-beboere">Ingen eiendomsdata registrert.</p>';
 }
 
-const HUS_IKON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>';
-
-function byggBygningerFane(e, byg){
+function byggHistorieFane(e, p, byg){
   let html = '';
 
-  if (byg.hustype || byg.etasjer || byg.leiligheter || byg.sidebygninger) {
-    html += `<div class="bygg-hero">
-      <div class="bygg-ikon">${HUS_IKON}</div>
-      <div class="bygg-tekst">
-        <div class="bygg-type">${byg.hustype || 'Bygning'}</div>
-        ${byg.sidebygninger ? `<div class="bygg-detalj">${byg.sidebygninger}</div>` : ''}
-      </div>
-    </div>`;
-
-    const kort = [
-      byg.etasjer ? ['Etasjer', byg.etasjer] : null,
-      byg.leiligheter ? ['Leiligheter', byg.leiligheter] : null
-    ].filter(Boolean);
-    if (kort.length) {
-      html += `<div class="bygg-grid">
-        ${kort.map(k => `<div class="bygg-kort"><div class="bygg-kort-verdi">${k[1]}</div><div class="bygg-kort-etikett">${k[0]}</div></div>`).join('')}
-      </div>`;
-    }
-  }
-
+  /* Bilder */
   if (e.bilder && e.bilder.length) {
     html += e.bilder.map(b => `
       <figure>
@@ -685,15 +660,30 @@ function byggBygningerFane(e, byg){
           [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
         }${b.beskrivelse ? ', ' + b.beskrivelse : ''}</figcaption>` : ''}
       </figure>`).join('');
-  } else {
-    html += '<div class="bilde-placeholder"><span>Ingen bilder ennå</span></div>';
   }
 
+  /* Historie-tekst */
   if (e.historie) {
-    html += `<div class="historie">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>`;
+    html += `<div class="historie" style="margin-top:0;border-top:none;padding-top:0">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>`;
   }
 
-  return html || '<p class="ingen-beboere">Ingen bygningsdata registrert.</p>';
+  /* Lenker */
+  const d = beboere[p.id];
+  const lenker = [];
+  if (d && d.kilde_url) lenker.push({label:'Folketelling 1900 på Digitalarkivet', url:d.kilde_url});
+  if (e.lenker && e.lenker.length) e.lenker.forEach(l => lenker.push(l));
+
+  if (lenker.length) {
+    html += `<div class="felt-gruppe" style="margin-top:${html ? '20' : '0'}px"><div class="gruppe-tittel">Lenker</div>
+      ${lenker.map(l => `<div class="felt"><a href="${l.url}" target="_blank" rel="noopener" style="color:var(--signal-2);font-size:13px;text-decoration:none;text-decoration-style:dotted;text-underline-offset:2px">${l.label}</a></div>`).join('')}
+    </div>`;
+  }
+
+  if (!html) {
+    html = '<p class="ingen-beboere">Ingen historie, bilder eller lenker lagt til ennå.</p>';
+  }
+
+  return html;
 }
 
 /* ---- Hovedvisning ---- */
@@ -740,7 +730,7 @@ function vis(p){
     <div class="tabs">
       <div class="tab${startTab==='beboere'?' active':''}" data-tab="beboere">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</div>
       <div class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom">Eiendom</div>
-      <div class="tab${startTab==='bygninger'?' active':''}" data-tab="bygninger">Bygninger</div>
+      <div class="tab${startTab==='historie'?' active':''}" data-tab="historie">Historie</div>
     </div>`;
 
   /* Fane-innhold */
@@ -752,8 +742,8 @@ function vis(p){
     <div class="tab-content${startTab==='eiendom'?' active':''}" data-content="eiendom">
       <div class="tab-inner">${byggEiendomFane(e, p, mat, ft, byg)}${adminEditor(p)}</div>
     </div>
-    <div class="tab-content${startTab==='bygninger'?' active':''}" data-content="bygninger">
-      <div class="tab-inner">${byggBygningerFane(e, byg)}</div>
+    <div class="tab-content${startTab==='historie'?' active':''}" data-content="historie">
+      <div class="tab-inner">${byggHistorieFane(e, p, byg)}</div>
     </div>`;
 
   /* Kilde-footer */
