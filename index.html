@@ -96,6 +96,17 @@
   .kf-farge{width:14px;height:10px;border-radius:2px;flex-shrink:0}
   .kf-strek{width:14px;height:0;border-top:1.5px dashed var(--paper-dim);flex-shrink:0}
 
+  /* Bilde-toggle i kontrollpanel */
+  .bilde-toggle{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);
+    display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+  .bilde-toggle input{accent-color:var(--signal-2);cursor:pointer;margin:0}
+  .bilde-toggle span{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--paper-dim)}
+  .bilde-marker{display:flex;align-items:center;justify-content:center;
+    width:22px;height:22px;border-radius:50%;
+    background:rgba(224,163,60,.85);border:2px solid #fff;
+    box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer}
+  .bilde-marker svg{width:12px;height:12px;fill:#fff}
+
   /* ===========================
      SIDEBAR
      =========================== */
@@ -215,6 +226,11 @@
               font-size:12.5px;line-height:1.55;color:var(--paper-dim);font-style:italic}
 
   /* === HISTORIE-fane === */
+  figure.hist-bilde{margin:0 0 14px}
+  figure.hist-bilde a{display:block;text-decoration:none}
+  figure.hist-bilde img{width:100%;display:block;border-radius:4px;transition:opacity .15s}
+  figure.hist-bilde a:hover img{opacity:.85}
+  figure.hist-bilde figcaption{font-size:11px;color:#6f7780;margin-top:6px;line-height:1.5}
   figure{margin:0 0 14px}
   figure img{width:100%;display:block;border-radius:4px}
   figcaption{font-size:11px;color:#6f7780;margin-top:6px;line-height:1.5}
@@ -398,6 +414,10 @@
         <div class="kartforklaring-rad"><span class="kf-strek"></span> Planlagt vei</div>
         <div class="kartforklaring-rad"><span class="kf-strek" style="border-top:2.5px dashed var(--paper-dim);border-image:repeating-linear-gradient(90deg,var(--paper-dim) 0 8px,transparent 8px 11px,var(--paper-dim) 11px 14px,transparent 14px 17px) 1"></span> Bygrense</div>
       </div>
+      <label class="bilde-toggle">
+        <input type="checkbox" id="visBilder">
+        <span>Vis bilder</span>
+      </label>
     </div>
   </div>
 
@@ -653,13 +673,19 @@ function byggHistorieFane(e, p, byg){
 
   /* Bilder */
   if (e.bilder && e.bilder.length) {
-    html += e.bilder.map(b => `
-      <figure>
-        <img src="${b.fil}" alt="${e.navn || e.adresse || ''}" loading="lazy">
-        ${(b.kreditering || b.rettigheter) ? `<figcaption>${
-          [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
-        }${b.beskrivelse ? ', ' + b.beskrivelse : ''}</figcaption>` : ''}
-      </figure>`).join('');
+    html += e.bilder.map(b => {
+      const imgSrc = b.thumbnail || b.fil;
+      const linkUrl = b.dimu_url || b.fil;
+      const isExternal = !!b.dimu_url;
+      const kredLine = [b.kreditering, b.rettigheter].filter(Boolean).join(' · ');
+      return `
+      <figure class="hist-bilde">
+        <a href="${linkUrl}" target="_blank" rel="noopener"${isExternal ? ' title="Åpne i DigitaltMuseum"' : ''}>
+          <img src="${imgSrc}" alt="${b.beskrivelse || e.navn || ''}" loading="lazy">
+        </a>
+        ${(kredLine || b.beskrivelse) ? `<figcaption>${b.beskrivelse ? b.beskrivelse + '<br>' : ''}${kredLine}${isExternal ? ' · <a href="' + linkUrl + '" target="_blank" rel="noopener" style="color:var(--signal-2)">DigitaltMuseum</a>' : ''}</figcaption>` : ''}
+      </figure>`;
+    }).join('');
   }
 
   /* Historie-tekst */
@@ -675,7 +701,7 @@ function byggHistorieFane(e, p, byg){
 
   if (lenker.length) {
     html += `<div class="felt-gruppe" style="margin-top:${html ? '20' : '0'}px"><div class="gruppe-tittel">Lenker</div>
-      ${lenker.map(l => `<div class="felt"><a href="${l.url}" target="_blank" rel="noopener" style="color:var(--signal-2);font-size:13px;text-decoration:none;text-decoration-style:dotted;text-underline-offset:2px">${l.label}</a></div>`).join('')}
+      ${lenker.map(l => `<div class="felt"><a href="${l.url}" target="_blank" rel="noopener" style="color:var(--signal-2);font-size:13px;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px">${l.label}</a></div>`).join('')}
     </div>`;
   }
 
@@ -777,6 +803,13 @@ const treff  = {color:'#15181c',weight:2.2,opacity:1,fillColor:'#e0a33c',fillOpa
 const eierHL = {color:'#c2452d',weight:2.4,opacity:1,fillColor:'#c2452d',fillOpacity:.25};
 let forrige = null, lag = null, aktivFane = null;
 let eierFilter = null;
+let bildeMarkorer = [];
+const KAMERA_IKON = L.divIcon({
+  className:'',
+  html:'<div class="bilde-marker"><svg viewBox="0 0 16 16"><path d="M2 4a1 1 0 00-1 1v7a1 1 0 001 1h12a1 1 0 001-1V5a1 1 0 00-1-1h-2.4l-.8-1.6A1 1 0 0010 3H6a1 1 0 00-.8.4L4.4 4H2zm6 7.5a3 3 0 110-6 3 3 0 010 6z"/></svg></div>',
+  iconSize:[22,22],
+  iconAnchor:[11,11]
+});
 
 function markerEier(eierNavn){
   if (!lag || !eierNavn) return;
@@ -866,6 +899,31 @@ async function start(){
   map.setMaxBounds(bounds);
   map.setView([59.1233, 11.3877], 18);
 }
+
+/* ---- Bilde-markører ---- */
+function visBildeMarkorer(){
+  fjernBildeMarkorer();
+  if (!lag) return;
+  lag.eachLayer(l => {
+    const id = l.feature && l.feature.properties.id;
+    const e = eiendommer[id] || {};
+    if (e.bilder && e.bilder.length) {
+      const center = l.getBounds().getCenter();
+      const m = L.marker(center, {icon: KAMERA_IKON, interactive: true});
+      m.on('click', () => l.fire('click'));
+      m.addTo(map);
+      bildeMarkorer.push(m);
+    }
+  });
+}
+function fjernBildeMarkorer(){
+  bildeMarkorer.forEach(m => map.removeLayer(m));
+  bildeMarkorer = [];
+}
+document.getElementById('visBilder').addEventListener('change', e => {
+  if (e.target.checked) visBildeMarkorer();
+  else fjernBildeMarkorer();
+});
 
 document.getElementById('sok').addEventListener('input', e => {
   if (!lag) return;

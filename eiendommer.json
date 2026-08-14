@@ -650,10 +650,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBo?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBo?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Nyveien (Rødsveien), 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "tittel": "Nyveien, Fredrikshald — DigitaltMuseum",
+        "type": "fotografi"
+      }
+    ]
   },
   "324": {
     "navn": null,
@@ -713,10 +728,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00129_NB_NS_000337F/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00129_NB_NS_000337F/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt over Fredrikshald, lastetomtene, 1899",
+        "nb_url": "https://www.nb.no/items/1337a06cf832131b663902b63646f195"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1337a06cf832131b663902b63646f195",
+        "tittel": "Oversikt over Fredrikshald, lastetomtene, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "327": {
     "navn": null,
@@ -944,10 +974,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fiskebryggen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915479"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen og Broen fra Fiskebryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210114110968"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915479",
+        "label": "Fiskebryggen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210114110968",
+        "label": "Fæstningen og Broen fra Fiskebryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "339": {
     "navn": null,
@@ -975,10 +1033,38 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fiskebryggen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915479"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen og Broen fra Fiskebryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210114110968"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915479",
+        "label": "Fiskebryggen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210114110968",
+        "label": "Fæstningen og Broen fra Fiskebryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "340": {
     "navn": null,
@@ -2294,10 +2380,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "400": {
     "navn": null,
@@ -2315,10 +2416,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "401": {
     "navn": null,
@@ -2336,10 +2452,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "402": {
     "navn": null,
@@ -2357,10 +2488,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "403": {
     "navn": null,
@@ -2378,10 +2524,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "404": {
     "navn": null,
@@ -2399,10 +2560,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "405": {
     "navn": null,
@@ -2420,10 +2596,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "406": {
     "navn": null,
@@ -2483,10 +2674,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20200924_00272_NB_RA_M1_B009_0016/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20200924_00272_NB_RA_M1_B009_0016/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gamle Teater, Halden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/47590635058382d740e21390cce3f278"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/47590635058382d740e21390cce3f278",
+        "tittel": "Gamle Teater, Halden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "409": {
     "navn": null,
@@ -2672,10 +2878,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "434": {
     "navn": null,
@@ -2882,10 +3103,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00128_NB_NS_000337E/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899",
+        "nb_url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/9644244e2892c422d1086446aa5cfaae",
+        "tittel": "Oversikt fra Rødsfjellet, Repslagergata synlig, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "446": {
     "navn": "Missionhuset",
@@ -3102,10 +3338,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "469": {
     "navn": "Wielgården",
@@ -3133,10 +3384,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "470": {
     "navn": null,
@@ -3164,10 +3430,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "471": {
     "navn": null,
@@ -3185,10 +3466,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "472": {
     "navn": null,
@@ -3216,10 +3512,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "473": {
     "navn": null,
@@ -3245,10 +3556,25 @@
       "gardens_nummer_raa": "449",
       "krets": "010a"
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "474": {
     "navn": null,
@@ -3276,10 +3602,38 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20231124_00035_NB_NS_000293A/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20231124_00035_NB_NS_000293A/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Grosserer Riddervolds butikk, Storgaden, 1899",
+        "nb_url": "https://www.nb.no/items/69a2273d06adb95dbab7dbbbd5b259bb"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/69a2273d06adb95dbab7dbbbd5b259bb",
+        "tittel": "Grosserer Riddervolds butikk, Storgaden, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "475": {
     "navn": null,
@@ -3307,10 +3661,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "476": {
     "navn": null,
@@ -3328,10 +3697,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "477": {
     "navn": null,
@@ -3359,10 +3743,25 @@
       "krets": null,
       "eier_folketelling": null
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "479": {
     "navn": null,
@@ -3380,10 +3779,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "480": {
     "navn": null,
@@ -3401,10 +3815,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "561": {
     "navn": null,
@@ -3586,10 +4015,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20171204_00074_NB_NS_NM_05776/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20171204_00074_NB_NS_NM_05776/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1905",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Halden, ca. 1905",
+        "nb_url": "https://www.nb.no/items/4548fc2f1677287d35a5585981b4ceb5"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4548fc2f1677287d35a5585981b4ceb5",
+        "tittel": "Halden, ca. 1905 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "Fredheim": {
     "navn": "Fredheim",
@@ -6112,10 +6556,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "96": {
     "navn": null,
@@ -6154,10 +6613,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "98": {
     "navn": null,
@@ -7099,10 +7586,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "143": {
     "navn": null,
@@ -7141,10 +7656,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "145": {
     "navn": null,
@@ -7225,10 +7768,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160203_00268_NB_NS_000414B/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160203_00268_NB_NS_000414B/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Haldens Skofabrik, Ths. Stangs Gade, 1899",
+        "nb_url": "https://www.nb.no/items/c732dec180d76f95ff798ef05eaba9bd"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/c732dec180d76f95ff798ef05eaba9bd",
+        "tittel": "Haldens Skofabrik, Ths. Stangs Gade, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "149": {
     "navn": null,
@@ -7246,10 +7830,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "150": {
     "navn": null,
@@ -7267,10 +7879,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915478"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210113944637"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06832/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06832/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Halden (Borgergaden/Kirkegaden), 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/e226a5fa68ba4be89e3d1f84a3e6f743"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915478",
+        "label": "Kirkegaten, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210113944637",
+        "label": "Kirkegaten, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/e226a5fa68ba4be89e3d1f84a3e6f743",
+        "tittel": "Halden (Borgergaden/Kirkegaden), 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "151": {
     "navn": null,
@@ -7288,10 +7941,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915478"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210113944637"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915478",
+        "label": "Kirkegaten, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210113944637",
+        "label": "Kirkegaten, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "152": {
     "navn": null,
@@ -7309,10 +7990,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915478"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210113944637"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915478",
+        "label": "Kirkegaten, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210113944637",
+        "label": "Kirkegaten, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "153": {
     "navn": null,
@@ -7330,10 +8039,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915478"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE6ikU4Moq?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Kirkegaten, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210113944637"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915478",
+        "label": "Kirkegaten, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210113944637",
+        "label": "Kirkegaten, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "154": {
     "navn": null,
@@ -7435,10 +8172,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1901",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Katolske kirke fra Kirkebakken, 1901",
+        "nb_url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fra Parken med katolske kirke, 13. juni 1902",
+        "nb_url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00010_NB_NS_NM_01763/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00010_NB_NS_NM_01763/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Kirken sett fra andre siden av elven, ca. 1910",
+        "nb_url": "https://www.nb.no/items/0aadf6e7402d123500edd711fa113d8c"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910",
+        "tittel": "Katolske kirke fra Kirkebakken, 1901 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e",
+        "tittel": "Fra Parken med katolske kirke, 13. juni 1902 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/0aadf6e7402d123500edd711fa113d8c",
+        "tittel": "Kirken sett fra andre siden av elven, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "159": {
     "navn": null,
@@ -9367,10 +10145,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00018_NB_NS_NM_01771/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00018_NB_NS_NM_01771/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredrikshald jernbanestasjon og kanalen, ca. 1910",
+        "nb_url": "https://www.nb.no/items/2ecd80b21f874415bd327fad2f60a420"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/2ecd80b21f874415bd327fad2f60a420",
+        "tittel": "Fredrikshald jernbanestasjon — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "251": {
     "navn": null,
@@ -9409,10 +10202,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "253": {
     "navn": null,
@@ -9430,10 +10238,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "254": {
     "navn": null,
@@ -9451,10 +10274,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "255": {
     "navn": null,
@@ -9472,10 +10310,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "256": {
     "navn": null,
@@ -9493,10 +10346,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "257": {
     "navn": null,
@@ -9514,10 +10382,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "258": {
     "navn": null,
@@ -9535,10 +10418,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "259": {
     "navn": null,
@@ -9556,10 +10454,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "260": {
     "navn": null,
@@ -9577,10 +10490,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00017_NB_NS_NM_01770/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00017_NB_NS_NM_01770/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Torvet, Fredrikshald, ca. 1910",
+        "nb_url": "https://www.nb.no/items/468aa1e2b8288066da77569b5bfc66fd"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/468aa1e2b8288066da77569b5bfc66fd",
+        "tittel": "Torvet, Fredrikshald, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "261": {
     "navn": null,
@@ -9598,10 +10539,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/DFF-EHT0543?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/DFF-EHT0543?dimension=300x300",
+        "kreditering": "Foto: Erik Hadland Torjusen, 1880–1915",
+        "rettigheter": "CC PDM / Dalane Folkemuseum",
+        "beskrivelse": "Wiels plass med Sparebanken, brannstasjonen og rådhuset",
+        "dimu_url": "https://digitaltmuseum.no/011014458556"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/011014458556",
+        "tittel": "Wiels plass, Halden — DigitaltMuseum",
+        "type": "fotografi"
+      }
+    ]
   },
   "262": {
     "navn": null,
@@ -9619,10 +10588,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "263": {
     "navn": null,
@@ -9640,10 +10624,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "264": {
     "navn": null,
@@ -9661,10 +10686,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "265": {
     "navn": null,
@@ -9745,10 +10785,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06831/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06831/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Grand Hotel, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/81ad8c7701b0ab7013c7677bbc308f20"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/81ad8c7701b0ab7013c7677bbc308f20",
+        "tittel": "Grand Hotel, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "269": {
     "navn": null,
@@ -9766,10 +10821,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "270": {
     "navn": null,
@@ -9787,10 +10883,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "271": {
     "navn": null,
@@ -9808,10 +10919,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "272": {
     "navn": null,
@@ -9829,10 +10955,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "273": {
     "navn": null,
@@ -9850,10 +10991,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "274": {
     "navn": null,
@@ -9871,10 +11027,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "275": {
     "navn": null,
@@ -9892,10 +11063,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYG7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen fra Tolbodbryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915477"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915477",
+        "label": "Fæstningen fra Tolbodbryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "276": {
     "navn": null,
@@ -9913,10 +11099,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06827/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten fra Langbryggen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06811/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Stemning, Fæstningen, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/4455e939e78de2a784db7b2b0b2a1ab5",
+        "tittel": "Fredriksten fra Langbryggen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/bd45230b85786b0f35dd262793ef9b5b",
+        "tittel": "Stemning, Fæstningen, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "277": {
     "navn": null,
@@ -9934,10 +11161,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "278": {
     "navn": null,
@@ -9955,10 +11197,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "279": {
     "navn": null,
@@ -9976,10 +11233,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "280": {
     "navn": null,
@@ -9997,10 +11269,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "281": {
     "navn": null,
@@ -10018,10 +11305,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "282": {
     "navn": null,
@@ -10039,10 +11341,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "283": {
     "navn": null,
@@ -10060,10 +11377,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "284": {
     "navn": null,
@@ -10081,10 +11413,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "285": {
     "navn": null,
@@ -10102,10 +11449,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "286": {
     "navn": null,
@@ -10123,10 +11485,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "287": {
     "navn": null,
@@ -10144,10 +11521,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "288": {
     "navn": null,
@@ -10165,10 +11557,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "289": {
     "navn": null,
@@ -10186,10 +11593,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "290": {
     "navn": null,
@@ -10207,10 +11629,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00129_NB_NS_000337F/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20160201_00129_NB_NS_000337F/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1899",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Oversikt over Fredrikshald, lastetomtene, 1899",
+        "nb_url": "https://www.nb.no/items/1337a06cf832131b663902b63646f195"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/1337a06cf832131b663902b63646f195",
+        "tittel": "Oversikt over Fredrikshald, lastetomtene, 1899 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "291": {
     "navn": null,
@@ -10228,10 +11678,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo7?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fredriksten fra Langbryggen, 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916480"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916480",
+        "label": "Fredriksten fra Langbryggen, 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "292": {
     "navn": null,
@@ -10249,10 +11714,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "293": {
     "navn": null,
@@ -10270,10 +11750,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "294": {
     "navn": null,
@@ -10291,10 +11786,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBsko5ipo9?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Torvet, 26. mai 1907",
+        "dimu_url": "https://digitaltmuseum.no/0210111916482"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111916482",
+        "label": "Torvet, 26. mai 1907 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "295": {
     "navn": null,
@@ -10396,10 +11906,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBr?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fiskebryggen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915479"
+      },
+      {
+        "fil": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EE7EK1E74h?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Fæstningen og Broen fra Fiskebryggen, 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210114110968"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915479",
+        "label": "Fiskebryggen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://digitaltmuseum.no/0210114110968",
+        "label": "Fæstningen og Broen fra Fiskebryggen, 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "398": {
     "navn": null,
@@ -11089,10 +12627,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20170110_00197_NB_MIT_GNR_09180/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20170110_00197_NB_MIT_GNR_09180/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1900",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Nordsidens Park, ca. 1900",
+        "nb_url": "https://www.nb.no/items/4f8ce583b2bd72d9fa4b7162ced6bb06"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01271/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01271/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fra Parken med paviljongen, 13. juni 1902",
+        "nb_url": "https://www.nb.no/items/13258f992e73fd0b7c3d37bca9052ebf"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      },
+      {
+        "url": "https://www.nb.no/items/4f8ce583b2bd72d9fa4b7162ced6bb06",
+        "tittel": "Nordsidens Park, ca. 1900 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/13258f992e73fd0b7c3d37bca9052ebf",
+        "tittel": "Fra Parken med paviljongen, 13. juni 1902 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "481": {
     "navn": null,
@@ -11110,10 +12689,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "482": {
     "navn": null,
@@ -11131,10 +12725,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/019EBskgmWYBp?dimension=300x300",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "CC PDM / Norsk Folkemuseum",
+        "beskrivelse": "Storgaten fra Broen, 13. juni 1902",
+        "dimu_url": "https://digitaltmuseum.no/0210111915476"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/0210111915476",
+        "label": "Storgaten fra Broen, 13. juni 1902 (DigitaltMuseum)",
+        "type": "historisk_foto"
+      }
+    ]
   },
   "483": {
     "navn": null,
@@ -11194,10 +12803,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20170110_00155_NB_MIT_GNR_09047/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20170110_00155_NB_MIT_GNR_09047/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1900–1920 (usikkert)",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Halden (årstall usikkert, NB oppgir 1900, klesdrakten tyder på ca. 1920)",
+        "nb_url": "https://www.nb.no/items/026c036e2751f9c59173e5ecbc826074"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/026c036e2751f9c59173e5ecbc826074",
+        "tittel": "Halden, ca. 1900 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "486": {
     "navn": null,
@@ -12559,10 +14183,38 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00008_NB_NS_NM_01761/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00008_NB_NS_NM_01761/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Urtegaden/Østergade, ca. 1910",
+        "nb_url": "https://www.nb.no/items/2a83a1ee2deb7d9be61e90fef54ec6f9"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gateparti, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/2a83a1ee2deb7d9be61e90fef54ec6f9",
+        "tittel": "Urtegaden/Østergade, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63",
+        "tittel": "Gateparti, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "551": {
     "navn": null,
@@ -13031,10 +14683,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00008_NB_NS_NM_01761/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00008_NB_NS_NM_01761/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Urtegaden/Østergade, ca. 1910",
+        "nb_url": "https://www.nb.no/items/2a83a1ee2deb7d9be61e90fef54ec6f9"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/2a83a1ee2deb7d9be61e90fef54ec6f9",
+        "tittel": "Urtegaden/Østergade, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "579": {
     "navn": null,
@@ -13104,10 +14771,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gateparti, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63",
+        "tittel": "Gateparti, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "582": {
     "navn": null,
@@ -13146,10 +14828,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gateparti, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63",
+        "tittel": "Gateparti, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "584": {
     "navn": null,
@@ -13167,10 +14864,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gateparti, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63",
+        "tittel": "Gateparti, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "585": {
     "navn": null,
@@ -13209,10 +14921,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06834/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Gateparti, Fredrikshald, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/c89ecc168980487f5eca0abec8600c63",
+        "tittel": "Gateparti, Fredrikshald, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "587": {
     "navn": null,
@@ -13377,10 +15104,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06830/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_06830/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1907",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Allé på kirkegården, 26. mai 1907",
+        "nb_url": "https://www.nb.no/items/7449d7b781bb192dfdef66075271465a"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/7449d7b781bb192dfdef66075271465a",
+        "tittel": "Allé på kirkegården, 26. mai 1907 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "595": {
     "navn": null,
@@ -14700,10 +16442,51 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20180125_00086_NB_NS_NM_07143/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20180125_00086_NB_NS_NM_07143/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1900",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "P. Kolbjørnsens Park, Fredrikshald, ca. 1900",
+        "nb_url": "https://www.nb.no/items/2408a145ae72ae6cf2184a5d43c65dc9"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00015_NB_NS_NM_01768/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00015_NB_NS_NM_01768/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "P. Kolbjørnsens Park, ca. 1910",
+        "nb_url": "https://www.nb.no/items/6099963ae6d8d62f8466799de466ec51"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00014_NB_NS_NM_01767/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00014_NB_NS_NM_01767/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "P. Kolbjørnsens Park, ca. 1910",
+        "nb_url": "https://www.nb.no/items/d8aa33eed6177cc7c1977aec3ead0d55"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/2408a145ae72ae6cf2184a5d43c65dc9",
+        "tittel": "P. Kolbjørnsens Park, Fredrikshald, ca. 1900 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/6099963ae6d8d62f8466799de466ec51",
+        "tittel": "P. Kolbjørnsens Park, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/d8aa33eed6177cc7c1977aec3ead0d55",
+        "tittel": "P. Kolbjørnsens Park, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "659": {
     "navn": null,
@@ -15288,10 +17071,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "687": {
     "navn": null,
@@ -15309,10 +17107,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "688": {
     "navn": null,
@@ -15330,10 +17143,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "689": {
     "navn": null,
@@ -15351,10 +17179,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "690": {
     "navn": null,
@@ -15372,10 +17215,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "691": {
     "navn": null,
@@ -15393,10 +17251,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "692": {
     "navn": null,
@@ -15414,10 +17287,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "693": {
     "navn": null,
@@ -15456,10 +17344,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "695": {
     "navn": null,
@@ -15498,10 +17401,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "697": {
     "navn": null,
@@ -15540,10 +17458,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "699": {
     "navn": null,
@@ -15561,10 +17494,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "700": {
     "navn": null,
@@ -15582,10 +17530,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "701": {
     "navn": null,
@@ -15645,10 +17608,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "704": {
     "navn": null,
@@ -15666,10 +17644,25 @@
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00003_NB_NS_NM_01756/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Tistedalsgaden, ca. 1910",
+        "nb_url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/1da99836cf12969b506bcc9f994c8d33",
+        "tittel": "Tistedalsgaden, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "705": {
     "navn": null,
@@ -19681,10 +21674,25 @@
       "konfidens": "høy",
       "merknad": "Militær eiendom utenfor matrikkelsystemet. Eliminasjonsmetode: eneste klynge som matcher census (2 etg, bryggerhus, fjøs, stall, vedboder). Synlig på 1905-kartet som gule/røde bygg."
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190704_00037_NB_NS_000030A/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190704_00037_NB_NS_000030A/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1902",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fredriksten festning, 1902",
+        "nb_url": "https://www.nb.no/items/a87dfd1b7405a9be11ca40e1c8fec246"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/a87dfd1b7405a9be11ca40e1c8fec246",
+        "tittel": "Fredriksten festning, 1902 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "fest38": {
     "navn": "Ukjent bygning (opsynsmannsbolig)",
@@ -19756,10 +21764,25 @@
       "konfidens": "høy",
       "merknad": "Militær eiendom utenfor matrikkelsystemet. Toetasjes hvitmalt bygg inn i festningsmur. Opprinnelig «Kommandantens uthus», brant 1826, gjenoppbygd 1830-tallet av Garben."
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20200924_00315_NB_RA_M1_B009_0041/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20200924_00315_NB_RA_M1_B009_0041/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, ca. 1910",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Logementshuset, Fredriksten, ca. 1910",
+        "nb_url": "https://www.nb.no/items/d0dadeeb0ca51fae02b35c492edd91ac"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/d0dadeeb0ca51fae02b35c492edd91ac",
+        "tittel": "Logementshuset, Fredriksten, ca. 1910 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "fest41": {
     "navn": "Laboratoriet ved Huth",
@@ -19806,10 +21829,25 @@
       "konfidens": "middels",
       "merknad": "Militær eiendom utenfor matrikkelsystemet. Kan ikke skille mellom Øvre og Nedre kaserne uten mer info."
     },
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://ems.dimu.org/image/MINØ.030962?dimension=800x800",
+        "thumbnail": "https://ems.dimu.org/image/MINØ.030962?dimension=300x300",
+        "kreditering": "Foto: H.S. Falchenberg, før 1910",
+        "rettigheter": "CC PDM / Anno Musea i Nord-Østerdalen",
+        "beskrivelse": "Befal ved Fredriksten festning",
+        "dimu_url": "https://digitaltmuseum.no/021017353648"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://digitaltmuseum.no/021017353648",
+        "tittel": "Befal på Fredrikshald — DigitaltMuseum",
+        "type": "fotografi"
+      }
+    ]
   },
   "fest43": {
     "navn": "Kaserne II (Øvre el. Nedre)",
