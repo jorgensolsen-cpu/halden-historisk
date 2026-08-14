@@ -40,10 +40,10 @@
   .topbar-subtitle{font-size:10px;color:var(--paper-dim);letter-spacing:.06em;
     text-transform:uppercase;margin-top:2px}
   .topbar-nav{display:flex;gap:6px}
-  .topbar-nav a{font-size:12px;font-weight:500;color:var(--paper-dim);
-    text-decoration:none;padding:6px 14px;border-radius:3px;
-    letter-spacing:.02em;transition:color .15s,background .15s;cursor:pointer}
-  .topbar-nav a:hover{color:var(--paper);background:rgba(239,231,214,.06)}
+  .topbar-nav button{font-size:12px;font-weight:500;color:var(--paper-dim);
+    background:none;border:none;padding:6px 14px;border-radius:3px;
+    letter-spacing:.02em;transition:color .15s,background .15s;cursor:pointer;font:inherit}
+  .topbar-nav button:hover{color:var(--paper);background:rgba(239,231,214,.06)}
 
   /* ===========================
      MAIN (kart + sidebar)
@@ -120,13 +120,20 @@
     color:var(--paper);font:inherit;font-size:13px;transition:border-color .15s}
   .sidebar-search input::placeholder{color:#6f7780}
   .sidebar-search input:focus{outline:none;border-color:var(--signal-2)}
+  .sok-resultater{max-height:260px;overflow-y:auto;margin-top:8px}
+  .sok-oppsummering{font-size:11px;color:var(--paper-dim);padding:4px 0 6px;letter-spacing:.02em}
+  .sok-treff{padding:8px 0;border-bottom:1px solid rgba(239,231,214,.07);cursor:pointer;transition:background .1s}
+  .sok-treff:hover{background:rgba(239,231,214,.04)}
+  .sok-treff:last-child{border-bottom:none}
+  .sok-treff-navn{font-size:13px;color:var(--paper);font-weight:500}
+  .sok-treff-detalj{font-size:11px;color:var(--paper-dim);margin-top:2px;line-height:1.4}
 
   /* Art nouveau divider */
   .nouveau-divider{height:20px;flex-shrink:0;overflow:hidden;
     display:flex;align-items:center;justify-content:center;opacity:.38}
   .nouveau-divider svg{width:200px;height:16px;color:var(--gold)}
 
-  input:focus-visible,a:focus-visible{outline:2px solid var(--signal-2);outline-offset:1px}
+  input:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--signal-2);outline-offset:1px}
 
   #panelBody{flex:1;overflow-y:auto;display:flex;flex-direction:column;min-height:0}
   .empty{color:var(--paper-dim);font-size:14px;line-height:1.55;padding:22px}
@@ -148,7 +155,8 @@
   .tabs{display:flex;gap:0;padding:0 22px;flex-shrink:0;border-bottom:1px solid var(--line);margin-top:16px}
   .tab{padding:10px 0;margin-right:22px;font-size:12px;font-weight:500;letter-spacing:.04em;
        text-transform:uppercase;color:var(--paper-dim);cursor:pointer;border-bottom:2px solid transparent;
-       transition:color .15s, border-color .15s;position:relative;top:1px}
+       transition:color .15s, border-color .15s;position:relative;top:1px;
+       background:none;border-top:none;border-left:none;border-right:none;font:inherit}
   .tab:hover{color:var(--paper)}
   .tab.active{color:var(--signal-2);border-bottom-color:var(--signal-2)}
   .tab .teller{font-size:10px;font-weight:400;opacity:.6;margin-left:4px}
@@ -335,6 +343,8 @@
     }
 
     .sidebar-search{padding:10px 16px}
+    #sokResultater{padding:0}
+    #sokResultater > div{padding:0 16px 10px !important}
     .nouveau-divider{display:none}
     .tab-inner{padding:14px 16px 18px}
     .tabs{padding:0 16px}
@@ -349,6 +359,16 @@
     /* Opasitetskontroll: kompaktere */
     .opacity-control{bottom:120px;left:10px;min-width:170px;padding:10px 12px}
     .kartforklaring{display:none}
+    .kartforklaring.mobil-open{display:block}
+    .legend-toggle{
+      display:flex;align-items:center;justify-content:center;
+      position:absolute;bottom:120px;right:10px;z-index:600;
+      width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+      background:rgba(28,33,38,.92);backdrop-filter:blur(8px);
+      color:var(--paper-dim);font-size:14px;font-weight:600;cursor:pointer;
+      box-shadow:0 2px 8px rgba(0,0,0,.3);
+    }
+    .legend-toggle:hover{color:var(--paper)}
 
     /* Velkomstoverlay: kompaktere */
     .welcome{padding:24px 28px 20px}
@@ -382,9 +402,9 @@
     </div>
   </div>
   <div class="topbar-nav">
-    <a onclick="openModal('om')">Om prosjektet</a>
-    <a onclick="openModal('kilder')">Kilder</a>
-    <a onclick="openModal('bidrag')">Bidragsytere</a>
+    <button type="button" onclick="openModal('om')">Om prosjektet</button>
+    <button type="button" onclick="openModal('kilder')">Kilder</button>
+    <button type="button" onclick="openModal('bidrag')">Bidragsytere</button>
   </div>
 </nav>
 
@@ -421,6 +441,7 @@
     </div>
   </div>
 
+  <button type="button" class="legend-toggle" id="legendToggle" aria-label="Vis tegnforklaring">?</button>
   <aside id="sheet">
     <div class="drag-handle"><span></span></div>
     <!-- Søk -->
@@ -432,6 +453,8 @@
         <input type="search" id="sok" placeholder="Søk navn eller yrke …">
       </div>
     </div>
+
+    <div id="sokResultater" style="display:none"></div>
 
     <!-- Divider -->
     <div class="nouveau-divider">
@@ -508,7 +531,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const EPOST = 'din@epost.no';   // bytt ut
+const EPOST = 'jorgen.s.olsen@gmail.com';
 
 /* ---- Velkomsttilstand ---- */
 let welcomed = false;
@@ -537,7 +560,7 @@ const map = L.map('map',{
   zoomControl:false,
   minZoom:14,
   bounceAtZoomLimits:false
-}).setView([59.1233,11.3877],20);
+}).setView([59.1233,11.3877],18);
 
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
@@ -753,10 +776,10 @@ function vis(p){
   const tabsEl = document.getElementById('panelTabs');
   tabsEl.style.display = '';
   tabsEl.innerHTML = `
-    <div class="tabs">
-      <div class="tab${startTab==='beboere'?' active':''}" data-tab="beboere">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</div>
-      <div class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom">Eiendom</div>
-      <div class="tab${startTab==='historie'?' active':''}" data-tab="historie">Historie${e.bilder && e.bilder.length ? '<span class="teller">' + e.bilder.length + '</span>' : ''}</div>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" class="tab${startTab==='beboere'?' active':''}" data-tab="beboere" aria-selected="${startTab==='beboere'}">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</button>
+      <button type="button" role="tab" class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom" aria-selected="${startTab==='eiendom'}">Eiendom</button>
+      <button type="button" role="tab" class="tab${startTab==='historie'?' active':''}" data-tab="historie" aria-selected="${startTab==='historie'}">Historie${e.bilder && e.bilder.length ? '<span class="teller">' + e.bilder.length + '</span>' : ''}</button>
     </div>`;
 
   /* Fane-innhold */
@@ -788,9 +811,10 @@ function vis(p){
     tab.addEventListener('click', () => {
       const id = tab.dataset.tab;
       aktivFane = id;
-      tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tabsEl.querySelectorAll('.tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
       bodyEl.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
       bodyEl.querySelector('[data-content="' + id + '"]').classList.add('active');
     });
   });
@@ -844,14 +868,6 @@ function settCasing(l){
   l.bringToFront();
 }
 
-function tekstFor(id){
-  const d = beboere[id];
-  const e = eiendommer[id] || {};
-  const personTekst = d ? d.husstander.flatMap(h => h.beboere)
-    .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ') : '';
-  const eierTekst = e.matrikkel_1901 ? (e.matrikkel_1901.eier || '') : '';
-  return (personTekst + ' ' + eierTekst + ' ' + (e.navn || '')).toLowerCase();
-}
 
 async function start(){
   let geo, folk = {};
@@ -875,6 +891,7 @@ async function start(){
         if (forrige) forrige.setStyle(stil);
         lag.eachLayer(x => { if (x !== l && x !== forrige) x.setStyle(stil); });
         l.setStyle(valgt); settCasing(l); forrige = l; vis(p);
+        history.replaceState(null, '', '#lnr=' + p.id);
       });
       l.on('mouseover', () => { if (l !== forrige) l.setStyle({fillOpacity:.32}); });
       l.on('mouseout',  () => { if (l !== forrige) l.setStyle(stil); });
@@ -889,6 +906,12 @@ async function start(){
   /* Lukk tooltips ved drag for å unngå hengende tooltips */
   map.on('dragstart', () => { lag.eachLayer(l => l.closeTooltip()); });
 
+  /* Dismiss velkomstboks ved kartinteraksjon */
+  map.on('movestart zoomstart', dismissWelcome);
+
+  /* Bygg søkeindeks */
+  byggSokIndeks();
+
   /* Klikk på tomt kartområde nullstiller eier-markering */
   map.on('click', e => {
     if (eierFilter && !e.originalEvent._parsellKlikk) nullstillEierMarkering();
@@ -898,6 +921,18 @@ async function start(){
   const bounds = lag.getBounds().pad(0.15);
   map.setMaxBounds(bounds);
   map.setView([59.1233, 11.3877], 18);
+
+  /* Åpne parsell fra URL-hash */
+  const hashMatch = location.hash.match(/^#lnr=(.+)/);
+  if (hashMatch) {
+    const targetId = decodeURIComponent(hashMatch[1]);
+    lag.eachLayer(l => {
+      if (l.feature && l.feature.properties.id === targetId) {
+        l.fire('click');
+        map.fitBounds(l.getBounds().pad(0.5), {maxZoom: 19});
+      }
+    });
+  }
 }
 
 /* ---- Bilde-markører ---- */
@@ -925,18 +960,81 @@ document.getElementById('visBilder').addEventListener('change', e => {
   else fjernBildeMarkorer();
 });
 
+/* Tegnforklaring-toggle (mobil) */
+document.getElementById('legendToggle').addEventListener('click', () => {
+  document.querySelector('.kartforklaring').classList.toggle('mobil-open');
+});
+
+/* ---- Søkeindeks (bygges én gang) ---- */
+let sokIndeks = [];
+function byggSokIndeks(){
+  sokIndeks = [];
+  if (!lag) return;
+  lag.eachLayer(l => {
+    const p = l.feature && l.feature.properties;
+    if (!p) return;
+    const ei = eiendommer[p.id] || {};
+    const mat = ei.matrikkel_1901 || {};
+    const ft = ei.folketelling_meta || {};
+    const d = beboere[p.id];
+    const personTekst = d ? d.husstander.flatMap(h => h.beboere)
+      .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ') : '';
+    const eierTekst = mat.eier || '';
+    const tittel = ei.navn || mat.gate || ei.adresse || ft.adresse_historisk || ('Løpenummer ' + p.id);
+    const hay = (personTekst + ' ' + eierTekst + ' ' + tittel + ' ' + (mat.gate||'') + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'')).toLowerCase();
+    sokIndeks.push({layer:l, props:p, hay, tittel, eier:eierTekst, antall: d ? d.husstander.flatMap(h=>h.beboere).length : 0});
+  });
+}
+
+const sokResultatEl = document.getElementById('sokResultater');
+
+function visResultatliste(treffListe){
+  if (!treffListe.length) { sokResultatEl.style.display = 'none'; return; }
+  const vis20 = treffListe.slice(0, 20);
+  sokResultatEl.style.display = '';
+  sokResultatEl.innerHTML = `
+    <div style="padding:0 22px 12px">
+      <div class="sok-oppsummering">${treffListe.length} treff${treffListe.length > 20 ? ' (viser 20)' : ''}</div>
+      <div class="sok-resultater">
+        ${vis20.map(t => `
+          <div class="sok-treff" data-lnr="${t.props.id}">
+            <div class="sok-treff-navn">${t.tittel}</div>
+            <div class="sok-treff-detalj">${t.antall ? t.antall + ' beboere' : 'Ingen beboere'}${t.eier ? ' · ' + t.eier : ''}</div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  sokResultatEl.querySelectorAll('.sok-treff').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.lnr;
+      lag.eachLayer(l => {
+        if (l.feature && l.feature.properties.id === id) {
+          l.fire('click');
+          map.fitBounds(l.getBounds().pad(0.5), {maxZoom: 19});
+        }
+      });
+    });
+  });
+}
+
 document.getElementById('sok').addEventListener('input', e => {
   if (!lag) return;
   const q = e.target.value.trim().toLowerCase();
   document.body.classList.toggle('sok', !!q);
-  lag.eachLayer(l => {
-    if (!q) { l.setStyle(l === forrige ? valgt : stil); return; }
-    const p = l.feature.properties;
-    const ei = eiendommer[p.id] || {};
-    const eiMat = ei.matrikkel_1901 || {};
-    const hay = tekstFor(p.id) + ' ' + (eiMat.gate||'') + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'');
-    l.setStyle(hay.toLowerCase().includes(q) ? treff : dimmet);
+  if (!q) {
+    lag.eachLayer(l => l.setStyle(l === forrige ? valgt : stil));
+    sokResultatEl.style.display = 'none';
+    return;
+  }
+  const treffListe = [];
+  sokIndeks.forEach(s => {
+    if (s.hay.includes(q)) {
+      s.layer.setStyle(s.layer === forrige ? valgt : treff);
+      treffListe.push(s);
+    } else {
+      s.layer.setStyle(dimmet);
+    }
   });
+  visResultatliste(treffListe);
 });
 
 /* ---- Admin-modus ---- */
