@@ -8174,22 +8174,6 @@
     "folketelling_meta": null,
     "bilder": [
       {
-        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,800/0/native.jpg",
-        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,300/0/native.jpg",
-        "kreditering": "Foto: Ukjent fotograf, 1901",
-        "rettigheter": "Public Domain / Nasjonalbiblioteket",
-        "beskrivelse": "Katolske kirke fra Kirkebakken, 1901",
-        "nb_url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910"
-      },
-      {
-        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,800/0/native.jpg",
-        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,300/0/native.jpg",
-        "kreditering": "Foto: Anders Beer Wilse, 1902",
-        "rettigheter": "Public Domain / Nasjonalbiblioteket",
-        "beskrivelse": "Fra Parken med katolske kirke, 13. juni 1902",
-        "nb_url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e"
-      },
-      {
         "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00010_NB_NS_NM_01763/full/0,800/0/native.jpg",
         "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20210908_00010_NB_NS_NM_01763/full/0,300/0/native.jpg",
         "kreditering": "Foto: Ukjent fotograf, ca. 1910",
@@ -8201,16 +8185,6 @@
     "historie": null,
     "historie_kilde": null,
     "lenker": [
-      {
-        "url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910",
-        "tittel": "Katolske kirke fra Kirkebakken, 1901 — Nasjonalbiblioteket",
-        "type": "fotografi"
-      },
-      {
-        "url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e",
-        "tittel": "Fra Parken med katolske kirke, 13. juni 1902 — Nasjonalbiblioteket",
-        "type": "fotografi"
-      },
       {
         "url": "https://www.nb.no/items/0aadf6e7402d123500edd711fa113d8c",
         "tittel": "Kirken sett fra andre siden av elven, ca. 1910 — Nasjonalbiblioteket",
@@ -12756,15 +12730,43 @@
       "eier": "Katholske Mission",
       "skattetakst": 31200,
       "brandtakst": 62940,
-      "gate": "Kristian den Ytes Plads",
+      "gate": "Kristian den Vtes Plads",
       "anmerkning": "Gamle Hospital, Kirken, Præstebolig og den ved Siden af liggende lille Bygning samt Have. Cfr L.-No 488."
     },
     "bygning": null,
     "folketelling_meta": null,
-    "bilder": [],
+    "bilder": [
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_20190715_00025_NB_NS_000040M/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Ukjent fotograf, 1901",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Katolske kirke fra Kirkebakken, 1901",
+        "nb_url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910"
+      },
+      {
+        "fil": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,800/0/native.jpg",
+        "thumbnail": "https://www.nb.no/services/image/resolver/URN:NBN:no-nb_digifoto_NF_W_01272/full/0,300/0/native.jpg",
+        "kreditering": "Foto: Anders Beer Wilse, 1902",
+        "rettigheter": "Public Domain / Nasjonalbiblioteket",
+        "beskrivelse": "Fra Parken med katolske kirke, 13. juni 1902",
+        "nb_url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e"
+      }
+    ],
     "historie": null,
     "historie_kilde": null,
-    "lenker": []
+    "lenker": [
+      {
+        "url": "https://www.nb.no/items/30e9341c29ad4f2f791433635ecb7910",
+        "tittel": "Katolske kirke fra Kirkebakken, 1901 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      },
+      {
+        "url": "https://www.nb.no/items/5133fc4fbeede55cc9cec0586a4a722e",
+        "tittel": "Fra Parken med katolske kirke, 13. juni 1902 — Nasjonalbiblioteket",
+        "type": "fotografi"
+      }
+    ]
   },
   "484": {
     "navn": null,
@@ -12777,7 +12779,7 @@
       "eier": "Skrædder A. Bodahl",
       "skattetakst": 13000,
       "brandtakst": 18800,
-      "gate": "Kristian den Ytes Plads",
+      "gate": "Kristian den Vtes Plads",
       "anmerkning": null
     },
     "bygning": null,

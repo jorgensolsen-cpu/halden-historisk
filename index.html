@@ -675,15 +675,15 @@ function byggHistorieFane(e, p, byg){
   if (e.bilder && e.bilder.length) {
     html += e.bilder.map(b => {
       const imgSrc = b.thumbnail || b.fil;
-      const linkUrl = b.dimu_url || b.fil;
-      const isExternal = !!b.dimu_url;
+      const linkUrl = b.dimu_url || b.nb_url || b.fil;
+      const sourceName = b.dimu_url ? 'DigitaltMuseum' : b.nb_url ? 'Nasjonalbiblioteket' : null;
       const kredLine = [b.kreditering, b.rettigheter].filter(Boolean).join(' · ');
       return `
       <figure class="hist-bilde">
-        <a href="${linkUrl}" target="_blank" rel="noopener"${isExternal ? ' title="Åpne i DigitaltMuseum"' : ''}>
+        <a href="${linkUrl}" target="_blank" rel="noopener"${sourceName ? ` title="Åpne i ${sourceName}"` : ''}>
           <img src="${imgSrc}" alt="${b.beskrivelse || e.navn || ''}" loading="lazy">
         </a>
-        ${(kredLine || b.beskrivelse) ? `<figcaption>${b.beskrivelse ? b.beskrivelse + '<br>' : ''}${kredLine}${isExternal ? ' · <a href="' + linkUrl + '" target="_blank" rel="noopener" style="color:var(--signal-2)">DigitaltMuseum</a>' : ''}</figcaption>` : ''}
+        ${(kredLine || b.beskrivelse) ? `<figcaption>${b.beskrivelse ? b.beskrivelse + '<br>' : ''}${kredLine}${sourceName ? ' · <a href="' + linkUrl + '" target="_blank" rel="noopener" style="color:var(--signal-2)">' + sourceName + '</a>' : ''}</figcaption>` : ''}
       </figure>`;
     }).join('');
   }
@@ -701,7 +701,7 @@ function byggHistorieFane(e, p, byg){
 
   if (lenker.length) {
     html += `<div class="felt-gruppe" style="margin-top:${html ? '20' : '0'}px"><div class="gruppe-tittel">Lenker</div>
-      ${lenker.map(l => `<div class="felt"><a href="${l.url}" target="_blank" rel="noopener" style="color:var(--signal-2);font-size:13px;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px">${l.label}</a></div>`).join('')}
+      ${lenker.map(l => `<div class="felt"><a href="${l.url}" target="_blank" rel="noopener" style="color:var(--signal-2);font-size:13px;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px">${l.label || l.tittel || l.url}</a></div>`).join('')}
     </div>`;
   }
 
@@ -756,7 +756,7 @@ function vis(p){
     <div class="tabs">
       <div class="tab${startTab==='beboere'?' active':''}" data-tab="beboere">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</div>
       <div class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom">Eiendom</div>
-      <div class="tab${startTab==='historie'?' active':''}" data-tab="historie">Historie</div>
+      <div class="tab${startTab==='historie'?' active':''}" data-tab="historie">Historie${e.bilder && e.bilder.length ? '<span class="teller">' + e.bilder.length + '</span>' : ''}</div>
     </div>`;
 
   /* Fane-innhold */
