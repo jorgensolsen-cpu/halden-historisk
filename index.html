@@ -3,47 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fredrikshald 1900</title>
+<title>Fredrikshald, Anno 1900</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+  @font-face{font-family:'Berolina';src:url('Berolina.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:swap}
   :root{
     --ink:#15181c; --panel:#1c2126; --panel-2:#242a30;
     --paper:#efe7d6; --paper-dim:#c9c0ae;
     --signal:#c2452d; --signal-2:#e0a33c;
     --line:rgba(239,231,214,.14);
+    --gold:#efe7d6; --gold-dim:rgba(239,231,214,.35);
   }
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0}
-  body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--ink);color:var(--paper);display:flex}
-  #map{flex:1;height:100vh;background:#0f1214}
-  aside{width:360px;height:100vh;flex-shrink:0;background:var(--panel);
-        border-left:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
-  header{padding:20px 22px 16px;border-bottom:1px solid var(--line)}
-  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:25px;margin:0;letter-spacing:-.01em}
-  .sub{font-size:12px;color:var(--paper-dim);margin-top:4px;letter-spacing:.02em}
+  html,body{height:100%;margin:0;overflow:hidden}
+  body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--ink);color:var(--paper);
+       display:flex;flex-direction:column}
 
-  .controls{padding:16px 22px;border-bottom:1px solid var(--line)}
-  label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--paper-dim);margin-bottom:8px}
-  input[type=range]{width:100%;accent-color:var(--signal-2)}
-  input[type=search]{width:100%;margin-top:14px;padding:9px 11px;border-radius:3px;
-    border:1px solid var(--line);background:var(--panel-2);color:var(--paper);font:inherit;font-size:13px}
-  input[type=search]::placeholder{color:#6f7780}
+  /* ===========================
+     TOPPLINJE
+     =========================== */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    height:64px;padding:0 24px;
+    background:var(--ink);border-bottom:1px solid var(--line);
+    position:relative;z-index:1000;flex-shrink:0;
+  }
+  .topbar::after{
+    content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+    background:var(--gold-dim);
+  }
+  .topbar-left{display:flex;align-items:center;gap:12px}
+  .ornament{width:auto;height:42px;flex-shrink:0;opacity:.85}
+  .topbar-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;
+    letter-spacing:-.01em;color:var(--paper);line-height:1}
+  .topbar-subtitle{font-size:10px;color:var(--paper-dim);letter-spacing:.06em;
+    text-transform:uppercase;margin-top:2px}
+  .topbar-nav{display:flex;gap:6px}
+  .topbar-nav a{font-size:12px;font-weight:500;color:var(--paper-dim);
+    text-decoration:none;padding:6px 14px;border-radius:3px;
+    letter-spacing:.02em;transition:color .15s,background .15s;cursor:pointer}
+  .topbar-nav a:hover{color:var(--paper);background:rgba(239,231,214,.06)}
+
+  /* ===========================
+     MAIN (kart + sidebar)
+     =========================== */
+  .main{display:flex;flex:1;min-height:0}
+  #map{flex:1;background:#0f1214;position:relative}
+  aside{width:360px;height:100%;flex-shrink:0;background:var(--panel);
+        border-left:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
+
+  /* ===========================
+     VELKOMSTTILSTAND (over kartet)
+     =========================== */
+  .welcome{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    text-align:center;z-index:500;pointer-events:none;
+    background:rgba(21,24,28,.72);padding:40px 56px 32px;border-radius:6px;
+    animation:welcomeFadeIn .8s ease-out;
+  }
+  .welcome.hidden{opacity:0;transition:opacity .4s ease-out;pointer-events:none}
+  .welcome-title{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:56px;
+    color:var(--paper);letter-spacing:-.02em;line-height:1.05;
+    margin-bottom:14px}
+  .welcome-sub{font-size:15px;color:var(--paper);
+    letter-spacing:.03em}
+  .welcome-bg{display:none}
+  .welcome-ornament{margin-top:16px;display:flex;justify-content:center;color:var(--gold);opacity:.5}
+  @keyframes welcomeFadeIn{
+    from{opacity:0;transform:translate(-50%,-48%)}
+    to{opacity:1;transform:translate(-50%,-50%)}
+  }
+
+  /* ===========================
+     FLYTENDE OPASITETSKONTROLL
+     =========================== */
+  .opacity-control{
+    position:absolute;bottom:24px;left:16px;z-index:600;
+    background:rgba(28,33,38,.92);backdrop-filter:blur(8px);
+    border:1px solid var(--line);border-radius:6px;padding:14px 16px;
+    min-width:200px;box-shadow:0 4px 16px rgba(0,0,0,.4);
+  }
+  .opacity-control label{display:block;font-size:10px;text-transform:uppercase;
+    letter-spacing:.09em;color:var(--paper-dim);margin-bottom:6px}
+  .opacity-control input[type=range]{width:100%;accent-color:var(--signal-2)}
+  .kartforklaring{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+  .kartforklaring-tittel{font-size:9px;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--paper-dim);margin-bottom:8px;font-weight:500}
+  .kartforklaring-rad{display:flex;align-items:center;gap:8px;margin-bottom:5px;
+    font-size:11px;color:var(--paper-dim);line-height:1.3}
+  .kartforklaring-rad:last-child{margin-bottom:0}
+  .kf-farge{width:14px;height:10px;border-radius:2px;flex-shrink:0}
+  .kf-strek{width:14px;height:0;border-top:1.5px dashed var(--paper-dim);flex-shrink:0}
+
+  /* ===========================
+     SIDEBAR
+     =========================== */
+  .sidebar-search{padding:16px 22px;border-bottom:1px solid var(--line)}
+  .search-wrap{position:relative}
+  .search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);
+    width:16px;height:16px;color:#6f7780;pointer-events:none}
+  .sidebar-search input[type=search]{
+    width:100%;padding:9px 11px 9px 34px;border-radius:4px;
+    border:1px solid var(--line);background:var(--panel-2);
+    color:var(--paper);font:inherit;font-size:13px;transition:border-color .15s}
+  .sidebar-search input::placeholder{color:#6f7780}
+  .sidebar-search input:focus{outline:none;border-color:var(--signal-2)}
+
+  /* Art nouveau divider */
+  .nouveau-divider{height:20px;flex-shrink:0;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;opacity:.38}
+  .nouveau-divider svg{width:200px;height:16px;color:var(--gold)}
+
   input:focus-visible,a:focus-visible{outline:2px solid var(--signal-2);outline-offset:1px}
 
-  .body{flex:1;overflow-y:auto;padding:22px}
-  .empty{color:var(--paper-dim);font-size:14px;line-height:1.55}
+  #panelBody{flex:1;overflow-y:auto;display:flex;flex-direction:column;min-height:0}
+  .empty{color:var(--paper-dim);font-size:14px;line-height:1.55;padding:22px}
+  .empty-ornament{display:flex;justify-content:center;margin-top:20px;opacity:.3}
 
-  .addr{font-family:Fraunces,serif;font-size:22px;line-height:1.15;margin:0 0 2px}
-  .navn{font-size:13px;color:var(--paper-dim);margin-bottom:10px}
-  .matr{font-size:12px;color:var(--signal-2);letter-spacing:.04em;margin-bottom:18px}
+  .top{padding:22px 22px 0;flex-shrink:0}
+  .top-ornament{text-align:center;margin:12px 0 4px;opacity:.38}
+  .modal-footer-ornament{text-align:center;margin:18px 0 0;opacity:.32}
+  .addr{font-family:Fraunces,serif;font-weight:600;font-size:22px;line-height:1.15;margin:0 0 2px}
+  .undertittel{font-size:13px;color:var(--paper-dim);margin-bottom:4px}
+  .eier-linje{font-size:13px;color:var(--paper);margin-bottom:2px}
+  .eier-linje .etikett{color:var(--paper-dim)}
+  .eier-link{color:var(--signal-2);cursor:pointer;text-decoration:underline;text-decoration-style:dotted;
+    text-underline-offset:2px}
+  .eier-link:hover{text-decoration-style:solid}
+  .matr{font-size:11.5px;color:var(--signal-2);letter-spacing:.03em;margin-bottom:0;line-height:1.5}
 
-  .hus{border-top:1px solid var(--line);padding-top:14px;margin-top:4px}
-  .hus-type{font-size:13.5px;color:var(--paper);line-height:1.45}
-  .count{font-size:11px;text-transform:uppercase;letter-spacing:.08em;
-         color:var(--paper-dim);padding:4px 0 0}
+  /* Faner */
+  .tabs{display:flex;gap:0;padding:0 22px;flex-shrink:0;border-bottom:1px solid var(--line);margin-top:16px}
+  .tab{padding:10px 0;margin-right:22px;font-size:12px;font-weight:500;letter-spacing:.04em;
+       text-transform:uppercase;color:var(--paper-dim);cursor:pointer;border-bottom:2px solid transparent;
+       transition:color .15s, border-color .15s;position:relative;top:1px}
+  .tab:hover{color:var(--paper)}
+  .tab.active{color:var(--signal-2);border-bottom-color:var(--signal-2)}
+  .tab .teller{font-size:10px;font-weight:400;opacity:.6;margin-left:4px}
 
-  .silh{display:flex;align-items:flex-end;gap:4px;flex-wrap:wrap;margin-bottom:10px}
+  /* Fane-innhold */
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+  .tab-inner{padding:18px 22px 22px}
+  #panelBody .tab-content.active{flex:1}
+
+  /* === BEBOERE-fane === */
+  .oppsummering{font-size:12px;color:var(--paper-dim);padding-bottom:18px;
+                margin-bottom:0;line-height:1.5}
+  .silh{display:flex;align-items:flex-end;gap:4px;flex-wrap:wrap;margin-bottom:8px}
   .silh svg{display:block;width:auto;color:var(--paper)}
   .silh svg.v{height:26px}
   .silh svg.bn{height:18px}
@@ -52,7 +160,23 @@
   .silh.tett svg.v{height:18px}
   .silh.tett svg.bn{height:12px}
 
+  /* Visuelt skille mellom totaloppsummering og husstandsliste */
+  .husstand-separator{
+    display:flex;align-items:center;gap:12px;
+    padding:14px 0 6px;margin-bottom:4px;
+  }
+  .husstand-separator::before,
+  .husstand-separator::after{
+    content:'';flex:1;height:1px;
+    background:var(--gold-dim);
+  }
+  .husstand-separator span{
+    font-size:9px;text-transform:uppercase;letter-spacing:.12em;
+    color:var(--gold);opacity:.6;white-space:nowrap;font-weight:500;
+  }
+
   details.hh{border-bottom:1px solid var(--line);padding:14px 0}
+  details.hh:last-of-type{border-bottom:none}
   details.hh summary{cursor:pointer;list-style:none;position:relative;padding-right:20px}
   details.hh summary::-webkit-details-marker{display:none}
   details.hh summary::after{
@@ -73,84 +197,290 @@
   .p span{color:var(--paper-dim)}
   .yrke{color:var(--signal-2)}
 
-  figure{margin:0 0 18px}
-  figure img{width:100%;display:block;border-radius:2px}
+  .ingen-beboere{color:var(--paper-dim);font-size:13px;line-height:1.55;padding:16px 0}
+
+  /* === EIENDOM-fane === */
+  .felt-gruppe{margin-bottom:20px}
+  .felt-gruppe:last-child{margin-bottom:0}
+  .gruppe-tittel{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--paper-dim);
+                 margin-bottom:10px;font-weight:500}
+  .felt{display:flex;justify-content:space-between;align-items:baseline;
+        padding:6px 0;border-bottom:1px solid rgba(239,231,214,.06);font-size:13px;line-height:1.45}
+  .felt:last-child{border-bottom:none}
+  .felt-etikett{color:var(--paper-dim);flex-shrink:0;margin-right:12px}
+  .felt-verdi{text-align:right;color:var(--paper);font-variant-numeric:tabular-nums}
+  .felt-verdi.stor{font-family:Fraunces,serif;font-size:15px;color:var(--signal-2)}
+
+  .anmerkning{margin-top:16px;padding:12px 14px;background:rgba(239,231,214,.05);border-radius:4px;
+              font-size:12.5px;line-height:1.55;color:var(--paper-dim);font-style:italic}
+
+  /* === BYGNINGER-fane === */
+  .bygg-hero{display:flex;gap:16px;align-items:flex-start;margin-bottom:18px}
+  .bygg-ikon{width:48px;height:48px;border-radius:4px;background:var(--panel-2);
+             display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .bygg-ikon svg{width:28px;height:28px;color:var(--signal-2)}
+  .bygg-tekst{flex:1}
+  .bygg-type{font-family:Fraunces,serif;font-size:17px;line-height:1.2;margin-bottom:4px}
+  .bygg-detalj{font-size:12.5px;color:var(--paper-dim);line-height:1.5}
+
+  .bygg-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+  .bygg-kort{background:var(--panel-2);border-radius:4px;padding:12px 14px}
+  .bygg-kort-verdi{font-family:Fraunces,serif;font-size:20px;line-height:1;margin-bottom:4px;color:var(--paper)}
+  .bygg-kort-etikett{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--paper-dim)}
+
+  .bilde-placeholder{width:100%;aspect-ratio:16/10;border-radius:4px;background:var(--panel-2);
+                      display:flex;align-items:center;justify-content:center;margin-top:4px}
+  .bilde-placeholder span{font-size:12px;color:#6f7780}
+
+  figure{margin:0 0 14px}
+  figure img{width:100%;display:block;border-radius:4px}
   figcaption{font-size:11px;color:#6f7780;margin-top:6px;line-height:1.5}
 
-  .historie{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);
+  .historie{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
             font-size:13.5px;line-height:1.65;color:var(--paper)}
   .historie p{margin:0 0 .8em}
   .historie p:last-child{margin-bottom:0}
 
-  .ingen{color:var(--paper-dim);font-size:13px;line-height:1.55;padding:16px 0}
-  .meta{margin-top:24px;font-size:11px;color:#6f7780;line-height:1.6}
-  .meta a{color:var(--signal-2)}
+  /* Kilde-footer */
+  .kilde{padding:14px 22px;border-top:1px solid var(--line);font-size:10.5px;color:#6f7780;line-height:1.6;flex-shrink:0}
+  .kilde a{color:var(--signal-2)}
+
+  /* Admin */
+  .admin-bar{padding:10px 22px;border-top:1px solid var(--signal-2);background:var(--panel-2);display:none}
+  body.admin .admin-bar{display:block}
+  .admin-btn{background:var(--signal-2);color:var(--ink);border:none;padding:7px 14px;border-radius:3px;
+    font:inherit;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.02em;width:100%}
+  .admin-btn:hover{filter:brightness(1.15)}
+  .admin-btn.secondary{background:transparent;border:1px solid var(--signal-2);color:var(--signal-2)}
+  .admin-edit{padding:14px 0}
+  .admin-edit label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.09em;
+    color:var(--paper-dim);margin-bottom:4px;margin-top:10px}
+  .admin-edit label:first-child{margin-top:0}
+  .admin-edit input[type=text],.admin-edit textarea{width:100%;padding:7px 9px;border-radius:3px;
+    border:1px solid var(--line);background:var(--panel);color:var(--paper);font:inherit;font-size:13px}
+  .admin-edit textarea{min-height:60px;resize:vertical}
+  .admin-badge{display:inline-block;background:var(--signal-2);color:var(--ink);font-size:9px;
+    font-weight:600;padding:2px 6px;border-radius:2px;letter-spacing:.06em;margin-left:8px;vertical-align:middle}
+  .admin-changes{font-size:11px;color:var(--signal-2);margin-top:6px}
+
+  /* ===========================
+     MODALER
+     =========================== */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(15,18,20,.85);
+    backdrop-filter:blur(4px);z-index:2000;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;transition:opacity .25s;
+  }
+  .modal-overlay.open{opacity:1;pointer-events:auto}
+  .modal{
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:8px;max-width:520px;width:90%;
+    padding:32px 36px;position:relative;
+    box-shadow:0 16px 48px rgba(0,0,0,.5);
+    transform:translateY(8px);transition:transform .25s;
+  }
+  .modal-overlay.open .modal{transform:translateY(0)}
+  .modal-close{
+    position:absolute;top:14px;right:16px;
+    width:28px;height:28px;border-radius:50%;border:none;
+    background:transparent;color:var(--paper-dim);font-size:18px;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    transition:background .15s,color .15s;
+  }
+  .modal-close:hover{background:rgba(239,231,214,.08);color:var(--paper)}
+  .modal h2{font-family:Fraunces,serif;font-weight:600;font-size:22px;
+    margin-bottom:16px;color:var(--paper)}
+  .modal p{font-size:14px;line-height:1.65;color:var(--paper-dim);margin-bottom:12px}
+  .modal p:last-child{margin-bottom:0}
+  .modal-ornament{display:flex;justify-content:center;margin-bottom:20px;opacity:.4}
+
   .leaflet-container{font-family:inherit}
   .baselag,.histlag{transition:filter .25s}
   body.sok .baselag,body.sok .histlag{filter:saturate(.25) brightness(1.05)}
-  /* ── Mobil: bunnpanel ── */
+
   @media(max-width:860px){
-    body{flex-direction:column;position:relative}
-    #map{width:100%;height:100vh;height:100dvh;position:fixed;top:0;left:0}
-    aside{
-      position:fixed;bottom:0;left:0;right:0;z-index:1000;
-      width:100%;height:auto;max-height:82vh;max-height:82dvh;
-      border-left:none;border-top:1px solid var(--line);
-      border-radius:14px 14px 0 0;
-      transform:translateY(calc(100% - var(--peek)));
-      transition:transform .3s cubic-bezier(.4,0,.2,1);
-      will-change:transform;
-      touch-action:none;
-    }
-    aside.open{transform:translateY(0)}
-    :root{--peek:132px}          /* header + søk synlig i lukket tilstand */
-    .drag-handle{
-      display:flex;justify-content:center;padding:10px 0 2px;cursor:grab;
-    }
-    .drag-handle span{
-      width:36px;height:4px;border-radius:2px;background:var(--paper-dim);opacity:.5;
-    }
-    header{padding:14px 18px 10px}
-    h1{font-size:20px}
-    .controls{padding:12px 18px}
-    .body{padding:18px;max-height:52vh;max-height:52dvh;overflow-y:auto}
-    .addr{font-size:18px}
-    .hh-navn{font-size:15px}
-    /* Leaflet-zoom nede til høyre, dytt opp over panelet */
-    .leaflet-bottom.leaflet-right{bottom:140px !important}
-  }
-  @media(min-width:861px){
-    .drag-handle{display:none}
+    .main{flex-direction:column-reverse}
+    aside{width:100%;height:52vh}
+    #map{height:48vh}
+    .topbar-nav{gap:2px}
+    .topbar-nav a{padding:6px 8px;font-size:11px}
   }
 </style>
 </head>
 <body>
+<!-- SVG-ornamenter (tre motiver, gjenbrukt) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="orn-lg" viewBox="0 0 277.9 26.8"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M0,16.4l75.2-2.9l20.5-0.6c0.8,1.4,2,2.7,3.3,3.6c-1.1,1-1.9,2.3-2.4,3.7l-21.4-0.6L0,16.6V16.4zM174.7,2.4C174.4,2.8,174,3,173.4,3c-0.8,0-1.5-0.7-1.5-1.5c0-1.7,2-2,3-0.8c0.3,0.4,0.5,0.9,0.7,1.4c1,3.7-1.3,8.1-4.2,10.5c-0.2,0.2-0.5,0.1-0.7-0.1c-0.2-0.2-0.1-0.5,0.1-0.7C173.4,9.6,175.5,5.7,174.7,2.4zM180.2,3.6c-1.6,0.7-2.6,2.6-3.2,4.1c-1,2.6-2.2,5-5,6c-0.2,0.1-0.5,0-0.6-0.3c-0.1-0.2,0-0.5,0.3-0.6c2.5-0.9,3.5-3.2,4.4-5.5c0.8-2.1,2.2-4.7,4.7-4.9c1.1-0.1,2.2,0.4,2.2,1.7c0,0.8-0.7,1.5-1.5,1.5c-0.8,0-1.5-0.7-1.5-1.5C180.1,4,180.2,3.8,180.2,3.6zM170.9,16c0.1,0.8,0.3,1.7,0.2,2.6c-4.1,4.3-10.3,6.5-15.9,7.1c4.4-1,10.7-3.7,12.4-8.8C168.5,16.7,169.9,16.4,170.9,16zM180.4,25.3c0.2,0.2,0.5,0.2,0.6-0.3c0.3-3.3-1-6.9-3.8-8.6c3.4-1.5,5.7-5.6,5.8-9.2c0-0.2-0.2-0.4-0.4-0.4c-0.1,0-0.2,0-0.3,0.1c-1.5,1.2-3.3,2.1-5.3,2.1c-0.2,0-0.3,0.2-0.3,0.4c0,0.2,0.2,0.4,0.4,0.4c1.9,0,3.3-0.4,4.9-1.5c-0.5,3.5-2.7,6.6-6.1,7.7c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0.2,0,0.4,0.2,0.5c2.7,1.3,4.3,4.1,4.3,7.1c-1.4-3-4.1-4.9-7.6-5c0-1.6-0.2-3.2-0.6-4.7c-1.4,0.9-2.8,1.4-4.2,1.5c0.1-3.7-1-6.7-4.3-8.1c2.3-0.3,4.3,1.1,5.8,2.8c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.4-0.4c0.2-2.4,0-4.8-1.2-6.9c2,0.5,3.4,2,4.3,3.9c0.1,0.2,0.3,0.3,0.5,0.2c0.2-0.1,0.3-0.4,0.2-0.6c-1.2-2.5-3.4-4.2-6-4.6c-0.2,0-0.4,0.1-0.4,0.3c0,0.1,0,0.2,0.1,0.3c1.3,1.9,1.8,4,1.8,6.2c-0.1-0.1-0.1-0.1-0.2-0.2c-1.7-1.6-4.1-2.5-6.5-1.9c-0.2,0-0.3,0.3-0.3,0.5c1.4,2.7,1.9,6.2,1.2,9.2c-0.8,3.2-2.8,5.8-6.2,7.5c-3.9,1.9-10.6,1.4-13.5-2.9c2.4,8.1,14.9,6.2,20,4.3c2.8-1,5.6-2.2,8.5-2.6C175.3,22.1,178.4,22.8,180.4,25.3zM103.2,2.4c0.3,0.4,0.7,0.7,1.3,0.7c0.8,0,1.5-0.7,1.5-1.5c0-1.7-2-2-3-0.8c-0.3,0.4-0.5,0.9-0.7,1.4c-1,3.7,1.3,8.1,4.2,10.5c0.2,0.2,0.5,0.1,0.7-0.1c0.2-0.2,0.1-0.5-0.1-0.7C104.6,9.6,102.4,5.7,103.2,2.4zM97.7,3.6c1.6,0.7,2.6,2.6,3.2,4.1c1,2.6,2.2,5,5,6c0.2,0.1,0.5,0,0.6-0.3c0.1-0.2,0-0.5-0.3-0.6c-2.5-0.9-3.5-3.2-4.4-5.5c-0.8-2.1-2.2-4.7-4.7-4.9c-1.1-0.1-2.2,0.4-2.2,1.7c0,0.8,0.7,1.5,1.5,1.5c0.8,0,1.5-0.7,1.5-1.5C97.8,4,97.7,3.8,97.7,3.6zM107.1,16c-0.1,0.8-0.3,1.7-0.2,2.6c4.1,4.3,10.3,6.5,15.9,7.1c-4.4-1-10.7-3.7-12.4-8.8C109.4,16.7,108,16.4,107.1,16zM97.5,25.3c-0.2,0.2-0.5,0.2-0.6-0.3c-0.3-3.3,1-6.9,3.8-8.6c-3.4-1.5-5.7-5.6-5.8-9.2c0-0.2,0.2-0.4,0.4-0.4c0.1,0,0.2,0,0.3,0.1c1.5,1.2,3.3,2.1,5.3,2.1c0.2,0,0.3,0.2,0.3,0.4c0,0.2-0.2,0.4-0.4,0.4c-1.9,0-3.3-0.4-4.9-1.5c0.5,3.5,2.7,6.6,6.1,7.7c0.1,0,0.2,0.1,0.2,0.2c0.1,0.2,0,0.4-0.2,0.5c-2.7,1.3-4.3,4.1-4.3,7.1c1.4-3,4.1-4.9,7.6-5c0-1.6,0.2-3.2,0.6-4.7c1.4,0.9,2.8,1.4,4.2,1.5c-0.1-3.7,1-6.7,4.3-8.1c-2.3-0.3-4.3,1.1-5.8,2.8c-0.1,0.1-0.2,0.1-0.3,0.1c-0.2,0-0.4-0.1-0.4-0.4c-0.2-2.4,0-4.8,1.2-6.9c-2,0.5-3.4,2-4.3,3.9c-0.1,0.2-0.3,0.3-0.5,0.2c-0.2-0.1-0.3-0.4-0.2-0.6c1.2-2.5,3.4-4.2,6-4.6c0.2,0,0.4,0.1,0.4,0.3c0,0.1,0,0.2-0.1,0.3c-1.3,1.9-1.8,4-1.8,6.2c0.1-0.1,0.1-0.1,0.2-0.2c1.7-1.6,4.1-2.5,6.5-1.9c0.2,0,0.3,0.3,0.3,0.5c-1.4,2.7-1.9,6.2-1.2,9.2c0.7,3.2,2.8,5.8,6.2,7.5c3.9,1.9,10.6,1.4,13.5-2.9c-2.4,8.1-14.9,6.2-20,4.3c-2.8-1-5.6-2.2-8.5-2.6C102.6,22.1,99.5,22.8,97.5,25.3zM133.1,11.3h2.3c0-0.3,0-0.6,0-0.9c0-0.7-0.1-1.6-0.5-2.3c0,1-0.7,1.7-1.7,1.7c-1,0-1.8-0.8-1.8-1.8c0-1.7,2.1-2.4,3.4-1.5c1.1,0.8,1.6,2.5,1.6,3.8c0,0.4,0,0.7,0,1.1h1.7c-0.1-1.9-0.9-3.8-2-5.1l2.7-2.5l2.7,2.5c-1.1,1.4-1.9,3.3-2,5.1h1.7c0-0.4,0-0.7,0-1.1c0.1-1.3,0.5-3,1.6-3.8c1.2-0.9,3.4-0.2,3.4,1.5c0,1-0.8,1.8-1.8,1.8c-1,0-1.7-0.7-1.7-1.7c-0.4,0.7-0.5,1.7-0.5,2.3c0,0.3,0,0.6,0,0.9h2.3v2.2h-2.2c0.6,3.6,2.5,6.9,6.4,7.7c3.1,0.6,6.9-0.8,6.5-4.6c-0.2-2.4-2.6-4.1-5.3-1.9c-0.4-1.8,0.2-3.2,1.1-4.1c1.7-1.8,4.9-2,7-0.6c3.7,2.5,3.6,7.7,0.8,10.8c-2.6,3-7,3.5-10.4,2.2c-4-1.5-6.3-5.4-6.9-9.5h-1.8c0.6,2.7,2.8,5.1,3,8.1c0.1,3.1-1.6,4.7-3.5,4.8V13.5h-0.6v12.9c-1.9-0.2-3.6-1.8-3.5-4.8c0.1-3,2.3-5.4,3-8.1h-1.8c-0.6,4-3,8-6.9,9.5c-3.4,1.3-7.9,0.8-10.4-2.2c-2.8-3.2-2.9-8.3,0.8-10.8c2-1.4,5.3-1.2,7,0.6c0.9,1,1.4,2.4,1.1,4.1c-2.7-2.2-5.1-0.5-5.3,1.9c-0.4,3.8,3.4,5.2,6.5,4.6c3.9-0.8,5.8-4.1,6.4-7.7h-2.2V11.3zM182.2,12.8l20.5,0.6l75.2,2.9v0.3l-75.2,2.9l-21.4,0.6c-0.5-1.4-1.3-2.7-2.4-3.7C180.2,15.5,181.3,14.3,182.2,12.8z"/></symbol>
+  <symbol id="orn-div" viewBox="0 0 268.4 14.3"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M118.7,2.7c-4.1,0-10,2-19.8,3.5C91.2,6.2,87.6,4,85,0c0.3,3.3,2.1,5.4,5,6.4H0.6C0.3,6.4,0,6.7,0,7.1c0,0.4,0.3,0.8,0.6,0.8H90c-3,1-4.7,3.1-5,6.4c2.7-4.1,6.4-6.3,14.6-6.2c9.4,1.4,15.1,3.5,19.2,3.5c5.1,0,7.9-2,7.9-4.4C126.6,4.7,123.7,2.7,118.7,2.7zM149.7,2.7c4.1,0,10,2,19.8,3.5c7.7,0,11.3-2.2,13.9-6.2c-0.3,3.3-2.1,5.4-5,6.4h89.4c0.3,0,0.6,0.3,0.6,0.8c0,0.4-0.3,0.8-0.6,0.8h-89.4c3,1,4.7,3.1,5,6.4c-2.7-4.1-6.4-6.3-14.6-6.2c-9.4,1.4-15.1,3.5-19.2,3.5c-5.1,0-7.9-2-7.9-4.4C141.8,4.7,144.7,2.7,149.7,2.7zM134.3,1.3c3.2,0,5.9,2.6,5.9,5.9c0,3.2-2.6,5.9-5.9,5.9c-3.2,0-5.9-2.6-5.9-5.9C128.4,3.9,131,1.3,134.3,1.3z"/></symbol>
+  <symbol id="orn-sm" viewBox="0 0 131.2 27.7"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M116.9,12.6c-4.9,0-9.6,0.5-16.5,0.9c7.1-1.1,14-3.6,17.2-9.5c0.3-0.6-0.2-0.8-0.6-0.3c-4.7,5.7-14.9,9.1-21.4,9.8c-0.1,0.5-0.1,0.3,0,0.8c6.6,0.6,16.7,4.1,21.4,9.8c0.4,0.5,0.9,0.3,0.6-0.3c-3.1-6-10.1-8.4-17.2-9.5c7,0.3,11.8,0.9,16.6,0.9c4.8,0,14.4-0.6,14.4-1.2C131.2,13.2,121.7,12.6,116.9,12.6zM14.4,12.6c4.9,0,9.6,0.5,16.5,0.9c-7.1-1.1-14-3.6-17.2-9.5c-0.3-0.6,0.2-0.8,0.6-0.3c4.7,5.7,14.9,9.1,21.4,9.8c0.1,0.5,0.1,0.3,0,0.8C29.2,14.8,19,18.3,14.4,24c-0.4,0.5-0.9,0.3-0.6-0.3c3.1-6,10.1-8.4,17.2-9.5C24,14.5,19.2,15,14.4,15C9.6,15,0,14.4,0,13.8C0,13.2,9.5,12.6,14.4,12.6zM87.3,11.3c-1.4,0-2.5,1.1-2.5,2.5c0,1.4,1.1,2.5,2.5,2.5c1.4,0,2.5-1.1,2.5-2.5C89.8,12.4,88.7,11.3,87.3,11.3zM44,11.3c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5c-1.4,0-2.5-1.1-2.5-2.5C41.5,12.4,42.6,11.3,44,11.3zM65.2,0H66c0,0.1,0,0.1,0,0.2c0,7.3,5.9,13.3,13.3,13.3c0.1,0,0.1,0,0.2,0v0.8c-0.1,0-0.1,0-0.2,0C72,14.2,66,20.2,66,27.5c0,0.1,0,0.1,0,0.2h-0.8c0-0.1,0-0.1,0-0.2c0-7.3-5.9-13.3-13.3-13.3c-0.1,0-0.1,0-0.2,0v-0.8c0.1,0,0.1,0,0.2,0c7.3,0,13.3-5.9,13.3-13.3C65.2,0.1,65.2,0.1,65.2,0z"/></symbol>
+</svg>
 
-<div id="map"></div>
 
-<aside id="sheet">
-  <div class="drag-handle"><span></span></div>
-  <header>
-    <h1>Fredrikshald 1900</h1>
-    <div class="sub">Folketellingen lagt over Krums bykart fra 1905</div>
-  </header>
+<!-- ============================================
+     TOPPLINJE
+     ============================================ -->
+<nav class="topbar">
+  <div class="topbar-left">
+    <img class="ornament" src="templogo.png" alt="Fredriksten festning">
+    <div>
+      <div class="topbar-title">Fredrikshald<span class="admin-badge" style="display:none" id="adminBadge">ADMIN</span></div>
+      <div class="topbar-subtitle">Anno 1900</div>
+    </div>
+  </div>
+  <div class="topbar-nav">
+    <a onclick="openModal('om')">Om prosjektet</a>
+    <a onclick="openModal('kilder')">Kilder</a>
+    <a onclick="openModal('bidrag')">Bidragsytere</a>
+  </div>
+</nav>
 
-  <div class="controls">
-    <label for="op">Historisk kart</label>
-    <input type="range" id="op" min="0" max="100" value="75">
-    <input type="search" id="sok" placeholder="Søk navn eller yrke">
+<!-- ============================================
+     MAIN: KART + SIDEBAR
+     ============================================ -->
+<div class="main">
+  <div id="map">
+    <!-- Velkomsttilstand -->
+    <div class="welcome" id="welcome">
+      <div class="welcome-bg"></div>
+      <div class="welcome-title">Fredrikshald, 1900</div>
+      <div class="welcome-sub">Klikk på en bygning for å se hvem som bodde der.</div>
+      <div class="welcome-ornament">
+        <svg width="220" height="22" viewBox="0 0 277.9 26.8" style="color:var(--gold);opacity:.7"><use href="#orn-lg"/></svg>
+      </div>
+    </div>
+
+    <!-- Flytende opasitetskontroll -->
+    <div class="opacity-control">
+      <label for="op">Synlighet historisk kart</label>
+      <input type="range" id="op" min="0" max="100" value="75">
+      <div class="kartforklaring">
+        <div class="kartforklaring-tittel">Tegnforklaring</div>
+        <div class="kartforklaring-rad"><span class="kf-farge" style="background:#c2452d"></span> Murbygning</div>
+        <div class="kartforklaring-rad"><span class="kf-farge" style="background:#d4a832"></span> Trebygning</div>
+        <div class="kartforklaring-rad"><span class="kf-strek"></span> Planlagt vei</div>
+        <div class="kartforklaring-rad"><span class="kf-strek" style="border-top:2.5px dashed var(--paper-dim);border-image:repeating-linear-gradient(90deg,var(--paper-dim) 0 8px,transparent 8px 11px,var(--paper-dim) 11px 14px,transparent 14px 17px) 1"></span> Bygrense</div>
+      </div>
+    </div>
   </div>
 
-  <div class="body" id="panel">
-    <p class="empty">Klikk på en gård for å se hvem som bodde der.</p>
+  <aside>
+    <!-- Søk -->
+    <div class="sidebar-search">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/>
+        </svg>
+        <input type="search" id="sok" placeholder="Søk navn eller yrke …">
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="nouveau-divider">
+      <svg viewBox="0 0 268.4 14.3" style="color:var(--gold);opacity:.6"><use href="#orn-div"/></svg>
+    </div>
+
+    <div id="panelTop"></div>
+    <div id="panelTabs" style="display:none"></div>
+    <div id="panelBody">
+      <div id="panel">
+        <div class="empty">
+          Velg en bygning på kartet for å utforske folketellingen fra 1900.
+          <div class="empty-ornament">
+            <svg width="80" height="18" viewBox="0 0 131.2 27.7" style="color:var(--gold);opacity:.4"><use href="#orn-sm"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="panelKilde" class="kilde" style="display:none"></div>
+  </aside>
+</div>
+
+<!-- ============================================
+     MODALER
+     ============================================ -->
+<div class="modal-overlay" id="modalOm">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModals()">&#215;</button>
+    <div class="modal-ornament">
+      <svg width="180" height="10" viewBox="0 0 268.4 14.3" style="color:var(--gold);opacity:.5"><use href="#orn-div"/></svg>
+    </div>
+    <h2>Om prosjektet</h2>
+    <p>Halden Historisk er et digitaliseringsprosjekt som kobler folketellingen fra 1900 til O. Krums historiske bykart over Fredrikshald fra 1905.</p>
+    <p>Ved å klikke på en bygning kan du se hvem som bodde der for over hundre år siden: navn, alder, yrke og familieforhold, hentet direkte fra Digitalarkivets folketellingsdata.</p>
+    <p>Prosjektet er under utvikling. Nye bygninger og beboere legges til fortløpende.</p>
+    <p style="margin-top:16px;font-size:12.5px;color:#9a9082;line-height:1.6;border-top:1px solid rgba(239,231,214,.15);padding-top:14px"><em>Parsellgrensene i kartet er tegnet for h&#229;nd i QGIS, basert p&#229; l&#248;penumre markert p&#229; O. Krums kart fra 1905. Kartet er over 120 &#229;r gammelt, og grenselinjer er ofte utydelige eller tvetydige. Der kartet ikke gir et klart svar, er det gjort skj&#248;nnsmessige vurderinger. Mange parseller vil derfor ha un&#248;yaktige grenser, men de skal ligge i n&#230;rheten av den opprinnelige tomten. Polygonene er ment som en visuell guide, ikke som juridisk eller historisk autoritative eiendomsgrenser.</em></p>
+    <div class="modal-footer-ornament">
+      <svg width="200" height="20" viewBox="0 0 277.9 26.8" style="color:var(--gold)"><use href="#orn-lg"/></svg>
+    </div>
   </div>
-</aside>
+</div>
+
+<div class="modal-overlay" id="modalKilder">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModals()">&#215;</button>
+    <div class="modal-ornament">
+      <svg width="180" height="10" viewBox="0 0 268.4 14.3" style="color:var(--gold);opacity:.5"><use href="#orn-div"/></svg>
+    </div>
+    <h2>Kilder</h2>
+    <p><strong style="color:var(--paper)">Folketelling 1900</strong>: Digitalarkivet / Arkivverket. Originale kirkebøker og folketellingslister digitalisert og gjort tilgjengelig via digitalarkivet.no.</p>
+    <p><strong style="color:var(--paper)">Historisk bykart 1905</strong>: «Kart over Fredrikshald» tegnet av O. Krum. Originalkartet tilhører Kartverket og er brukt med tillatelse.</p>
+    <p><strong style="color:var(--paper)">Matrikkel 1901</strong>: Matrikkeldata for Fredrikshald by fra 1901, digitalisert fra Nasjonalbibliotekets samlinger.</p>
+    <div class="modal-footer-ornament">
+      <svg width="200" height="20" viewBox="0 0 277.9 26.8" style="color:var(--gold)"><use href="#orn-lg"/></svg>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalBidrag">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModals()">&#215;</button>
+    <div class="modal-ornament">
+      <svg width="180" height="10" viewBox="0 0 268.4 14.3" style="color:var(--gold);opacity:.5"><use href="#orn-div"/></svg>
+    </div>
+    <h2>Bidragsytere</h2>
+    <p><strong style="color:var(--paper)">Jørgen S. Olsen</strong>: Prosjektleder, design og kartarbeid.</p>
+    <p><strong style="color:var(--paper)">Silhuetter</strong>: Cindy (@cindyannisa), Fiverr.</p>
+    <p>Prosjektet er åpent for bidrag. Ta kontakt om du har historisk materiale, fotografier eller kunnskap om Fredrikshald rundt 1900.</p>
+    <div class="modal-footer-ornament">
+      <svg width="200" height="20" viewBox="0 0 277.9 26.8" style="color:var(--gold)"><use href="#orn-lg"/></svg>
+    </div>
+  </div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const EPOST = 'din@epost.no';   // bytt ut
 
-const map = L.map('map',{zoomControl:false}).setView([59.1240,11.3877],17);
+/* ---- Velkomsttilstand ---- */
+let welcomed = false;
+function dismissWelcome(){
+  if(welcomed) return;
+  welcomed = true;
+  document.getElementById('welcome').classList.add('hidden');
+}
+
+/* ---- Modaler ---- */
+const modalMap = {om:'modalOm',kilder:'modalKilder',bidrag:'modalBidrag'};
+function openModal(key){
+  closeModals();
+  document.getElementById(modalMap[key]).classList.add('open');
+}
+function closeModals(){
+  document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
+}
+document.querySelectorAll('.modal-overlay').forEach(m => {
+  m.addEventListener('click', e => { if(e.target === m) closeModals(); });
+});
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModals(); });
+
+/* ---- Leaflet-kart ---- */
+const map = L.map('map',{
+  zoomControl:false,
+  minZoom:14,
+  bounceAtZoomLimits:false
+}).setView([59.1233,11.3877],20);
+
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
   maxNativeZoom:19,maxZoom:21,className:'baselag',attribution:'© OpenStreetMap'
@@ -158,6 +488,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 const historisk = L.tileLayer('tiles/{z}/{x}/{y}.png',{
   minZoom:14,maxNativeZoom:19,maxZoom:21,opacity:.75,className:'histlag',attribution:'Historisk kart © Kartverket'
 }).addTo(map);
+const opCtrl = document.querySelector('.opacity-control');
+L.DomEvent.disableClickPropagation(opCtrl);
+L.DomEvent.disableScrollPropagation(opCtrl);
+opCtrl.addEventListener('pointerdown', e => e.stopPropagation());
+opCtrl.addEventListener('touchstart', e => e.stopPropagation());
 document.getElementById('op').addEventListener('input',e=>historisk.setOpacity(e.target.value/100));
 
 const SIL = {
@@ -169,28 +504,23 @@ const alder = f => f ? 1900 - f : null;
 function silhuett(b){
   const svg = (alder(b.f) !== null && alder(b.f) < 15) ? SIL.b
             : b.kj === 'k' ? SIL.k : SIL.m;
-  // kj null = kjønn ikke bestemt i kilden. Tegnes dempet, ikke som mann.
   return b.kj ? svg : svg.replace('class="', 'class="ukj ');
 }
 
 const panel = document.getElementById('panel');
-let beboere = {};        // id -> { husstander: [...] }
+let beboere = {};
+let eiendommer = {};
 
-/* Tittel på en husstand. Deler flertallet etternavn med den som fører
-   husstanden, er det en familie. Ellers navngir vi bare husfar, siden
-   «Wiel og 4» leser feil når de fire er tjenestefolk. */
 function husstandTittel(h){
   const b = h.beboere;
   const hf = b.find(x => /^h[fm]/i.test(x.stilling || '')) || b[0];
   if (!hf) return 'Husstand';
-
   const etter = hf.navn.trim().split(/\s+/).slice(-1)[0];
   const deler = b.filter(x => x.navn.trim().split(/\s+/).slice(-1)[0] === etter).length;
-
   return (deler >= 2 && deler > b.length / 2) ? `Familien ${etter}` : hf.navn;
 }
 
-function husstandBlokk(h, i, antall){
+function husstandBlokk(h){
   const b = h.beboere;
   const hf = b.find(x => /^h[fm]/i.test(x.stilling || '')) || b[0];
   const barn = b.filter(x => alder(x.f) !== null && alder(x.f) < 15).length;
@@ -211,91 +541,222 @@ function husstandBlokk(h, i, antall){
     </details>`;
 }
 
+/* ---- Fane-byggere ---- */
+
+function byggBeboereFane(hh, alle){
+  if (!alle.length) return '<p class="ingen-beboere">Ingen beboere registrert i folketellingen 1900.</p>';
+  const barn = alle.filter(b => alder(b.f) !== null && alder(b.f) < 15).length;
+  return `
+    <div class="oppsummering">
+      <div class="silh${alle.length > 30 ? ' tett' : ''}">${alle.map(silhuett).join('')}</div>
+      ${alle.length} personer i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn
+    </div>
+    <div class="husstand-separator"><span>Husstander</span></div>
+    ${hh.map(h => husstandBlokk(h)).join('')}`;
+}
+
+function byggEiendomFane(e, p, mat, ft, byg){
+  let html = '';
+
+  const matFelter = [
+    mat.eier ? ['Eier', mat.eier] : null,
+    mat.gate ? ['Gate', mat.gate] : null,
+    mat.matrikkelnr || p.matrikkel ? ['Matrikkelnr', mat.matrikkelnr || p.matrikkel] : null,
+    p.id ? ['Løpenr 1901', p.id] : null,
+    mat.lopenr_1878 || p.lopenr_1878 ? ['Løpenr 1878', mat.lopenr_1878 || p.lopenr_1878] : null,
+    e.gnr_bnr || p.gnr_bnr ? ['Gnr/bnr', e.gnr_bnr || p.gnr_bnr] : null
+  ].filter(Boolean);
+  if (matFelter.length) {
+    html += `<div class="felt-gruppe"><div class="gruppe-tittel">Matrikkel 1901</div>
+      ${matFelter.map(f => `<div class="felt"><span class="felt-etikett">${f[0]}</span><span class="felt-verdi">${f[1]}</span></div>`).join('')}
+    </div>`;
+  }
+
+  if (mat.skattetakst || mat.brandtakst) {
+    html += `<div class="felt-gruppe"><div class="gruppe-tittel">Takst</div>
+      ${mat.skattetakst ? `<div class="felt"><span class="felt-etikett">Skattetakst</span><span class="felt-verdi stor">${mat.skattetakst.toLocaleString('nb')} kr</span></div>` : ''}
+      ${mat.brandtakst ? `<div class="felt"><span class="felt-etikett">Brandtakst</span><span class="felt-verdi stor">${mat.brandtakst.toLocaleString('nb')} kr</span></div>` : ''}
+    </div>`;
+  }
+
+  if (mat.anmerkning) {
+    html += `<div class="anmerkning">${mat.anmerkning}</div>`;
+  }
+
+  const ftFelter = [
+    ft.adresse_historisk ? ['Historisk adresse', ft.adresse_historisk] : null,
+    ft.krets ? ['Tellingskrets', ft.krets] : null,
+    byg.gardens_nummer_raa ? ['Gårdens nummer', byg.gardens_nummer_raa] : null
+  ].filter(Boolean);
+  if (ftFelter.length) {
+    html += `<div class="felt-gruppe" style="margin-top:20px"><div class="gruppe-tittel">Folketelling</div>
+      ${ftFelter.map(f => `<div class="felt"><span class="felt-etikett">${f[0]}</span><span class="felt-verdi">${f[1]}</span></div>`).join('')}
+    </div>`;
+  }
+
+  return html || '<p class="ingen-beboere">Ingen eiendomsdata registrert.</p>';
+}
+
+const HUS_IKON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>';
+
+function byggBygningerFane(e, byg){
+  let html = '';
+
+  if (byg.hustype || byg.etasjer || byg.leiligheter || byg.sidebygninger) {
+    html += `<div class="bygg-hero">
+      <div class="bygg-ikon">${HUS_IKON}</div>
+      <div class="bygg-tekst">
+        <div class="bygg-type">${byg.hustype || 'Bygning'}</div>
+        ${byg.sidebygninger ? `<div class="bygg-detalj">${byg.sidebygninger}</div>` : ''}
+      </div>
+    </div>`;
+
+    const kort = [
+      byg.etasjer ? ['Etasjer', byg.etasjer] : null,
+      byg.leiligheter ? ['Leiligheter', byg.leiligheter] : null
+    ].filter(Boolean);
+    if (kort.length) {
+      html += `<div class="bygg-grid">
+        ${kort.map(k => `<div class="bygg-kort"><div class="bygg-kort-verdi">${k[1]}</div><div class="bygg-kort-etikett">${k[0]}</div></div>`).join('')}
+      </div>`;
+    }
+  }
+
+  if (e.bilder && e.bilder.length) {
+    html += e.bilder.map(b => `
+      <figure>
+        <img src="${b.fil}" alt="${e.navn || e.adresse || ''}" loading="lazy">
+        ${(b.kreditering || b.rettigheter) ? `<figcaption>${
+          [b.kreditering, b.rettigheter].filter(Boolean).join(' · ')
+        }${b.beskrivelse ? ', ' + b.beskrivelse : ''}</figcaption>` : ''}
+      </figure>`).join('');
+  } else {
+    html += '<div class="bilde-placeholder"><span>Ingen bilder ennå</span></div>';
+  }
+
+  if (e.historie) {
+    html += `<div class="historie">${e.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>`;
+  }
+
+  return html || '<p class="ingen-beboere">Ingen bygningsdata registrert.</p>';
+}
+
+/* ---- Hovedvisning ---- */
+
 function vis(p){
+  dismissWelcome();
+  aktivParsell = p;
+  const e = eiendommer[p.id] || {};
   const d = beboere[p.id];
   const hh = d ? d.husstander : [];
   const alle = hh.flatMap(h => h.beboere);
   const barn = alle.filter(b => alder(b.f) !== null && alder(b.f) < 15).length;
+  const mat = e.matrikkel_1901 || {};
+  const ft = e.folketelling_meta || {};
+  const byg = e.bygning || {};
 
-  const emne = encodeURIComponent('Rettelse: ' + p.id + (p.adresse ? ' (' + p.adresse + ')' : ''));
-
-  const bilde = d && d.bilde ? `
-    <figure>
-      <img src="${d.bilde}" alt="${p.navn || p.adresse || ''}" loading="lazy">
-      ${(d.bilde_kreditering || d.bilde_rettigheter) ? `<figcaption>${
-        [d.bilde_kreditering, d.bilde_rettigheter].filter(Boolean).join(' · ')
-      }</figcaption>` : ''}
-    </figure>` : '';
-
-  const historie = d && d.historie ? `
-    <div class="historie">${d.historie.split('\n\n').map(a => `<p>${a}</p>`).join('')}</div>` : '';
-
-  /* Kort beskrivelse av huset. Feltnavnene kan variere litt fra skraperen,
-     så vi aksepterer flere varianter og hopper over det som mangler. */
-  const g = (...n) => { for (const k of n) if (d && d[k] != null && d[k] !== '' && d[k] !== '-') return d[k]; };
-  const etasjer = g('etasjer','antall_etasjer');
-  const leil    = g('leiligheter','antall_leiligheter');
-  const husbeskrivelse = [
-    g('hustype'),
-    etasjer ? etasjer + (String(etasjer) === '1' ? ' etasje' : ' etasjer') : null,
-    leil ? leil + (String(leil) === '1' ? ' leilighet' : ' leiligheter') : null
-  ].filter(Boolean).join(' · ');
-
-  const matr = (d && d.matrikkel) || p.matrikkel;
-  const matrTekst = Array.isArray(matr) ? matr.join(', ') : matr;
-
+  const tittel = e.navn || mat.gate || e.adresse || ft.adresse_historisk || ('Løpenummer ' + p.id);
+  const undertittel = (e.navn && mat.gate && e.navn !== mat.gate) ? mat.gate
+                    : (!e.navn && e.adresse && e.adresse !== tittel) ? e.adresse : null;
   const nummerlinje = [
-    p.id ? 'Løpenummer 1901: ' + p.id : null,
-    p.lopenr_1878 ? 'Løpenr. 1878: ' + p.lopenr_1878 : null,
-    matrTekst ? 'Matrikkel ' + matrTekst : null,
-    p.gnr_bnr ? 'Gnr/bnr ' + p.gnr_bnr : null
-  ].filter(Boolean).join(' · ') || '—';
+    p.id ? 'Lnr ' + p.id : null,
+    mat.matrikkelnr || p.matrikkel ? 'Matrikkel ' + (mat.matrikkelnr || p.matrikkel) : null,
+    e.gnr_bnr || p.gnr_bnr ? 'Gnr/bnr ' + (e.gnr_bnr || p.gnr_bnr) : null
+  ].filter(Boolean).join(' · ') || '';
 
-  panel.innerHTML = `
-    <h2 class="addr">${p.adresse || p.navn || (beboere[p.id]||{}).adresse_historisk || ('Løpenummer ' + p.id)}</h2>
-    ${p.navn ? `<div class="navn">${p.navn}</div>` : ''}
-    <div class="matr">${nummerlinje}</div>
-    ${bilde}
-
-    ${alle.length || husbeskrivelse ? `
-      <div class="hus">
-        ${husbeskrivelse ? `<div class="hus-type">${husbeskrivelse}</div>` : ''}
-        ${alle.length ? `<div class="count">${alle.length} ${alle.length === 1 ? 'person' : 'personer'} i ${hh.length} ${hh.length === 1 ? 'husstand' : 'husstander'} · ${alle.length - barn} voksne, ${barn} barn</div>` : ''}
+  /* Top-header */
+  document.getElementById('panelTop').innerHTML = `
+    <div class="top">
+      <h2 class="addr">${tittel}</h2>
+      ${undertittel ? `<div class="undertittel">${undertittel}</div>` : ''}
+      ${mat.eier ? `<div class="eier-linje"><span class="etikett">Eier:</span> <span class="eier-link" onclick="markerEier('${mat.eier.replace(/'/g, "\\'")}')">${mat.eier}</span></div>` : ''}
+      ${nummerlinje ? `<div class="matr">${nummerlinje}</div>` : ''}
+      <div class="top-ornament">
+        <svg width="180" height="18" viewBox="0 0 277.9 26.8" style="color:var(--gold);opacity:.5"><use href="#orn-lg"/></svg>
       </div>
-      ${hh.map((h,i) => husstandBlokk(h, i, hh.length)).join('')}
-      ${!alle.length ? `<p class="ingen">Ingen beboere registrert på denne gården ennå.</p>` : ''}
-    ` : `<p class="ingen">Ingen beboere registrert på denne gården ennå.</p>`}
-
-    ${historie}
-
-    <div class="meta">
-      ${d && d.kilde_url
-        ? `Folketelling 1900 for 0101 Fredrikshald kjøpstad · <a href="${d.kilde_url}" target="_blank" rel="noopener">${d.kilde || 'Digitalarkivet'}</a>`
-        : `Folketelling 1900 for 0101 Fredrikshald kjøpstad${d && d.kilde ? ' · ' + d.kilde : ''}`}
-      · Arkivverket/Digitalarkivet<br>
-      ${d && d.hentet ? `Data hentet ${d.hentet}<br>` : ''}
-      ${[
-        g('sidebygninger') ? 'Sidebygninger: ' + g('sidebygninger') : null,
-        g('eier','gaardens_eier') ? 'Gårdens eier: ' + g('eier','gaardens_eier') : null,
-        g('krets','tellingskrets') ? 'Tellingskrets ' + g('krets','tellingskrets') : null,
-        g('adresse_historisk') ? 'Oppført som «' + g('adresse_historisk') + '»' : null
-      ].filter(Boolean).join('<br>') + (g('sidebygninger') || g('eier','gaardens_eier') || g('krets','tellingskrets') || g('adresse_historisk') ? '<br>' : '')}
-      ${d && d.historie_kilde ? `Historikk: ${d.historie_kilde}<br>` : ''}
-      Historisk kart 1905 ved O. Krum · ©Kartverket<br>
-      <a href="mailto:${EPOST}?subject=${emne}">Meld feil på denne gården</a>
     </div>`;
+
+  /* Faner */
+  const harBeboere = alle.length > 0;
+  const startTab = aktivFane || (harBeboere ? 'beboere' : 'eiendom');
+  const tabsEl = document.getElementById('panelTabs');
+  tabsEl.style.display = '';
+  tabsEl.innerHTML = `
+    <div class="tabs">
+      <div class="tab${startTab==='beboere'?' active':''}" data-tab="beboere">Beboere${harBeboere ? '<span class="teller">' + alle.length + '</span>' : ''}</div>
+      <div class="tab${startTab==='eiendom'?' active':''}" data-tab="eiendom">Eiendom</div>
+      <div class="tab${startTab==='bygninger'?' active':''}" data-tab="bygninger">Bygninger</div>
+    </div>`;
+
+  /* Fane-innhold */
+  const bodyEl = document.getElementById('panelBody');
+  bodyEl.innerHTML = `
+    <div class="tab-content${startTab==='beboere'?' active':''}" data-content="beboere">
+      <div class="tab-inner">${byggBeboereFane(hh, alle)}</div>
+    </div>
+    <div class="tab-content${startTab==='eiendom'?' active':''}" data-content="eiendom">
+      <div class="tab-inner">${byggEiendomFane(e, p, mat, ft, byg)}${adminEditor(p)}</div>
+    </div>
+    <div class="tab-content${startTab==='bygninger'?' active':''}" data-content="bygninger">
+      <div class="tab-inner">${byggBygningerFane(e, byg)}</div>
+    </div>`;
+
+  /* Kilde-footer */
+  const emne = encodeURIComponent('Rettelse: ' + p.id + (e.adresse ? ' (' + e.adresse + ')' : ''));
+  const kildeEl = document.getElementById('panelKilde');
+  kildeEl.style.display = '';
+  kildeEl.innerHTML = `
+    ${d && d.kilde_url
+      ? `Folketelling 1900 · <a href="${d.kilde_url}" target="_blank" rel="noopener">Digitalarkivet</a>`
+      : 'Folketelling 1900 · Digitalarkivet'} · Arkivverket<br>
+    Historisk kart 1905 ved O. Krum · ©Kartverket<br>
+    <a href="mailto:${EPOST}?subject=${emne}">Meld feil</a>`;
+
+  /* Tab-switching */
+  tabsEl.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const id = tab.dataset.tab;
+      aktivFane = id;
+      tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      bodyEl.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      bodyEl.querySelector('[data-content="' + id + '"]').classList.add('active');
+    });
+  });
 }
 
-/* Kartet er allerede rødt og gult, så konturene bruker lyshet framfor kulør:
-   mørk strek med hvit casing under leser på gult papir, rød mur og blått vann. */
 const stil   = {color:'#15181c',weight:1.2,opacity:.7,fillColor:'#15181c',fillOpacity:.06};
 const valgt  = {color:'#15181c',weight:2.6,opacity:1,fillColor:'#e0a33c',fillOpacity:.30};
 const dimmet = {color:'#15181c',weight:.8,opacity:.2,fillColor:'#15181c',fillOpacity:.02};
 const treff  = {color:'#15181c',weight:2.2,opacity:1,fillColor:'#e0a33c',fillOpacity:.28};
-let forrige = null, lag = null;
+const eierHL = {color:'#c2452d',weight:2.4,opacity:1,fillColor:'#c2452d',fillOpacity:.25};
+let forrige = null, lag = null, aktivFane = null;
+let eierFilter = null;
 
-/* Hvit linje bak den valgte bygningen. Egen layer, ikke setStyle, siden
-   Leaflet ikke kan tegne to strekbredder på samme polygon. */
+function markerEier(eierNavn){
+  if (!lag || !eierNavn) return;
+  const norm = eierNavn.toLowerCase().replace(/^do\.?$/i, '');
+  if (!norm) return;
+  eierFilter = norm;
+  lag.eachLayer(l => {
+    const id = l.feature && l.feature.properties.id;
+    const e = eiendommer[id] || {};
+    const mat = e.matrikkel_1901 || {};
+    const eier = (mat.eier || '').toLowerCase();
+    if (eier && eier.includes(norm)) {
+      l.setStyle(l === forrige ? valgt : eierHL);
+    } else {
+      l.setStyle(l === forrige ? valgt : dimmet);
+    }
+  });
+}
+
+function nullstillEierMarkering(){
+  if (!eierFilter || !lag) return;
+  eierFilter = null;
+  lag.eachLayer(l => { l.setStyle(l === forrige ? valgt : stil); });
+}
+
 let casing = null;
 function settCasing(l){
   if (casing){ map.removeLayer(casing); casing = null; }
@@ -307,9 +768,11 @@ function settCasing(l){
 
 function tekstFor(id){
   const d = beboere[id];
-  if (!d) return '';
-  return d.husstander.flatMap(h => h.beboere)
-    .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ').toLowerCase();
+  const e = eiendommer[id] || {};
+  const personTekst = d ? d.husstander.flatMap(h => h.beboere)
+    .map(b => (b.navn||'') + ' ' + (b.yrke||'')).join(' ') : '';
+  const eierTekst = e.matrikkel_1901 ? (e.matrikkel_1901.eier || '') : '';
+  return (personTekst + ' ' + eierTekst + ' ' + (e.navn || '')).toLowerCase();
 }
 
 async function start(){
@@ -322,92 +785,146 @@ async function start(){
   }
   try { folk = await (await fetch('beboere.json')).json(); } catch(e) { /* valgfri */ }
   beboere = folk;
+  try { eiendommer = await (await fetch('eiendommer.json')).json(); } catch(e) { /* valgfri */ }
 
   lag = L.geoJSON(geo,{
     style: stil,
     onEachFeature: (f,l) => {
       const p = f.properties;
-      l.on('click', () => {
+      l.on('click', (ev) => {
+        if (ev.originalEvent) ev.originalEvent._parsellKlikk = true;
+        eierFilter = null;
         if (forrige) forrige.setStyle(stil);
+        lag.eachLayer(x => { if (x !== l && x !== forrige) x.setStyle(stil); });
         l.setStyle(valgt); settCasing(l); forrige = l; vis(p);
       });
       l.on('mouseover', () => { if (l !== forrige) l.setStyle({fillOpacity:.32}); });
       l.on('mouseout',  () => { if (l !== forrige) l.setStyle(stil); });
-      l.bindTooltip(p.adresse || p.navn || (beboere[p.id]||{}).adresse_historisk || ('Løpenummer ' + p.id),
+      const e = eiendommer[p.id] || {};
+      const ft = e.folketelling_meta || {};
+      const mat = e.matrikkel_1901 || {};
+      l.bindTooltip(e.navn || mat.gate || e.adresse || p.adresse || p.navn || ft.adresse_historisk || ('Løpenummer ' + p.id),
                     {direction:'top', opacity:.9});
     }
   }).addTo(map);
 
-  map.fitBounds(lag.getBounds(), {padding:[30,30]});
+  /* Lukk tooltips ved drag for å unngå hengende tooltips */
+  map.on('dragstart', () => { lag.eachLayer(l => l.closeTooltip()); });
+
+  /* Klikk på tomt kartområde nullstiller eier-markering */
+  map.on('click', e => {
+    if (eierFilter && !e.originalEvent._parsellKlikk) nullstillEierMarkering();
+  });
+
+  /* Lås kart til tilene */
+  const bounds = lag.getBounds().pad(0.15);
+  map.setMaxBounds(bounds);
+  map.setView([59.1233, 11.3877], 18);
 }
 
 document.getElementById('sok').addEventListener('input', e => {
   if (!lag) return;
   const q = e.target.value.trim().toLowerCase();
-  document.body.classList.toggle('sok', !!q);   // demper kartet, så treffene løftes fram
+  document.body.classList.toggle('sok', !!q);
   lag.eachLayer(l => {
     if (!q) { l.setStyle(l === forrige ? valgt : stil); return; }
     const p = l.feature.properties;
-    const hay = tekstFor(p.id) + ' ' + (p.adresse||'') + ' ' + (p.navn||'');
+    const ei = eiendommer[p.id] || {};
+    const eiMat = ei.matrikkel_1901 || {};
+    const hay = tekstFor(p.id) + ' ' + (eiMat.gate||'') + ' ' + (ei.adresse||p.adresse||'') + ' ' + (ei.navn||p.navn||'');
     l.setStyle(hay.toLowerCase().includes(q) ? treff : dimmet);
   });
 });
 
-start();
+/* ---- Admin-modus ---- */
+const ADMIN_PASS = 'fredrikshald1900';
+let adminMode = false;
+let adminEndringer = {};
+let aktivParsell = null;
 
-/* ── Mobil bunnpanel: sveip opp/ned ── */
-(function(){
-  const sheet = document.getElementById('sheet');
-  if (!sheet) return;
-  const isMobile = () => window.matchMedia('(max-width:860px)').matches;
-  let startY, startT, dragging = false;
-
-  function open(){ sheet.classList.add('open'); }
-  function close(){ sheet.classList.remove('open'); }
-
-  sheet.addEventListener('touchstart', e => {
-    if (!isMobile()) return;
-    const t = e.target;
-    // Bare drag fra handle, header, controls — ikke fra scrollbart innhold
-    if (t.closest('.body') && sheet.classList.contains('open')) return;
-    dragging = true;
-    startY = e.touches[0].clientY;
-    startT = Date.now();
-    sheet.style.transition = 'none';
-  }, {passive:true});
-
-  sheet.addEventListener('touchmove', e => {
-    if (!dragging) return;
-    const dy = e.touches[0].clientY - startY;
-    const isOpen = sheet.classList.contains('open');
-    // Begrens dragging
-    if (isOpen) {
-      sheet.style.transform = `translateY(${Math.max(0, dy)}px)`;
-    } else {
-      sheet.style.transform = `translateY(calc(100% - var(--peek) + ${Math.min(0, dy)}px))`;
+function sjekkAdmin(){
+  if (new URLSearchParams(location.search).has('admin')){
+    const pw = prompt('Admin-passord:');
+    if (pw === ADMIN_PASS){
+      adminMode = true;
+      document.body.classList.add('admin');
+      document.getElementById('adminBadge').style.display = '';
     }
-  }, {passive:true});
+  }
+}
 
-  sheet.addEventListener('touchend', e => {
-    if (!dragging) return;
-    dragging = false;
-    sheet.style.transition = '';
-    sheet.style.transform = '';
-    const dy = e.changedTouches[0].clientY - startY;
-    const fast = Date.now() - startT < 250;
-    const isOpen = sheet.classList.contains('open');
+function adminEditor(p){
+  if (!adminMode) return '';
+  const e = eiendommer[p.id] || {};
+  const mat = e.matrikkel_1901 || {};
+  const ft = e.folketelling_meta || {};
+  const endret = adminEndringer[p.id] || {};
+  const val = (felt, fallback) => endret[felt] !== undefined ? endret[felt] : (fallback || '');
 
-    if (isOpen) {
-      (dy > 60 || (fast && dy > 20)) ? close() : open();
-    } else {
-      (dy < -60 || (fast && dy < -20)) ? open() : close();
+  return `
+    <div class="admin-edit" style="border-top:1px solid var(--signal-2);margin-top:18px;padding-top:14px">
+      <div style="font-size:11px;color:var(--signal-2);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px">Rediger</div>
+      <label>Navn (f.eks. Wielgården)</label>
+      <input type="text" data-felt="navn" value="${val('navn', e.navn || '')}">
+      <label>Adresse</label>
+      <input type="text" data-felt="adresse" value="${val('adresse', e.adresse || mat.gate || '')}">
+      <label>Gnr/bnr</label>
+      <input type="text" data-felt="gnr_bnr" value="${val('gnr_bnr', e.gnr_bnr || '')}">
+      <button class="admin-btn" style="margin-top:12px" onclick="lagreEndring('${p.id}')">Lagre</button>
+    </div>`;
+}
+
+function lagreEndring(id){
+  const inputs = document.getElementById('panelBody').querySelectorAll('.admin-edit input[data-felt], .admin-edit textarea[data-felt]');
+  const endring = {};
+  inputs.forEach(inp => { if (inp.value.trim()) endring[inp.dataset.felt] = inp.value.trim(); });
+  if (Object.keys(endring).length === 0) return;
+
+  adminEndringer[id] = Object.assign(adminEndringer[id] || {}, endring);
+
+  if (!eiendommer[id]) eiendommer[id] = {};
+  Object.assign(eiendommer[id], endring);
+
+  if (lag) lag.eachLayer(l => {
+    if (l.feature && l.feature.properties.id === id){
+      const e = eiendommer[id] || {};
+      const mat = e.matrikkel_1901 || {};
+      l.unbindTooltip();
+      l.bindTooltip(e.navn || mat.gate || e.adresse || ('Løpenummer ' + id), {direction:'top', opacity:.9});
     }
   });
 
-  // Åpne panelet når en bygning klikkes
-  const origVis = vis;
-  vis = function(p){ origVis(p); if (isMobile()) open(); };
-})();
+  if (aktivParsell && aktivParsell.id === id) vis(aktivParsell);
+  oppdaterEksportKnapp();
+}
+
+function oppdaterEksportKnapp(){
+  const n = Object.keys(adminEndringer).length;
+  let bar = document.getElementById('adminBar');
+  if (!bar){
+    bar = document.createElement('div');
+    bar.className = 'admin-bar';
+    bar.id = 'adminBar';
+    document.querySelector('aside').appendChild(bar);
+  }
+  bar.innerHTML = `
+    <div class="admin-changes">${n} ${n === 1 ? 'gård' : 'gårder'} endret</div>
+    <button class="admin-btn" style="margin-top:6px" onclick="eksporterEndringer()">Last ned eiendommer.json</button>`;
+  bar.style.display = n > 0 ? 'block' : 'none';
+}
+
+function eksporterEndringer(){
+  const data = JSON.stringify(eiendommer, null, 2);
+  const blob = new Blob([data], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'eiendommer.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+sjekkAdmin();
+start();
 </script>
 </body>
 </html>
