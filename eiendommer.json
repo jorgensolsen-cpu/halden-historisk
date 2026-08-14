@@ -19657,7 +19657,7 @@
     "lenker": []
   },
   "fest37": {
-    "navn": "Intendantboligen m/bryggerhus",
+    "navn": "Offisersboligen ved byporten",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19671,10 +19671,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": "Prins Georgs bastion",
-      "kart_1885": "G (Kapteinvaktmesterbolig)",
+      "plassering": "Ved byporten, innenfor festningsmuren",
+      "kart_1885": "Umerket på 1883-kartet",
       "konfidens": "høy",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Eliminasjonsmetode: eneste klynge som matcher census (2 etg, bryggerhus, fjøs, stall, vedboder). Synlig på 1905-kartet som gule/røde bygg."
     },
     "bilder": [],
     "historie": null,
@@ -19682,32 +19682,7 @@
     "lenker": []
   },
   "fest38": {
-    "navn": "Opsynsmannsboligen",
-    "adresse": "Fredriksten festning",
-    "gnr_bnr": null,
-    "matrikkel_1901": null,
-    "bygning": {
-      "hustype": "Vaaningshus",
-      "etasjer": "1",
-      "sidebygninger": null,
-      "leiligheter": "1"
-    },
-    "folketelling_meta": {
-      "adresse_historisk": "Fæstningen",
-      "gardens_nummer_raa": null,
-      "krets": "003a",
-      "plassering": "Ved bryggerhuset, Prins Georgs bastion",
-      "kart_1885": null,
-      "konfidens": "middels-høy",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
-    },
-    "bilder": [],
-    "historie": null,
-    "historie_kilde": null,
-    "lenker": []
-  },
-  "fest39": {
-    "navn": "Korporalboligen",
+    "navn": "Ukjent bygning (opsynsmannsbolig)",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19724,7 +19699,32 @@
       "plassering": null,
       "kart_1885": null,
       "konfidens": "lav",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Enetasjes våningshus — ingen kandidat identifisert. Opprinnelig matchet til Kapteinvagmesterboligen (nr. 3), men denne viste seg å være Gamle kommandantbolig (stort fleretasjes bygg)."
+    },
+    "bilder": [],
+    "historie": null,
+    "historie_kilde": null,
+    "lenker": []
+  },
+  "fest39": {
+    "navn": "Lite hus ved byporten (korporalbolig)",
+    "adresse": "Fredriksten festning",
+    "gnr_bnr": null,
+    "matrikkel_1901": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": null,
+      "leiligheter": "1"
+    },
+    "folketelling_meta": {
+      "adresse_historisk": "Fæstningen",
+      "gardens_nummer_raa": null,
+      "krets": "003a",
+      "plassering": "Ved byporten, nær offisersboligen",
+      "kart_1885": "Umerket på 1883-kartet",
+      "konfidens": "middels-høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Enetasjes våningshus. Står i dag som rødt murhus på eksakt samme fotavtrykk som gult trebygg på 1905-kartet."
     },
     "bilder": [],
     "historie": null,
@@ -19732,7 +19732,7 @@
     "lenker": []
   },
   "fest40": {
-    "navn": "Vaskekonens bolig",
+    "navn": "Losjementbygningen",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19746,10 +19746,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": null,
-      "kart_1885": null,
-      "konfidens": "lav",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "plassering": "Inne i festningsmuren, i dag vertshuset Curtisen",
+      "kart_1885": "Umerket på 1883-kartet",
+      "konfidens": "høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Toetasjes hvitmalt bygg inn i festningsmur. Opprinnelig «Kommandantens uthus», brant 1826, gjenoppbygd 1830-tallet av Garben."
     },
     "bilder": [],
     "historie": null,
@@ -19757,7 +19757,7 @@
     "lenker": []
   },
   "fest41": {
-    "navn": "Ekserserhuset (el. magasin)",
+    "navn": "Laboratoriet ved Huth",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19771,10 +19771,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": null,
-      "kart_1885": "L (Ekserserhus) el. magasin",
-      "konfidens": "middels-lav",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "plassering": "Ved Huth batteri, i utkanten pga. eksplosjonsfare",
+      "kart_1885": "Nr. 13 (Laboratorier for Artilleriet)",
+      "konfidens": "høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Census: «1ste Etg til Opbevaringsrum» (lager nede, bolig oppe). Kruttlaboratoriebygningen."
     },
     "bilder": [],
     "historie": null,
@@ -19782,7 +19782,7 @@
     "lenker": []
   },
   "fest42": {
-    "navn": "Kaserne I (underoff.skole)",
+    "navn": "Kaserne I (Øvre el. Nedre)",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19796,10 +19796,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": null,
-      "kart_1885": "K el. H",
+      "plassering": "Øvre kaserne (nr. 3, Gamle kommandantbolig) eller Nedre kaserne (nr. 17, revet 1960-61)",
+      "kart_1885": "Nr. 3 (Øvre kaserne) el. nr. 17 (Nedre kaserne)",
       "konfidens": "middels",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Kan ikke skille mellom Øvre og Nedre kaserne uten mer info."
     },
     "bilder": [],
     "historie": null,
@@ -19807,7 +19807,7 @@
     "lenker": []
   },
   "fest43": {
-    "navn": "Kaserne II (hornblåserkorps)",
+    "navn": "Kaserne II (Øvre el. Nedre)",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19821,10 +19821,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": null,
-      "kart_1885": "H el. K",
+      "plassering": "Øvre kaserne (nr. 3, Gamle kommandantbolig) eller Nedre kaserne (nr. 17, revet 1960-61)",
+      "kart_1885": "Nr. 3 (Øvre kaserne) el. nr. 17 (Nedre kaserne)",
       "konfidens": "middels",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Kan ikke skille mellom Øvre og Nedre kaserne uten mer info. Hornblåserne har sivile biyrker."
     },
     "bilder": [],
     "historie": null,
@@ -19832,7 +19832,7 @@
     "lenker": []
   },
   "fest44": {
-    "navn": "Hovedvakten",
+    "navn": "Corps de garde",
     "adresse": "Fredriksten festning",
     "gnr_bnr": null,
     "matrikkel_1901": null,
@@ -19846,10 +19846,10 @@
       "adresse_historisk": "Fæstningen",
       "gardens_nummer_raa": null,
       "krets": "003a",
-      "plassering": "Ved hovedporten",
-      "kart_1885": "Hovedvakten",
-      "konfidens": "høy",
-      "merknad": "Militær eiendom utenfor matrikkelsystemet"
+      "plassering": "Ved Place d'Armes, hovedporten",
+      "kart_1885": "Nr. 4 (Corps de garde)",
+      "konfidens": "middels-høy",
+      "merknad": "Militær eiendom utenfor matrikkelsystemet. Census: eksplisitt «Vagtbygning». Beskrevet som vakker, lysmalt vaktstue bygget i 1840."
     },
     "bilder": [],
     "historie": null,
