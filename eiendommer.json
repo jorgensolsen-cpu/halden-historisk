@@ -1261,7 +1261,7 @@
       "lopenr": "353",
       "lopenr_1878": "438",
       "matrikkelnr": "492 a",
-      "eier": "Bordhusarb. Laur. A Andreassen",
+      "eier": "Bordhusarb. L. A. Andreassen",
       "skattetakst": 3800,
       "brandtakst": 3530,
       "gate": "Strandgaden",
@@ -1868,7 +1868,7 @@
       "lopenr": "380",
       "lopenr_1878": "465 466",
       "matrikkelnr": "794 a & 464",
-      "eier": "Slagter Chr Østbye",
+      "eier": "Slagter Chr. Østbye",
       "skattetakst": 17000,
       "brandtakst": 29370,
       "gate": "Vestergade",
@@ -2832,7 +2832,7 @@
       "lopenr": "443",
       "lopenr_1878": "493",
       "matrikkelnr": "439 a & 440 a",
-      "eier": "Fr.halds Kommune",
+      "eier": "Fredrikshalds Kommune",
       "skattetakst": null,
       "brandtakst": 132110,
       "gate": "Oscars Gade",
@@ -3642,10 +3642,10 @@
       "anmerkning": "Hus og Brygge."
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Udhus",
+      "leiligheter": "4"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3673,10 +3673,10 @@
       "anmerkning": "Hus og Brygge."
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Almindelige Udhuse",
+      "leiligheter": "3"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3746,10 +3746,10 @@
       "anmerkning": "Hus og Have."
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Udhus",
+      "leiligheter": "ja 7"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3778,9 +3778,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "etasjer": "2",
+      "sidebygninger": "Udhus",
+      "leiligheter": "ja 4"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3809,9 +3809,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "ja 2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3839,10 +3839,10 @@
       "anmerkning": "Hus."
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "almindelig Udhus",
+      "leiligheter": "4"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3922,10 +3922,10 @@
       "anmerkning": "Hus og Skibsværft."
     },
     "bygning": {
-      "hustype": null,
+      "hustype": "Fabrik",
       "etasjer": null,
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "1"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -3975,7 +3975,7 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "2",
       "sidebygninger": null,
       "leiligheter": null
     },
@@ -4006,9 +4006,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "etasjer": "1",
+      "sidebygninger": "Udhus",
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4037,9 +4037,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "1"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4068,9 +4068,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4098,10 +4098,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
+      "sidebygninger": "1 Udhus",
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4129,10 +4129,10 @@
       "anmerkning": "Arbeiderbolig."
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Almindelige Udhuse",
+      "leiligheter": "15"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4223,10 +4223,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4253,7 +4253,12 @@
       "gate": "Gamle Sørhaugen",
       "anmerkning": "Løkke."
     },
-    "bygning": null,
+    "bygning": {
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "almindelig Udhus",
+      "leiligheter": "ja 4"
+    },
     "folketelling_meta": null,
     "bilder": [],
     "historie": null,
@@ -4275,10 +4280,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "beboelse",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4338,9 +4343,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4368,10 +4373,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Vaaningshus, beboelse",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "4"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4399,10 +4404,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Vaaningshus, Forretningslokale",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4430,10 +4435,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "beboelse",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4461,10 +4466,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Vaaningshus",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "begge"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4493,9 +4498,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4524,9 +4529,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4554,10 +4559,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Forretningslokale",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "2"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4585,10 +4590,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Vaaningshus, Forretningslokale",
+      "etasjer": "2",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "udelukkende til Beboelse 4"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4617,9 +4622,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "ja"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4648,9 +4653,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "Beboelse hele"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4679,9 +4684,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "1"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4710,9 +4715,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "1"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4740,10 +4745,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
+      "hustype": "Våningshus",
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "1"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4772,9 +4777,9 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "1",
       "sidebygninger": null,
-      "leiligheter": null
+      "leiligheter": "6"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4802,10 +4807,10 @@
       "anmerkning": null
     },
     "bygning": {
-      "hustype": null,
-      "etasjer": null,
-      "sidebygninger": null,
-      "leiligheter": null
+      "hustype": "Vaaningshus",
+      "etasjer": "2",
+      "sidebygninger": "Sidebygninger",
+      "leiligheter": "3"
     },
     "folketelling_meta": {
       "adresse_historisk": null,
@@ -4855,7 +4860,7 @@
     },
     "bygning": {
       "hustype": null,
-      "etasjer": null,
+      "etasjer": "2",
       "sidebygninger": null,
       "leiligheter": null
     },
@@ -5427,7 +5432,7 @@
       "lopenr": "63",
       "lopenr_1878": "190",
       "matrikkelnr": "290c",
-      "eier": "Handelm. J. P. Hansen",
+      "eier": "Handelsmand J. P. Hansen",
       "skattetakst": 8000,
       "brandtakst": 5820,
       "gate": "Pyntestrædet",
@@ -7884,7 +7889,7 @@
       "lopenr": "180",
       "lopenr_1878": "269",
       "matrikkelnr": "97",
-      "eier": "Snedker Aug. Boman",
+      "eier": "Snedker Aug. Bohman",
       "skattetakst": 13000,
       "brandtakst": 11800,
       "gate": "Elvegaden",
@@ -8031,7 +8036,7 @@
       "lopenr": "187",
       "lopenr_1878": "265",
       "matrikkelnr": "103a2",
-      "eier": "Handelsm. J. P. Hansen",
+      "eier": "Handelsmand J. P. Hansen",
       "skattetakst": 10000,
       "brandtakst": null,
       "gate": "Elvegaden",
@@ -8661,7 +8666,7 @@
       "lopenr": "217",
       "lopenr_1878": "299",
       "matrikkelnr": "134a & 114b2",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 1500,
       "brandtakst": null,
       "gate": "Møllergaden",
@@ -8682,7 +8687,7 @@
       "lopenr": "218",
       "lopenr_1878": "300",
       "matrikkelnr": "134b",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 16000,
       "brandtakst": null,
       "gate": "Møllergaden",
@@ -8703,7 +8708,7 @@
       "lopenr": "219",
       "lopenr_1878": "301",
       "matrikkelnr": "133",
-      "eier": "Kommuen",
+      "eier": "Kommunen",
       "skattetakst": null,
       "brandtakst": 23000,
       "gate": "Møllergaden",
@@ -8724,7 +8729,7 @@
       "lopenr": "220",
       "lopenr_1878": "302",
       "matrikkelnr": "902b",
-      "eier": "Kommuen",
+      "eier": "Kommunen",
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Møllergaden",
@@ -8745,7 +8750,7 @@
       "lopenr": "221",
       "lopenr_1878": null,
       "matrikkelnr": "902a",
-      "eier": "Kommuen",
+      "eier": "Kommunen",
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Møllergaden",
@@ -8766,7 +8771,7 @@
       "lopenr": "222",
       "lopenr_1878": "303",
       "matrikkelnr": "901",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 12000,
       "brandtakst": 11500,
       "gate": "Møllergaden",
@@ -10131,7 +10136,7 @@
       "lopenr": "287",
       "lopenr_1878": null,
       "matrikkelnr": "131 b",
-      "eier": "Fr Gjersøe",
+      "eier": "Fr. Gjersøe",
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Langbryggen",
@@ -10404,7 +10409,7 @@
       "lopenr": "398",
       "lopenr_1878": "509",
       "matrikkelnr": "441 a",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 9000,
       "brandtakst": 11740,
       "gate": "Theatergaden",
@@ -10635,7 +10640,7 @@
       "lopenr": "427",
       "lopenr_1878": "633",
       "matrikkelnr": "814 & 813",
-      "eier": "Agent Simensen",
+      "eier": "Agent Paul Simensen",
       "skattetakst": 9500,
       "brandtakst": 11450,
       "gate": "Vognmagergaden",
@@ -10740,7 +10745,7 @@
       "lopenr": "432",
       "lopenr_1878": null,
       "matrikkelnr": "843 c2 & 487 c2",
-      "eier": "Arkitekt W Suhrke",
+      "eier": "Arkitekt W. Suhrke",
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Værns Gade",
@@ -11133,7 +11138,7 @@
   },
   "483": {
     "navn": null,
-    "adresse": "Kristian den Ytes Plads",
+    "adresse": "Kristian den Vtes Plads",
     "gnr_bnr": null,
     "matrikkel_1901": {
       "lopenr": "483",
@@ -11154,7 +11159,7 @@
   },
   "484": {
     "navn": null,
-    "adresse": "Kristian den Ytes Plads",
+    "adresse": "Kristian den Vtes Plads",
     "gnr_bnr": null,
     "matrikkel_1901": {
       "lopenr": "484",
@@ -11433,7 +11438,7 @@
       "lopenr": "497",
       "lopenr_1878": "650",
       "matrikkelnr": "355 b",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 16000,
       "brandtakst": 24000,
       "gate": "Busterudgaden",
@@ -11454,7 +11459,7 @@
       "lopenr": "498",
       "lopenr_1878": "651",
       "matrikkelnr": "355 f",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 15000,
       "brandtakst": 19880,
       "gate": "Busterudgaden",
@@ -11475,7 +11480,7 @@
       "lopenr": "499",
       "lopenr_1878": "652",
       "matrikkelnr": "355 c",
-      "eier": "Fr.halds Kommune",
+      "eier": "Fredrikshalds Kommune",
       "skattetakst": null,
       "brandtakst": 34700,
       "gate": "Busterudgaden",
@@ -11622,7 +11627,7 @@
       "lopenr": "506",
       "lopenr_1878": "664",
       "matrikkelnr": "355 d",
-      "eier": "Fr.halds Saugbrugsforening",
+      "eier": "Saugbrugsforeningen",
       "skattetakst": 18500,
       "brandtakst": 27900,
       "gate": "Busterudgaden",
@@ -11706,7 +11711,7 @@
       "lopenr": "510",
       "lopenr_1878": null,
       "matrikkelnr": "355 g²",
-      "eier": "Fr.halds Kommune",
+      "eier": "Fredrikshalds Kommune",
       "skattetakst": null,
       "brandtakst": null,
       "gate": "Busterudgaden",
@@ -12913,7 +12918,7 @@
       "lopenr": "573",
       "lopenr_1878": "768",
       "matrikkelnr": "557",
-      "eier": "O.R.Sagfører O A. Dietz",
+      "eier": "O.R.Sagfører O. A. Dietz",
       "skattetakst": 30000,
       "brandtakst": 45600,
       "gate": "Østergade",
@@ -18845,7 +18850,7 @@
       "lopenr": "856",
       "lopenr_1878": "1180, 1181, 1182, 1183",
       "matrikkelnr": "771a, 771b, 736a, 737a, 736b, 737b, 738a, 738b, 745b, 743 & 744",
-      "eier": "Haldens Bomulds. & Væveri",
+      "eier": "Haldens Bomuldsp. & Væveri",
       "skattetakst": 415000,
       "brandtakst": null,
       "gate": "Nordre Tistedalen",
@@ -18866,7 +18871,7 @@
       "lopenr": "857",
       "lopenr_1878": "1197",
       "matrikkelnr": "772, 773, 774 & 775",
-      "eier": "Haldens Bomulds. & Væveri",
+      "eier": "Haldens Bomuldsp. & Væveri",
       "skattetakst": 70000,
       "brandtakst": null,
       "gate": "Nordre Tistedalen",
