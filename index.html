@@ -299,12 +299,66 @@
   .baselag,.histlag{transition:filter .25s}
   body.sok .baselag,body.sok .histlag{filter:saturate(.25) brightness(1.05)}
 
+  /* ── Drag-handle (skjult på desktop) ── */
+  .drag-handle{display:none}
+
+  /* ── Mobil: bunnpanel ── */
   @media(max-width:860px){
-    .main{flex-direction:column-reverse}
-    aside{width:100%;height:52vh}
-    #map{height:48vh}
+    body{overflow:hidden}
+    .topbar{height:48px;padding:0 14px}
+    .topbar-title{font-size:15px}
+    .topbar-subtitle{font-size:9px}
+    .ornament{height:32px}
     .topbar-nav{gap:2px}
-    .topbar-nav a{padding:6px 8px;font-size:11px}
+    .topbar-nav a{padding:5px 8px;font-size:11px}
+
+    .main{flex-direction:column;position:relative;flex:1;min-height:0}
+    #map{flex:1;height:auto;position:relative}
+
+    aside{
+      position:fixed;bottom:0;left:0;right:0;z-index:1000;
+      width:100%;height:auto;max-height:82dvh;
+      border-left:none;border-top:1px solid var(--line);
+      border-radius:14px 14px 0 0;
+      transform:translateY(calc(100% - var(--peek)));
+      transition:transform .3s cubic-bezier(.4,0,.2,1);
+      will-change:transform;
+      touch-action:none;
+    }
+    aside.open{transform:translateY(0)}
+    :root{--peek:110px}
+
+    .drag-handle{
+      display:flex;justify-content:center;padding:10px 0 2px;cursor:grab;
+    }
+    .drag-handle span{
+      width:36px;height:4px;border-radius:2px;background:var(--paper-dim);opacity:.5;
+    }
+
+    .sidebar-search{padding:10px 16px}
+    .nouveau-divider{display:none}
+    .tab-inner{padding:14px 16px 18px}
+    .tabs{padding:0 16px}
+    .top{padding:16px 16px 0}
+    .addr{font-size:18px}
+    .hh-navn{font-size:15px}
+    .kilde{padding:10px 16px;font-size:10px}
+
+    /* Leaflet zoom-knapper over panelet */
+    .leaflet-bottom.leaflet-right{bottom:118px !important}
+
+    /* Opasitetskontroll: kompaktere */
+    .opacity-control{bottom:120px;left:10px;min-width:170px;padding:10px 12px}
+    .kartforklaring{display:none}
+
+    /* Velkomstoverlay: kompaktere */
+    .welcome{padding:24px 28px 20px}
+    .welcome-title{font-size:32px}
+    .welcome-sub{font-size:13px}
+    .welcome-ornament svg{width:140px}
+
+    /* Modaler: fullbredde */
+    .modal{width:95%;padding:24px 22px;max-height:80vh;overflow-y:auto}
   }
 </style>
 </head>
@@ -364,7 +418,8 @@
     </div>
   </div>
 
-  <aside>
+  <aside id="sheet">
+    <div class="drag-handle"><span></span></div>
     <!-- Søk -->
     <div class="sidebar-search">
       <div class="search-wrap">
@@ -925,6 +980,54 @@ function eksporterEndringer(){
 
 sjekkAdmin();
 start();
+
+/* ── Mobil bunnpanel: sveip opp/ned ── */
+(function(){
+  const sheet = document.getElementById('sheet');
+  if (!sheet) return;
+  const isMobile = () => window.matchMedia('(max-width:860px)').matches;
+  let startY, startT, dragging = false;
+
+  function open(){ sheet.classList.add('open'); }
+  function close(){ sheet.classList.remove('open'); }
+
+  sheet.addEventListener('touchstart', e => {
+    if (!isMobile()) return;
+    if (e.target.closest('#panelBody') && sheet.classList.contains('open')) return;
+    dragging = true;
+    startY = e.touches[0].clientY;
+    startT = Date.now();
+    sheet.style.transition = 'none';
+  }, {passive:true});
+
+  sheet.addEventListener('touchmove', e => {
+    if (!dragging) return;
+    const dy = e.touches[0].clientY - startY;
+    if (sheet.classList.contains('open')) {
+      sheet.style.transform = 'translateY(' + Math.max(0, dy) + 'px)';
+    } else {
+      sheet.style.transform = 'translateY(calc(100% - var(--peek) + ' + Math.min(0, dy) + 'px))';
+    }
+  }, {passive:true});
+
+  sheet.addEventListener('touchend', e => {
+    if (!dragging) return;
+    dragging = false;
+    sheet.style.transition = '';
+    sheet.style.transform = '';
+    const dy = e.changedTouches[0].clientY - startY;
+    const fast = Date.now() - startT < 250;
+    if (sheet.classList.contains('open')) {
+      (dy > 60 || (fast && dy > 20)) ? close() : open();
+    } else {
+      (dy < -60 || (fast && dy < -20)) ? open() : close();
+    }
+  });
+
+  /* Åpne panelet automatisk ved bygningsklikk */
+  const origVis = window.vis;
+  window.vis = function(p){ origVis(p); if (isMobile()) open(); };
+})();
 </script>
 </body>
 </html>
