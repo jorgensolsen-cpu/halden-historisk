@@ -291,9 +291,17 @@
   },
   "307": {
     "navn": null,
-    "adresse": null,
+    "adresse": "Peder Ankers Gade",
     "gnr_bnr": null,
-    "matrikkel_1901": null,
+    "matrikkel_1901": {
+      "gate": "Peder Ankers Gade",
+      "eier": "Handelsmand Alfred Pedersen",
+      "matrikkelnr": "855a",
+      "skattetakst": 5200,
+      "brandtakst": 16000,
+      "anmerkning": "2 Gaarde og Løkke. (Omfatter også lnr 307b, matr 855b: \"Ny Gaard.\")",
+      "lopenr_1878": null
+    },
     "bygning": null,
     "folketelling_meta": null,
     "bilder": [],
