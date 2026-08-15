@@ -315,6 +315,7 @@
   .leaflet-container{font-family:inherit}
   .baselag,.histlag{transition:filter .25s}
   body.sok .baselag,body.sok .histlag{filter:saturate(.25) brightness(1.05)}
+  body.overlegg .baselag,body.overlegg .histlag{filter:saturate(0) brightness(1.1);transition:filter .4s}
 
   /* ── Drag-handle (skjult på desktop) ── */
   .drag-handle{display:none}
@@ -371,7 +372,7 @@
     .kartforklaring{display:none}
     .kartforklaring.mobil-open{display:block}
     .legend-toggle{
-      display:flex;align-items:center;justify-content:center;
+      display:flex !important;align-items:center;justify-content:center;
       position:absolute;bottom:120px;right:10px;z-index:600;
       width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
       background:rgba(28,33,38,.92);backdrop-filter:blur(8px);
@@ -455,7 +456,7 @@
     </div>
   </div>
 
-  <button type="button" class="legend-toggle" id="legendToggle" aria-label="Vis tegnforklaring">?</button>
+  <button type="button" class="legend-toggle" id="legendToggle" aria-label="Vis tegnforklaring" style="display:none">?</button>
   <aside id="sheet">
     <div class="drag-handle"><span></span></div>
     <!-- Søk -->
@@ -889,6 +890,7 @@ function applyOverlay(){
     forkl.classList.remove('synlig');
     forkl.innerHTML = '';
   }
+  document.body.classList.toggle('overlegg', !!aktivOverlegg);
   lag.eachLayer(l => {
     const id = l.feature && l.feature.properties.id;
     l.setStyle(l === forrige ? valgt : baseStil(id));
