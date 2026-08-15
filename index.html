@@ -96,16 +96,26 @@
   .kf-farge{width:14px;height:10px;border-radius:2px;flex-shrink:0}
   .kf-strek{width:14px;height:0;border-top:1.5px dashed var(--paper-dim);flex-shrink:0}
 
-  /* Bilde-toggle i kontrollpanel */
-  .bilde-toggle{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);
-    display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
-  .bilde-toggle input{accent-color:var(--signal-2);cursor:pointer;margin:0}
-  .bilde-toggle span{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--paper-dim)}
-  .bilde-marker{display:flex;align-items:center;justify-content:center;
-    width:22px;height:22px;border-radius:50%;
-    background:rgba(224,163,60,.85);border:2px solid #fff;
-    box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer}
-  .bilde-marker svg{width:12px;height:12px;fill:#fff}
+  /* Kartoverlegg-velger */
+  .overlegg-velger{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+  .overlegg-velger label{display:block;font-size:10px;text-transform:uppercase;
+    letter-spacing:.09em;color:var(--paper-dim);margin-bottom:6px}
+  .overlegg-velger select{width:100%;padding:6px 8px;border-radius:4px;
+    border:1px solid var(--line);background:var(--panel-2);
+    color:var(--paper);font:inherit;font-size:12px;cursor:pointer;
+    -webkit-appearance:none;appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6' fill='%236f7780'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 8px center;padding-right:24px}
+  .overlegg-velger select:focus{outline:none;border-color:var(--signal-2)}
+  .overlegg-forklaring{margin-top:10px;display:none}
+  .overlegg-forklaring.synlig{display:block}
+  .overlegg-rampe{display:flex;gap:0;border-radius:3px;overflow:hidden;height:10px;margin-bottom:6px}
+  .overlegg-rampe span{flex:1;display:block}
+  .overlegg-etiketter{display:flex;justify-content:space-between;font-size:9px;color:var(--paper-dim);letter-spacing:.02em}
+  .overlegg-kategori{display:flex;align-items:center;gap:8px;margin-bottom:4px;
+    font-size:11px;color:var(--paper-dim);line-height:1.3}
+  .overlegg-kategori:last-child{margin-bottom:0}
+  .overlegg-kategori .kf-farge{width:14px;height:10px;border-radius:2px;flex-shrink:0}
 
   /* ===========================
      SIDEBAR
@@ -433,10 +443,15 @@
         <div class="kartforklaring-rad"><span class="kf-strek"></span> Planlagt vei</div>
         <div class="kartforklaring-rad"><span class="kf-strek" style="border-top:2.5px dashed var(--paper-dim);border-image:repeating-linear-gradient(90deg,var(--paper-dim) 0 8px,transparent 8px 11px,var(--paper-dim) 11px 14px,transparent 14px 17px) 1"></span> Bygrense</div>
       </div>
-      <label class="bilde-toggle">
-        <input type="checkbox" id="visBilder">
-        <span>Vis bilder</span>
-      </label>
+      <div class="overlegg-velger">
+        <label for="kartOverlegg">Fargelegg etter</label>
+        <select id="kartOverlegg">
+          <option value="">Ingen</option>
+          <option value="tetthet">Folketetthet</option>
+          <option value="foto">Har foto</option>
+        </select>
+      </div>
+      <div class="overlegg-forklaring" id="overleggForklaring"></div>
     </div>
   </div>
 
@@ -820,12 +835,66 @@ function vis(p){
 }
 
 const stil   = {color:'#15181c',weight:1.2,opacity:.7,fillColor:'#15181c',fillOpacity:.06};
-const valgt  = {color:'#15181c',weight:2.6,opacity:1,fillColor:'#e0a33c',fillOpacity:.30};
+const valgt  = {color:'#0077b6',weight:2.6,opacity:1,fillColor:'#00b4d8',fillOpacity:.32};
 const dimmet = {color:'#15181c',weight:.8,opacity:.2,fillColor:'#15181c',fillOpacity:.02};
-const treff  = {color:'#15181c',weight:2.2,opacity:1,fillColor:'#e0a33c',fillOpacity:.28};
-const eierHL = {color:'#c2452d',weight:2.4,opacity:1,fillColor:'#c2452d',fillOpacity:.25};
+const treff  = {color:'#0077b6',weight:2.2,opacity:1,fillColor:'#48cae4',fillOpacity:.28};
+const eierHL = {color:'#7b68ae',weight:2.4,opacity:1,fillColor:'#7b68ae',fillOpacity:.28};
 let forrige = null, lag = null, aktivFane = null;
 let eierFilter = null;
+let aktivOverlegg = '';
+
+const TETTHET_FARGER = [
+  {min:1, max:5, farge:'#c6dbef', opacity:.40, etikett:'1–5'},
+  {min:6, max:12, farge:'#6baed6', opacity:.45, etikett:'6–12'},
+  {min:13, max:20, farge:'#3182bd', opacity:.50, etikett:'13–20'},
+  {min:21, max:35, farge:'#1a5a99', opacity:.55, etikett:'21–35'},
+  {min:36, max:999, farge:'#08306b', opacity:.60, etikett:'36+'}
+];
+const TETTHET_INGEN = {color:'#15181c',weight:1,opacity:.4,fillColor:'#15181c',fillOpacity:.03};
+const FOTO_HAR = {color:'#15181c',weight:1.5,opacity:.8,fillColor:'#2ca25f',fillOpacity:.40};
+const FOTO_IKKE = {color:'#15181c',weight:1,opacity:.4,fillColor:'#15181c',fillOpacity:.03};
+
+function tetthetsStil(id){
+  const d = beboere[id];
+  const n = d ? d.husstander.flatMap(h => h.beboere).length : 0;
+  if (n === 0) return TETTHET_INGEN;
+  for (const t of TETTHET_FARGER) if (n >= t.min && n <= t.max)
+    return {color:'#15181c',weight:1.2,opacity:.7,fillColor:t.farge,fillOpacity:t.opacity};
+  return TETTHET_INGEN;
+}
+
+function baseStil(id){
+  if (aktivOverlegg === 'tetthet') return tetthetsStil(id);
+  if (aktivOverlegg === 'foto'){
+    const e = eiendommer[id];
+    return (e && e.bilder && e.bilder.length) ? FOTO_HAR : FOTO_IKKE;
+  }
+  return stil;
+}
+
+function applyOverlay(){
+  if (!lag) return;
+  const forkl = document.getElementById('overleggForklaring');
+  if (aktivOverlegg === 'tetthet'){
+    forkl.classList.add('synlig');
+    forkl.innerHTML = `
+      <div class="overlegg-rampe">${TETTHET_FARGER.map(t => `<span style="background:${t.farge}"></span>`).join('')}</div>
+      <div class="overlegg-etiketter"><span>1</span><span>12</span><span>20</span><span>35</span><span>72</span></div>`;
+  } else if (aktivOverlegg === 'foto'){
+    forkl.classList.add('synlig');
+    forkl.innerHTML = `
+      <div class="overlegg-kategori"><span class="kf-farge" style="background:#2ca25f"></span> Har historisk foto</div>
+      <div class="overlegg-kategori"><span class="kf-farge" style="background:rgba(21,24,28,.3)"></span> Ingen foto</div>`;
+  } else {
+    forkl.classList.remove('synlig');
+    forkl.innerHTML = '';
+  }
+  lag.eachLayer(l => {
+    const id = l.feature && l.feature.properties.id;
+    l.setStyle(l === forrige ? valgt : baseStil(id));
+  });
+}
+
 let bildeMarkorer = [];
 const KAMERA_IKON = L.divIcon({
   className:'',
@@ -855,7 +924,7 @@ function markerEier(eierNavn){
 function nullstillEierMarkering(){
   if (!eierFilter || !lag) return;
   eierFilter = null;
-  lag.eachLayer(l => { l.setStyle(l === forrige ? valgt : stil); });
+  lag.eachLayer(l => { l.setStyle(l === forrige ? valgt : baseStil(l.feature.properties.id)); });
 }
 
 let casing = null;
@@ -887,13 +956,13 @@ async function start(){
       l.on('click', (ev) => {
         if (ev.originalEvent) ev.originalEvent._parsellKlikk = true;
         eierFilter = null;
-        if (forrige) forrige.setStyle(stil);
-        lag.eachLayer(x => { if (x !== l && x !== forrige) x.setStyle(stil); });
+        if (forrige) forrige.setStyle(baseStil(forrige.feature.properties.id));
+        lag.eachLayer(x => { if (x !== l && x !== forrige) x.setStyle(baseStil(x.feature.properties.id)); });
         l.setStyle(valgt); settCasing(l); forrige = l; vis(p);
         history.replaceState(null, '', '#lnr=' + p.id);
       });
-      l.on('mouseover', () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')) l.setStyle({fillOpacity:.32}); });
-      l.on('mouseout',  () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')) l.setStyle(stil); });
+      l.on('mouseover', () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')){ const bs=baseStil(p.id); l.setStyle({fillOpacity:Math.min((bs.fillOpacity||.06)+.15,.7)}); }});
+      l.on('mouseout',  () => { if (l !== forrige && !eierFilter && !document.body.classList.contains('sok')) l.setStyle(baseStil(p.id)); });
       const e = eiendommer[p.id] || {};
       const ft = e.folketelling_meta || {};
       const mat = e.matrikkel_1901 || {};
@@ -954,9 +1023,10 @@ function fjernBildeMarkorer(){
   bildeMarkorer.forEach(m => map.removeLayer(m));
   bildeMarkorer = [];
 }
-document.getElementById('visBilder').addEventListener('change', e => {
-  if (e.target.checked) visBildeMarkorer();
-  else fjernBildeMarkorer();
+document.getElementById('kartOverlegg').addEventListener('change', e => {
+  aktivOverlegg = e.target.value;
+  fjernBildeMarkorer();
+  applyOverlay();
 });
 
 /* Tegnforklaring-toggle (mobil) */
@@ -1020,7 +1090,7 @@ document.getElementById('sok').addEventListener('input', e => {
   const q = e.target.value.trim().toLowerCase();
   document.body.classList.toggle('sok', !!q);
   if (!q) {
-    lag.eachLayer(l => l.setStyle(l === forrige ? valgt : stil));
+    lag.eachLayer(l => l.setStyle(l === forrige ? valgt : baseStil(l.feature && l.feature.properties.id)));
     sokResultatEl.style.display = 'none';
     return;
   }
