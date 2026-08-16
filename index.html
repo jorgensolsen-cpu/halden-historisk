@@ -40,10 +40,10 @@
   .topbar-subtitle{font-size:10px;color:var(--paper-dim);letter-spacing:.06em;
     text-transform:uppercase;margin-top:2px}
   .topbar-nav{display:flex;gap:6px}
-  .topbar-nav button{font-size:12px;font-weight:500;color:var(--paper-dim);
+  .topbar-nav button,.topbar-nav a{font-size:12px;font-weight:500;color:var(--paper-dim);
     background:none;border:none;padding:6px 14px;border-radius:3px;
-    letter-spacing:.02em;transition:color .15s,background .15s;cursor:pointer;font:inherit}
-  .topbar-nav button:hover{color:var(--paper);background:rgba(239,231,214,.06)}
+    letter-spacing:.02em;transition:color .15s,background .15s;cursor:pointer;font:inherit;text-decoration:none}
+  .topbar-nav button:hover,.topbar-nav a:hover{color:var(--paper);background:rgba(239,231,214,.06)}
 
   /* ===========================
      MAIN (kart + sidebar)
@@ -51,7 +51,108 @@
   .main{display:flex;flex:1;min-height:0}
   #map{flex:1;background:#0f1214;position:relative}
   aside{width:360px;height:100%;flex-shrink:0;background:var(--panel);
-        border-left:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
+        border-left:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden;
+        transition:width .35s cubic-bezier(.4,0,.2,1)}
+  body.view-wide aside{width:55%}
+  body.view-wide #map{flex:1}
+
+  /* Views inside sidebar */
+  .side-view{display:none;flex:1;overflow-y:auto;padding:28px 32px 48px;min-height:0}
+  .side-view.active{display:block}
+  #kartView{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+  #kartView.hidden{display:none}
+
+  /* WIP banner */
+  .wip-banner{background:var(--signal);color:#fff;text-align:center;padding:8px 14px;font-size:12px;font-weight:500;letter-spacing:.02em;border-radius:4px;margin:0 0 16px}
+
+  /* Chart styles for sidebar views */
+  .sv-hero{text-align:center;margin-bottom:8px}
+  .sv-hero h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;margin-bottom:4px}
+  .sv-hero .tagline{font-size:12px;color:var(--paper-dim)}
+  .sv-kpi-row{display:flex;justify-content:center;gap:0;border:1px solid var(--line);border-radius:6px;margin-bottom:24px}
+  .sv-kpi{flex:1;text-align:center;padding:14px 12px;border-right:1px solid var(--line)}
+  .sv-kpi:last-child{border-right:none}
+  .sv-kpi-value{font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:600;font-variant-numeric:tabular-nums}
+  .sv-kpi-label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--paper-dim);margin-top:2px}
+  .sv-kpi-sub{font-size:10px;color:var(--paper-dim);opacity:.7;margin-top:1px}
+
+  .sv-section{margin-bottom:36px}
+  .sv-section-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px;margin-bottom:3px}
+  .sv-section-sub{font-size:12px;color:var(--paper-dim);margin-bottom:18px;line-height:1.5}
+  .sv-card{background:var(--panel-2);border:1px solid var(--line);border-radius:6px;padding:20px 20px 16px;margin-bottom:16px}
+  .sv-card-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:15px;margin-bottom:3px}
+  .sv-card-sub{font-size:11px;color:var(--paper-dim);margin-bottom:14px}
+  .sv-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+  /* Horizontal bars */
+  .sv-hbar{margin-bottom:10px}
+  .sv-hbar-label{font-size:11px;color:var(--paper-dim);margin-bottom:2px;display:flex;justify-content:space-between;align-items:baseline}
+  .sv-hbar-label .ct{font-variant-numeric:tabular-nums;color:var(--paper);font-weight:500}
+  .sv-hbar-track{height:16px;background:rgba(239,231,214,.04);border-radius:3px;overflow:hidden}
+  .sv-hbar-fill{height:100%;border-radius:3px 0 0 3px}
+
+  /* Stacked bar */
+  .sv-stacked{display:flex;gap:2px;height:24px;border-radius:3px;overflow:hidden;margin-bottom:10px}
+  .sv-stacked-seg{min-width:2px}
+  .sv-stacked-legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .sv-stacked-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--paper-dim)}
+  .sv-stacked-swatch{width:10px;height:8px;border-radius:2px;flex-shrink:0}
+
+  /* Histogram */
+  .sv-hist{display:flex;align-items:flex-end;gap:2px;height:100px;border-bottom:1px solid rgba(239,231,214,.18);padding-bottom:0}
+  .sv-hist-wrap{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end}
+  .sv-hist-bar{width:100%;border-radius:3px 3px 0 0;min-height:1px}
+  .sv-hist-label{font-size:9px;color:var(--paper-dim);margin-top:4px;font-variant-numeric:tabular-nums}
+  .sv-hist-count{font-size:8px;color:var(--paper-dim);margin-bottom:2px;opacity:0;transition:opacity .3s}
+  .sv-hist-wrap:hover .sv-hist-count{opacity:1}
+
+  /* Pyramid */
+  .sv-pyramid-legend{display:flex;justify-content:center;gap:16px;margin-bottom:12px}
+  .sv-pyramid-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--paper-dim)}
+  .sv-pyramid-swatch{width:10px;height:8px;border-radius:2px}
+
+  /* Yrker: sector grid */
+  .sv-sector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+  .sv-sector-card{background:var(--panel-2);border:1px solid var(--line);border-radius:5px;padding:12px;cursor:pointer;transition:border-color .15s,background .15s}
+  .sv-sector-card:hover{border-color:rgba(239,231,214,.3)}
+  .sv-sector-card.active{border-color:var(--signal-2);background:rgba(224,163,60,.06)}
+  .sv-sector-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  .sv-sector-name{font-size:12px;font-weight:600}
+  .sv-sector-count{font-size:12px;font-variant-numeric:tabular-nums;color:var(--paper-dim)}
+  .sv-sector-bar{display:flex;gap:2px;height:6px;border-radius:3px;overflow:hidden;margin-bottom:4px}
+  .sv-sector-bar-m{background:var(--cat-1);border-radius:3px 0 0 3px}
+  .sv-sector-bar-k{background:var(--cat-2);border-radius:0 3px 3px 0}
+  .sv-sector-pct{display:flex;justify-content:space-between;font-size:9px;color:var(--paper-dim)}
+  .sv-sector-pct .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:3px;vertical-align:middle}
+
+  /* Detail panel */
+  .sv-detail{background:var(--panel-2);border:1px solid var(--signal-2);border-radius:6px;padding:16px 18px;margin-bottom:16px;display:none;position:relative}
+  .sv-detail.open{display:block}
+  .sv-detail-close{position:absolute;top:8px;right:10px;background:none;border:none;color:var(--paper-dim);font-size:18px;cursor:pointer;padding:4px 8px}
+  .sv-detail-close:hover{color:var(--paper)}
+  .sv-detail-title{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:16px;margin-bottom:2px}
+  .sv-detail-sub{font-size:11px;color:var(--paper-dim);margin-bottom:12px}
+  .sv-occ-bar{margin-bottom:6px}
+  .sv-occ-label{display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px}
+  .sv-occ-label .ct{color:var(--paper-dim);font-variant-numeric:tabular-nums}
+  .sv-occ-track{display:flex;gap:0;height:12px;border-radius:3px;overflow:hidden;background:rgba(239,231,214,.04)}
+  .sv-occ-fill-m{background:var(--cat-1);opacity:.85}
+  .sv-occ-fill-k{background:var(--cat-2);opacity:.85}
+
+  /* Overview stacked bar */
+  .sv-full-bar{display:flex;gap:2px;height:28px;border-radius:4px;overflow:hidden;margin-bottom:8px}
+  .sv-full-bar-seg{position:relative;cursor:pointer;min-width:3px;transition:opacity .15s}
+  .sv-full-bar-seg:hover{opacity:.8}
+  .sv-legend{display:flex;gap:12px;margin-bottom:12px}
+  .sv-legend-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--paper-dim)}
+  .sv-legend-swatch{width:10px;height:8px;border-radius:2px;flex-shrink:0}
+
+  /* Nav active state */
+  .topbar-nav .active{color:var(--signal-2) !important;background:rgba(224,163,60,.08) !important}
+
+  /* Footer in side-view */
+  .sv-footer{text-align:center;padding:24px 0 0;border-top:1px solid var(--line);font-size:10px;color:var(--paper-dim);line-height:1.6;margin-top:24px}
+  .sv-footer a{color:var(--signal-2);text-decoration:none}
 
   /* ===========================
      VELKOMSTTILSTAND (over kartet)
@@ -317,6 +418,9 @@
   body.sok .baselag,body.sok .histlag{filter:saturate(.25) brightness(1.05)}
   body.overlegg .baselag,body.overlegg .histlag{filter:saturate(0) brightness(1.1);transition:filter .4s}
 
+  /* ── Mobil-hint (skjult på desktop) ── */
+  .mobil-hint{display:none}
+
   /* ── Drag-handle (skjult på desktop) ── */
   .drag-handle{display:none}
 
@@ -327,8 +431,12 @@
     .topbar-title{font-size:15px}
     .topbar-subtitle{font-size:9px}
     .ornament{height:32px}
-    .topbar-nav{gap:2px}
-    .topbar-nav a{padding:5px 8px;font-size:11px}
+    .topbar-nav{gap:2px;flex-wrap:wrap;justify-content:flex-end}
+    .topbar-nav a,.topbar-nav button{padding:5px 8px;font-size:11px}
+    body.view-wide aside{width:100%;position:fixed;inset:0;z-index:1100;max-height:100dvh;border-radius:0;border-left:none}
+    body.view-wide #map{display:none}
+    .sv-cols{grid-template-columns:1fr}
+    .sv-sector-grid{grid-template-columns:1fr 1fr}
 
     .main{flex-direction:column;position:relative;flex:1;min-height:0}
     #map{flex:1;height:auto;position:relative}
@@ -370,6 +478,17 @@
     /* Opasitetskontroll: kompaktere */
     .opacity-control{bottom:120px;left:10px;min-width:170px;padding:10px 12px}
     .kartforklaring{display:none}
+
+    .mobil-hint{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      padding:8px 14px;
+      background:var(--panel-2);border-bottom:1px solid var(--line);
+      font:12px/1.4 'IBM Plex Sans',sans-serif;color:var(--paper-dim);
+    }
+    .mobil-hint button{
+      background:none;border:none;color:var(--paper-dim);font-size:18px;
+      padding:0 2px;cursor:pointer;line-height:1;
+    }
     .kartforklaring.mobil-open{display:block}
     .legend-toggle{
       display:flex !important;align-items:center;justify-content:center;
@@ -415,8 +534,15 @@
     <button type="button" onclick="openModal('om')">Om prosjektet</button>
     <button type="button" onclick="openModal('kilder')">Kilder</button>
     <button type="button" onclick="openModal('bidrag')">Bidragsytere</button>
+    <button type="button" id="navDemografi" onclick="showView('demografi')">Demografi</button>
+    <button type="button" id="navYrker" onclick="showView('yrker')">Yrker</button>
   </div>
 </nav>
+
+<div class="mobil-hint" id="mobilHint">
+  <span>Denne siden er foreløpig best på desktop.</span>
+  <button onclick="this.parentElement.remove()" aria-label="Lukk">&times;</button>
+</div>
 
 <!-- ============================================
      MAIN: KART + SIDEBAR
@@ -458,8 +584,9 @@
 
   <button type="button" class="legend-toggle" id="legendToggle" aria-label="Vis tegnforklaring" style="display:none">?</button>
   <aside id="sheet">
+    <!-- KART VIEW (property panel) -->
+    <div class="kart-content" id="kartView">
     <div class="drag-handle"><span></span></div>
-    <!-- Søk -->
     <div class="sidebar-search">
       <div class="search-wrap">
         <svg class="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -468,14 +595,10 @@
         <input type="search" id="sok" placeholder="Søk navn eller yrke …">
       </div>
     </div>
-
     <div id="sokResultater" style="display:none"></div>
-
-    <!-- Divider -->
     <div class="nouveau-divider">
       <svg viewBox="0 0 268.4 14.3" style="color:var(--gold);opacity:.6"><use href="#orn-div"/></svg>
     </div>
-
     <div id="panelTop"></div>
     <div id="panelTabs" style="display:none"></div>
     <div id="panelBody">
@@ -489,6 +612,112 @@
       </div>
     </div>
     <div id="panelKilde" class="kilde" style="display:none"></div>
+    </div>
+
+    <!-- DEMOGRAFI VIEW -->
+    <div class="side-view" id="demografiView">
+      <div class="wip-banner">⚠ Foreløpige tall — arbeid pågår</div>
+      <div class="sv-hero">
+        <h2>Byens befolkning i 1900</h2>
+        <p class="tagline">11 160 sjeler fordelt på 715 eiendommer i Fredrikshald</p>
+      </div>
+      <div class="sv-kpi-row">
+        <div class="sv-kpi"><div class="sv-kpi-value">11 160</div><div class="sv-kpi-label">Innbyggere</div></div>
+        <div class="sv-kpi"><div class="sv-kpi-value">28,0</div><div class="sv-kpi-label">Snittalder</div><div class="sv-kpi-sub">Median 23 år</div></div>
+        <div class="sv-kpi"><div class="sv-kpi-value">4,4</div><div class="sv-kpi-label">Per husstand</div><div class="sv-kpi-sub">2 558 husstander</div></div>
+        <div class="sv-kpi"><div class="sv-kpi-value">14,8%</div><div class="sv-kpi-label">Svenskfødte</div><div class="sv-kpi-sub">1 647 personer</div></div>
+      </div>
+
+      <div class="sv-section">
+        <h3 class="sv-section-title">Alderspyramide</h3>
+        <p class="sv-section-sub">Fordeling etter kjønn og femårs aldersgrupper. En ung by: nesten halvparten var under 20 år.</p>
+        <div class="sv-card">
+          <div class="sv-pyramid-legend">
+            <span class="sv-pyramid-item"><span class="sv-pyramid-swatch" style="background:#3987e5"></span> Menn (5 221)</span>
+            <span class="sv-pyramid-item"><span class="sv-pyramid-swatch" style="background:#d95926"></span> Kvinner (5 837)</span>
+          </div>
+          <div id="svPyramid"></div>
+        </div>
+      </div>
+
+      <div class="sv-cols">
+        <div class="sv-section">
+          <h3 class="sv-section-title">Hvor kom de fra?</h3>
+          <p class="sv-section-sub">Flertallet var fredrikshaldenere, men hver sjuende innbygger var svenskfødt.</p>
+          <div class="sv-card" id="svBirthplace"></div>
+        </div>
+        <div class="sv-section">
+          <h3 class="sv-section-title">Hva levde de av?</h3>
+          <p class="sv-section-sub">De 15 vanligste yrkesoppføringene.</p>
+          <div class="sv-card" id="svOccupation"></div>
+        </div>
+      </div>
+
+      <div class="sv-cols">
+        <div class="sv-section">
+          <h3 class="sv-section-title">Sivilstand</h3>
+          <p class="sv-section-sub">Over halvparten var ugift, noe som speiler den lave snittalderen.</p>
+          <div class="sv-card" id="svCivil"></div>
+        </div>
+        <div class="sv-section">
+          <h3 class="sv-section-title">Husstandsstørrelse</h3>
+          <p class="sv-section-sub">Fra enslige til storfamilier. To-personshusstanden var vanligst.</p>
+          <div class="sv-card" id="svHousehold"></div>
+        </div>
+      </div>
+
+      <div class="sv-section">
+        <h3 class="sv-section-title">Roller i husstanden</h3>
+        <p class="sv-section-sub">Husfar og husmor med barn, supplert av tjenere og losjerende.</p>
+        <div class="sv-card" id="svRoles"></div>
+      </div>
+
+      <div class="sv-footer">
+        <p>Kilde: <a href="https://www.digitalarkivet.no/census/search-residents?census_year=1900&county_id=01&municipality_id=0101" target="_blank" rel="noopener">Digitalarkivet — Folketelling 1900, Fredrikshald kjøpstad</a></p>
+        <p style="margin-top:8px;color:var(--signal-2);font-style:italic">Tallene er foreløpige — dette er et pågående arbeid.</p>
+      </div>
+    </div>
+
+    <!-- YRKER VIEW -->
+    <div class="side-view" id="yrkerView">
+      <div class="wip-banner">⚠ Foreløpige tall — arbeid pågår</div>
+      <div class="sv-hero">
+        <h2>Byens yrker i 1900</h2>
+        <p class="tagline">3 359 unike yrkesbeskrivelser, normalisert til 21 yrkeskategorier</p>
+      </div>
+      <div class="sv-kpi-row">
+        <div class="sv-kpi"><div class="sv-kpi-value">6 448</div><div class="sv-kpi-label">Med yrke</div></div>
+        <div class="sv-kpi"><div class="sv-kpi-value">21</div><div class="sv-kpi-label">Kategorier</div></div>
+        <div class="sv-kpi"><div class="sv-kpi-value">57,8%</div><div class="sv-kpi-label">Av innbyggerne</div></div>
+      </div>
+
+      <div class="sv-section">
+        <h3 class="sv-section-title">Næringene i overblikk</h3>
+        <p class="sv-section-sub">Klikk en sektor for å se yrkene innenfor. Blått for menn, oransje for kvinner.</p>
+        <div class="sv-legend">
+          <span class="sv-legend-item"><span class="sv-legend-swatch" style="background:#3987e5"></span> Menn</span>
+          <span class="sv-legend-item"><span class="sv-legend-swatch" style="background:#d95926"></span> Kvinner</span>
+        </div>
+        <div id="svSectorBar"></div>
+      </div>
+
+      <div class="sv-section">
+        <div class="sv-sector-grid" id="svSectorGrid"></div>
+        <div class="sv-detail" id="svDetailPanel"></div>
+      </div>
+
+      <div class="sv-section">
+        <h3 class="sv-section-title">Kjønn og arbeid</h3>
+        <p class="sv-section-sub">Noen sektorer var nesten utelukkende mannlige — bygg, sjøfart, militær. Andre dominert av kvinner — husarbeid, huslig tjeneste, tekstil.</p>
+        <div id="svGenderChart"></div>
+      </div>
+
+      <div class="sv-footer">
+        <p>Kilde: <a href="https://www.digitalarkivet.no/census/search-residents?census_year=1900&county_id=01&municipality_id=0101" target="_blank" rel="noopener">Digitalarkivet — Folketelling 1900, Fredrikshald kjøpstad</a></p>
+        <p style="margin-top:4px">Yrkesnormalisering: 3 359 unike yrkestrenger → 803 normaliserte titler → 21 kategorier</p>
+        <p style="margin-top:8px;color:var(--signal-2);font-style:italic">Tallene er foreløpige — dette er et pågående arbeid.</p>
+      </div>
+    </div>
   </aside>
 </div>
 
@@ -546,6 +775,28 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
+/* ============================
+   VIEW SWITCHING  (must be first — survives CDN/Leaflet failure)
+   ============================ */
+let currentView = 'kart';
+function showView(view){
+  if(currentView === view && view !== 'kart'){ view = 'kart'; }
+  currentView = view;
+  const body = document.body;
+  body.classList.toggle('view-wide', view !== 'kart');
+  document.getElementById('kartView').classList.toggle('hidden', view !== 'kart');
+  const dv = document.getElementById('demografiView');
+  const yv = document.getElementById('yrkerView');
+  dv.classList.toggle('active', view === 'demografi');
+  yv.classList.toggle('active', view === 'yrker');
+  document.querySelectorAll('.topbar-nav button, .topbar-nav a').forEach(b => b.classList.remove('active'));
+  if(view === 'demografi') document.getElementById('navDemografi').classList.add('active');
+  if(view === 'yrker') document.getElementById('navYrker').classList.add('active');
+  if(view === 'demografi' && !dv._rendered && typeof renderDemografi === 'function'){ renderDemografi(); dv._rendered = true; }
+  if(view === 'yrker' && !yv._rendered && typeof renderYrker === 'function'){ renderYrker(); yv._rendered = true; }
+  setTimeout(() => { if(window.map) map.invalidateSize(); }, 400);
+}
+
 const EPOST = 'jorgen.s.olsen@gmail.com';
 
 /* ---- Velkomsttilstand ---- */
@@ -1197,6 +1448,222 @@ function eksporterEndringer(){
 
 sjekkAdmin();
 start();
+
+/* ============================
+   DEMOGRAFI CHARTS
+   ============================ */
+const svPyramid = [
+  {bin:"0–4",m:655,k:683},{bin:"5–9",m:662,k:611},{bin:"10–14",m:555,k:550},
+  {bin:"15–19",m:588,k:642},{bin:"20–24",m:477,k:489},{bin:"25–29",m:315,k:404},
+  {bin:"30–34",m:273,k:368},{bin:"35–39",m:310,k:377},{bin:"40–44",m:267,k:342},
+  {bin:"45–49",m:236,k:289},{bin:"50–54",m:180,k:253},{bin:"55–59",m:185,k:197},
+  {bin:"60–64",m:147,k:225},{bin:"65–69",m:137,k:181},{bin:"70–74",m:97,k:138},
+  {bin:"75–79",m:83,k:102},{bin:"80–84",m:29,k:57},{bin:"85–89",m:13,k:15},
+  {bin:"90+",m:2,k:4}
+];
+const svBirthplaces = [
+  {place:"Fredrikshald",count:5988},{place:"Sverige",count:1572},
+  {place:"Id",count:427},{place:"Berg",count:195},
+  {place:"Kristiania",count:191},{place:"Aremark",count:123},
+  {place:"Rakkestad",count:77},{place:"Andre svenske steder",count:75},
+  {place:"Skjeberg",count:70},{place:"Tistedalen",count:58},
+  {place:"Asak",count:40},{place:"Drammen",count:36},
+  {place:"Sarpsborg",count:30}
+];
+const svOccupations = [
+  {occ:"Husgjerning",count:410},{occ:"Uten yrke",count:295},
+  {occ:"Skoleelev",count:262},{occ:"Husmor",count:179},
+  {occ:"Tjenestepige",count:160},{occ:"Underofficerselev",count:85},
+  {occ:"Sjømann",count:81},{occ:"Syerske",count:68},
+  {occ:"Høvleriarbeider",count:53},{occ:"Stenhugger",count:43},
+  {occ:"Tomtearbeider",count:42},{occ:"Husholderske",count:37},
+  {occ:"Stuerarbeider",count:37},{occ:"Kjøbmand",count:31},
+  {occ:"Styrmand",count:30}
+];
+const svCivilStatus = [
+  {status:"Ugift",count:5969,color:"#3987e5"},
+  {status:"Gift",count:3266,color:"#d95926"},
+  {status:"Enke/enkemann",count:646,color:"#199e70"},
+  {status:"Separert",count:16,color:"#c98500"},
+  {status:"Fraskilt",count:13,color:"#9085e9"}
+];
+const svHouseholdSizes = [
+  {size:1,count:305},{size:2,count:421},{size:3,count:397},
+  {size:4,count:379},{size:5,count:299},{size:6,count:259},
+  {size:7,count:193},{size:8,count:133},{size:9,count:84},
+  {size:10,count:40},{size:11,count:20},{size:12,count:11},
+  {size:"13+",count:9}
+];
+const svRoles = [
+  {role:"Sønn",count:2552},{role:"Datter",count:2545},
+  {role:"Husmor",count:2120},{role:"Husfar",count:1867},
+  {role:"Tjener",count:388},{role:"Elev/lærling",count:353},
+  {role:"Losjerende",count:277},{role:"Barn",count:89}
+];
+
+const svFmt = n => n.toLocaleString('nb-NO');
+const svPct = (n,t) => (n/t*100).toFixed(1)+'%';
+
+function svHBars(containerId, data, labelKey, valueKey){
+  const el = document.getElementById(containerId);
+  const max = Math.max(...data.map(d => d[valueKey]));
+  let html = '';
+  data.forEach(d => {
+    const w = d[valueKey] / max * 100;
+    html += `<div class="sv-hbar">
+      <div class="sv-hbar-label"><span>${d[labelKey]}</span><span class="ct">${svFmt(d[valueKey])}</span></div>
+      <div class="sv-hbar-track"><div class="sv-hbar-fill" style="width:${w}%;background:#3987e5;opacity:.8"></div></div>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+function renderDemografi(){
+  // Pyramid
+  const pc = document.getElementById('svPyramid');
+  const maxVal = Math.max(...svPyramid.map(d => Math.max(d.m, d.k)));
+  const W = pc.clientWidth || 600;
+  const midX = W/2;
+  const rowH = 20, gap = 2, labelColW = 48;
+  const barMaxL = midX - labelColW/2 - 10;
+  const H = svPyramid.length * (rowH+gap) + 4;
+  let svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="display:block">`;
+  svPyramid.forEach((d,i) => {
+    const y = i*(rowH+gap)+2;
+    const mW = d.m/maxVal*barMaxL, kW = d.k/maxVal*barMaxL;
+    const mX = midX-labelColW/2-mW;
+    const kX = midX+labelColW/2;
+    svg += `<rect x="${mX}" y="${y}" width="${mW}" height="${rowH}" rx="3" fill="#3987e5" opacity=".85"><title>Menn ${d.bin}: ${svFmt(d.m)}</title></rect>`;
+    svg += `<rect x="${kX}" y="${y}" width="${kW}" height="${rowH}" rx="3" fill="#d95926" opacity=".85"><title>Kvinner ${d.bin}: ${svFmt(d.k)}</title></rect>`;
+    svg += `<text x="${midX}" y="${y+rowH/2+1}" text-anchor="middle" dominant-baseline="middle" fill="#c9c0ae" font-size="9" font-family="IBM Plex Sans,system-ui,sans-serif">${d.bin}</text>`;
+  });
+  svg += '</svg>';
+  pc.innerHTML = svg;
+
+  // Birthplace & Occupation
+  svHBars('svBirthplace', svBirthplaces, 'place', 'count');
+  svHBars('svOccupation', svOccupations, 'occ', 'count');
+
+  // Civil status
+  const civEl = document.getElementById('svCivil');
+  const civTotal = svCivilStatus.reduce((s,d) => s+d.count, 0);
+  let civHtml = '<div class="sv-stacked">';
+  svCivilStatus.forEach(d => { civHtml += `<div class="sv-stacked-seg" style="flex:${d.count};background:${d.color};opacity:.85" title="${d.status}: ${svFmt(d.count)} (${svPct(d.count,civTotal)})"></div>`; });
+  civHtml += '</div><div class="sv-stacked-legend">';
+  svCivilStatus.forEach(d => { civHtml += `<span class="sv-stacked-item"><span class="sv-stacked-swatch" style="background:${d.color}"></span>${d.status} ${svPct(d.count,civTotal)}</span>`; });
+  civHtml += '</div>';
+  civEl.innerHTML = civHtml;
+
+  // Household sizes
+  const hhEl = document.getElementById('svHousehold');
+  const hhMax = Math.max(...svHouseholdSizes.map(d => d.count));
+  let hhHtml = '<div class="sv-hist">';
+  svHouseholdSizes.forEach(d => {
+    const h = d.count/hhMax*100;
+    hhHtml += `<div class="sv-hist-wrap"><span class="sv-hist-count">${d.count}</span><div class="sv-hist-bar" style="height:${h}%;background:#3987e5;opacity:.8" title="${d.size} pers: ${d.count}"></div></div>`;
+  });
+  hhHtml += '</div><div style="display:flex;gap:2px;margin-top:2px">';
+  svHouseholdSizes.forEach(d => { hhHtml += `<div style="flex:1;text-align:center"><span class="sv-hist-label">${d.size}</span></div>`; });
+  hhHtml += '</div>';
+  hhEl.innerHTML = hhHtml;
+
+  // Roles
+  svHBars('svRoles', svRoles, 'role', 'count');
+}
+
+/* ============================
+   YRKER CHARTS
+   ============================ */
+const svSectors = [
+  {name:"Husarbeid",count:901,m:7,k:889,yrker:[{n:"Husarbeid",c:626,m:7,k:617},{n:"Husmor",c:199,m:0,k:199},{n:"Husholderske",c:46,m:0,k:45},{n:"Husbestyrerinde",c:30,m:0,k:28}]},
+  {name:"Treindustri",count:569,m:562,k:5,yrker:[{n:"Høvleriarbeider",c:152,m:151,k:1},{n:"Trælastarbeider",c:89,m:87,k:2},{n:"Sagbruksarbeider",c:80,m:79,k:0},{n:"Tomtearbeider",c:80,m:79,k:0},{n:"Stuerarbeider",c:61,m:61,k:0},{n:"Bryggearbeider",c:49,m:49,k:0},{n:"Bordhusarbeider",c:15,m:15,k:0},{n:"Sliberiarbeider",c:15,m:13,k:2},{n:"Ramskjærer",c:10,m:10,k:0},{n:"Fløter",c:6,m:6,k:0},{n:"Propsarbeider",c:5,m:5,k:0},{n:"Sagfiler",c:4,m:4,k:0},{n:"Tømmervelter",c:3,m:3,k:0}]},
+  {name:"Huslig tjeneste",count:454,m:77,k:376,yrker:[{n:"Tjenestepike",c:245,m:2,k:242},{n:"Vaskekone",c:78,m:0,k:78},{n:"Visergutt",c:48,m:48,k:0},{n:"Kokkepike",c:14,m:0,k:14},{n:"Tjener",c:14,m:4,k:10},{n:"Gårdsgutt",c:12,m:12,k:0},{n:"Barnepike",c:10,m:0,k:10},{n:"Stuepike",c:9,m:0,k:9},{n:"Gårdskar",c:6,m:6,k:0},{n:"Kafejomfru",c:6,m:1,k:5},{n:"Tjenestedreng",c:4,m:4,k:0},{n:"Selskapsdame",c:3,m:0,k:3},{n:"Meieripike",c:3,m:0,k:3},{n:"Guvernante",c:2,m:0,k:2}]},
+  {name:"Skoleelev",count:436,m:226,k:203,yrker:[{n:"Skoleelev",c:433,m:223,k:203},{n:"Student",c:3,m:3,k:0}]},
+  {name:"Håndverk",count:399,m:379,k:19,yrker:[{n:"Skomaker",c:74,m:74,k:0},{n:"Snekker",c:62,m:62,k:0},{n:"Smed",c:40,m:39,k:1},{n:"Lærling",c:23,m:22,k:0},{n:"Typograf",c:20,m:8,k:12},{n:"Skomakersvenn",c:16,m:16,k:0},{n:"Mekaniker",c:15,m:15,k:0},{n:"Bygningssnekker",c:15,m:15,k:0},{n:"Elektriker",c:14,m:14,k:0},{n:"Bokbinder",c:13,m:11,k:2},{n:"Barber",c:11,m:11,k:0},{n:"Smedlærling",c:10,m:10,k:0},{n:"Urmaker",c:9,m:7,k:2},{n:"Rørlegger",c:9,m:9,k:0}]},
+  {name:"Industri",count:404,m:198,k:199,yrker:[{n:"Skofabrikarbeider",c:119,m:87,k:32},{n:"Fyrstikkarbeider",c:77,m:24,k:51},{n:"Gardinfabrikarbeider",c:50,m:20,k:27},{n:"Spinnerske",c:31,m:6,k:23},{n:"Fabrikarbeider",c:30,m:14,k:16},{n:"Spinner",c:28,m:18,k:10},{n:"Koffertfabrikarbeider",c:25,m:16,k:9},{n:"Notlerske",c:18,m:0,k:18},{n:"Kåpefabrikarbeider",c:10,m:1,k:9},{n:"Tobakkarbeider",c:4,m:0,k:4},{n:"Spikerklipper",c:4,m:4,k:0}]},
+  {name:"Forsørget",count:338,m:67,k:263,yrker:[{n:"Forsørget",c:116,m:17,k:97},{n:"Forsørget av fattigvesenet",c:73,m:9,k:62},{n:"Rentier",c:51,m:10,k:38},{n:"Pensjonist",c:38,m:18,k:20},{n:"Huseier",c:32,m:13,k:19},{n:"Livrente",c:17,m:0,k:16},{n:"Forsørget av legat",c:11,m:0,k:11}]},
+  {name:"Handel",count:338,m:209,k:125,yrker:[{n:"Kjøpmann",c:101,m:83,k:18},{n:"Handlende",c:65,m:27,k:36},{n:"Butikkjomfru",c:55,m:1,k:53},{n:"Handelsbetjent",c:35,m:34,k:0},{n:"Kolonialhandler",c:22,m:9,k:13},{n:"Kreaturhandler",c:19,m:19,k:0},{n:"Handelsagent",c:17,m:15,k:2},{n:"Fiskehandler",c:9,m:9,k:0},{n:"Handelsfullmektig",c:5,m:5,k:0}]},
+  {name:"Tekstil og søm",count:330,m:73,k:252,yrker:[{n:"Syerske",c:171,m:0,k:167},{n:"Veverske",c:37,m:2,k:35},{n:"Skredder",c:35,m:31,k:3},{n:"Strykerske",c:25,m:0,k:25},{n:"Skreddersvenn",c:19,m:19,k:0},{n:"Skreddermester",c:11,m:11,k:0},{n:"Motehandler",c:10,m:0,k:10},{n:"Salmaker",c:7,m:7,k:0},{n:"Broderiforretning",c:6,m:0,k:6},{n:"Strikkerske",c:6,m:0,k:6}]},
+  {name:"Sjøfart",count:295,m:292,k:3,yrker:[{n:"Sjømann",c:120,m:120,k:0},{n:"Skipsfører",c:42,m:39,k:3},{n:"Styrmann",c:42,m:42,k:0},{n:"Skipstømmermann",c:27,m:27,k:0},{n:"Fyrbøter",c:24,m:24,k:0},{n:"Matros",c:12,m:12,k:0},{n:"Dampskipsfører",c:8,m:8,k:0},{n:"Skipsreder",c:6,m:6,k:0},{n:"Stuert",c:6,m:6,k:0},{n:"Los",c:4,m:4,k:0},{n:"Skipsmekler",c:4,m:4,k:0}]},
+  {name:"Bygg og anlegg",count:241,m:239,k:0,yrker:[{n:"Steinhogger",c:81,m:80,k:0},{n:"Tømmermann",c:44,m:44,k:0},{n:"Murer",c:38,m:38,k:0},{n:"Malersvenn",c:22,m:22,k:0},{n:"Maler",c:22,m:22,k:0},{n:"Malermester",c:8,m:7,k:0},{n:"Malerlærling",c:8,m:8,k:0},{n:"Jordarbeider",c:6,m:6,k:0},{n:"Murersvenn",c:5,m:5,k:0},{n:"Jernbanearbeider",c:4,m:4,k:0},{n:"Murermester",c:3,m:3,k:0}]},
+  {name:"Mat og drikke",count:151,m:127,k:22,yrker:[{n:"Bryggeriarbeider",c:33,m:27,k:6},{n:"Baker",c:22,m:14,k:7},{n:"Slakter",c:17,m:17,k:0},{n:"Bakersvenn",c:15,m:15,k:0},{n:"Bakermester",c:12,m:12,k:0},{n:"Spisevært",c:12,m:4,k:8},{n:"Konditor",c:9,m:8,k:1},{n:"Bakerlærling",c:8,m:8,k:0},{n:"Pølsemaker",c:6,m:5,k:0},{n:"Slaktermester",c:5,m:5,k:0},{n:"Slaktersvenn",c:5,m:5,k:0}]},
+  {name:"Militær",count:148,m:146,k:2,yrker:[{n:"Underofficerselev",c:87,m:87,k:0},{n:"Korporal",c:13,m:13,k:0},{n:"Artillerist",c:10,m:10,k:0},{n:"Sergent",c:8,m:8,k:0},{n:"Soldat",c:8,m:8,k:0},{n:"Militærmusiker",c:6,m:6,k:0},{n:"Offiser",c:5,m:3,k:2},{n:"Musiksergent",c:4,m:4,k:0},{n:"Musikelev",c:4,m:4,k:0},{n:"Musikkorporal",c:3,m:3,k:0}]},
+  {name:"Kontor og forvaltning",count:125,m:57,k:68,yrker:[{n:"Kontorist",c:54,m:31,k:23},{n:"Bestyrer",c:20,m:5,k:15},{n:"Telefonist",c:15,m:4,k:11},{n:"Kasserer",c:11,m:2,k:9},{n:"Bokholder",c:8,m:7,k:1},{n:"Telegrafist",c:8,m:7,k:1},{n:"Kontordame",c:8,m:0,k:8}]},
+  {name:"Transport",count:127,m:125,k:1,yrker:[{n:"Kjører",c:50,m:49,k:0},{n:"Jernbanearbeider",c:23,m:23,k:0},{n:"Vognmann",c:13,m:12,k:1},{n:"Lokomotivfører",c:6,m:6,k:0},{n:"Brødkjører",c:5,m:5,k:0},{n:"Kjøregutt",c:5,m:5,k:0},{n:"Kusk",c:5,m:5,k:0},{n:"Ølkjører",c:4,m:4,k:0},{n:"Kullarbeider",c:3,m:3,k:0},{n:"Brøddrager",c:3,m:3,k:0},{n:"Konduktør",c:3,m:3,k:0},{n:"Dampbåtarbeider",c:3,m:3,k:0}]},
+  {name:"Undervisning",count:71,m:20,k:50,yrker:[{n:"Lærer",c:56,m:20,k:35},{n:"Lærerinne",c:15,m:0,k:15}]},
+  {name:"Offentlig tjeneste",count:58,m:58,k:0,yrker:[{n:"Tollvesen",c:9,m:9,k:0},{n:"Samlagsforstander",c:9,m:9,k:0},{n:"Politikonstabel",c:9,m:9,k:0},{n:"Kommunearbeider",c:7,m:7,k:0},{n:"Politibetjent",c:6,m:6,k:0},{n:"Tollopsynsmann",c:5,m:5,k:0},{n:"Politi",c:5,m:5,k:0},{n:"Postbud",c:4,m:4,k:0}]},
+  {name:"Jordbruk",count:48,m:34,k:13,yrker:[{n:"Gårdbruker",c:26,m:16,k:10},{n:"Gartner",c:14,m:11,k:2},{n:"Fisker",c:4,m:3,k:1},{n:"Jordbruker",c:4,m:4,k:0}]},
+  {name:"Helse",count:40,m:23,k:14,yrker:[{n:"Lege",c:13,m:13,k:0},{n:"Apoteker",c:12,m:9,k:3},{n:"Ordenssøster",c:8,m:0,k:5},{n:"Jordmor",c:4,m:0,k:4},{n:"Sykepleier",c:2,m:0,k:2}]},
+  {name:"Frie yrker",count:25,m:21,k:3,yrker:[{n:"Advokat",c:6,m:5,k:1},{n:"Prest",c:5,m:4,k:0},{n:"Fotograf",c:5,m:3,k:2},{n:"Ingeniør",c:3,m:3,k:0},{n:"Kunstner",c:3,m:3,k:0},{n:"Journalist",c:2,m:2,k:0}]}
+];
+const svMainSectors = svSectors.filter(s => !['Skoleelev','Forsørget'].includes(s.name));
+const svTotalYrke = 6448;
+const svSectorColors = [
+  '#3987e5','#d95926','#199e70','#c98500','#d55181',
+  '#008300','#9085e9','#e66767','#5598e7','#6da7ec',
+  '#86b6ef','#256abf','#184f95','#1c5cab','#448bc7',
+  '#72a0d4','#7db3b0','#a08860','#c4a06a'
+];
+
+let svActiveSector = -1;
+function svSelectSector(idx){
+  const panel = document.getElementById('svDetailPanel');
+  const cards = document.querySelectorAll('.sv-sector-card');
+  if(svActiveSector === idx){ panel.classList.remove('open'); cards.forEach(c=>c.classList.remove('active')); svActiveSector=-1; return; }
+  svActiveSector = idx;
+  cards.forEach(c => c.classList.toggle('active', parseInt(c.dataset.idx)===idx));
+  const s = svSectors[idx];
+  const maxC = Math.max(...s.yrker.map(y=>y.c));
+  let html = `<button class="sv-detail-close" onclick="svSelectSector(${idx})">&times;</button>`;
+  html += `<div class="sv-detail-title">${s.name}</div>`;
+  html += `<div class="sv-detail-sub">${svFmt(s.count)} personer — ${svFmt(s.m)} menn, ${svFmt(s.k)} kvinner</div>`;
+  s.yrker.forEach(y => {
+    html += `<div class="sv-occ-bar"><div class="sv-occ-label"><span>${y.n}</span><span class="ct">${svFmt(y.c)}</span></div>
+      <div class="sv-occ-track"><div class="sv-occ-fill-m" style="flex:${y.m}"></div><div class="sv-occ-fill-k" style="flex:${y.k}"></div></div></div>`;
+  });
+  panel.innerHTML = html;
+  panel.classList.add('open');
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function renderYrker(){
+  // Overview bar
+  const barEl = document.getElementById('svSectorBar');
+  let barHtml = '<div class="sv-full-bar">';
+  svMainSectors.forEach((s,i) => {
+    if(s.count/svTotalYrke*100 < 0.5) return;
+    barHtml += `<div class="sv-full-bar-seg" style="flex:${s.count};background:${svSectorColors[i%svSectorColors.length]}" onclick="svSelectSector(${svSectors.indexOf(s)})" title="${s.name}: ${svFmt(s.count)}"></div>`;
+  });
+  barHtml += '</div>';
+  barEl.innerHTML = barHtml;
+
+  // Grid
+  const gridEl = document.getElementById('svSectorGrid');
+  let gridHtml = '';
+  svMainSectors.forEach((s,i) => {
+    const si = svSectors.indexOf(s);
+    const mPct = Math.round(s.m/s.count*100);
+    const kPct = Math.round(s.k/s.count*100);
+    gridHtml += `<div class="sv-sector-card" data-idx="${si}" onclick="svSelectSector(${si})">
+      <div class="sv-sector-header"><span class="sv-sector-name">${s.name}</span><span class="sv-sector-count">${svFmt(s.count)}</span></div>
+      <div class="sv-sector-bar"><div class="sv-sector-bar-m" style="flex:${s.m}"></div><div class="sv-sector-bar-k" style="flex:${s.k}"></div></div>
+      <div class="sv-sector-pct"><span><span class="dot" style="background:#3987e5"></span>${mPct}% menn</span><span><span class="dot" style="background:#d95926"></span>${kPct}% kvinner</span></div>
+    </div>`;
+  });
+  gridEl.innerHTML = gridHtml;
+
+  // Gender chart
+  const gEl = document.getElementById('svGenderChart');
+  const sorted = [...svMainSectors].filter(s=>s.count>10).sort((a,b)=>(b.k/b.count)-(a.k/a.count));
+  let gHtml = '';
+  sorted.forEach(s => {
+    gHtml += `<div class="sv-occ-bar" style="margin-bottom:8px">
+      <div class="sv-occ-label"><span>${s.name}</span><span class="ct">${svFmt(s.count)}</span></div>
+      <div class="sv-occ-track" style="height:16px"><div class="sv-occ-fill-m" style="flex:${s.m}"></div><div class="sv-occ-fill-k" style="flex:${s.k}"></div></div>
+    </div>`;
+  });
+  gEl.innerHTML = gHtml;
+}
 
 /* ── Mobil bunnpanel: sveip opp/ned ── */
 (function(){
