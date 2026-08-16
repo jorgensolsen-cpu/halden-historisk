@@ -633,8 +633,8 @@
       "gardens_nummer_raa": null,
       "krets": null,
       "eier_folketelling": null,
-      "kilde": "gf01036993000162",
-      "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000162"
+      "kilde": "gf01036993000024",
+      "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000024"
     },
     "bilder": [],
     "historie": null,
@@ -5578,8 +5578,8 @@
       "gardens_nummer_raa": "154b, 143, 152, 129",
       "krets": "005a",
       "eier_folketelling": null,
-      "kilde": "gf01036993000231",
-      "kilde_url": "https://www.digitalarkivet.no/census/urban-residence/gf01036993000231"
+      "kilde": null,
+      "kilde_url": null
     },
     "bilder": [],
     "historie": null,
